@@ -13,3 +13,8 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+pa-puff-game/project.godot
+*.tmp
+*.uid
+pa-puff-game/project.godot
+pa-puff-game/project.godot
