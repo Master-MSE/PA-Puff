@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://j0a2ro2dd2us"]
+
+[ext_resource type="Script" uid="uid://dl26gwrm46t4q" path="res://GAME/Scripts/Gameplay/map/hexagone.gd" id="1_t0o44"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vf11p"]
+
+[node name="Hexagone" type="StaticBody2D"]
+material = SubResource("CanvasItemMaterial_vf11p")
+input_pickable = true
+script = ExtResource("1_t0o44")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+
+[node name="Texture_border" type="Polygon2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(50, 0, 25, 43.3, -25, 43.3, -50, 0, -25, -43.3, 25, -43.3)
+uv = PackedVector2Array(166, 125, 240, 31, 411, 31, 465, 131, 404, 256, 252, 259)
+
+[node name="Texture_base" type="Polygon2D" parent="."]
+light_mask = 4
+visibility_layer = 4
+polygon = PackedVector2Array(49, 0, 24.5, 42.4, -24.5, 42.4, -49, 0, -24.5, -42.4, 24.5, -42.4)
+uv = PackedVector2Array(166, 125, 240, 31, 411, 31, 465, 131, 404, 256, 252, 259)
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
