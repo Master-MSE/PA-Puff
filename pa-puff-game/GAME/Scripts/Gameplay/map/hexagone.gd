@@ -37,6 +37,7 @@ func _ready():
 		var y = (HEX_RADIUS+1) * sin(angle)
 		points.append(Vector2(x, y))
 	texture_border.polygon=points
+	
 func _process(delta: float) -> void:
 	texture_base.color=Color(1-inf_B,1-(inf_A+inf_B),1-inf_A)
 	
@@ -105,6 +106,7 @@ func set_infuence(inf_a,inf_b,inf_c)->void:
 	self.new_inf_A=inf_a
 	self.new_inf_B=inf_b
 	self.new_inf_C=inf_c
+	
 func update_influence()->void:
 	self.inf_A=self.new_inf_A
 	self.inf_B=self.new_inf_B

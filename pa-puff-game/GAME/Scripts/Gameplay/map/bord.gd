@@ -1,12 +1,10 @@
 extends Node2D
 const HEX_SCENE = preload("res://GAME/Assets/Models/hexagone.tscn")
+const HEX_SIZE = 50
+const INFLUENCE_FACTOR=0.01
+const REPUTATION_FACTOR=1.0
 
-var hex_size = 50
-var cols = 6
-var rows = 6
-var INFLUENCE_FACTOR=0.01
-var REPUTATION_FACTOR=1.0
-var tab_conection={
+const TAB_CONECTION={
 	0:[1,4,5,6],
 	1:[0,2,6],
 	2:[1,3,6,7],
@@ -36,13 +34,21 @@ var tab_conection={
 	26:[21,25,27],
 	27:[21,22,23,26],
 }
+
+var player1:Node2D
+var player2:Node2D
 var array_hex=[]
+
 func _ready():
+	
 	create_hex_grid()
+	get_player()
 
 func create_hex_grid():
-	var x_offset = hex_size * 1.5
-	var y_offset = hex_size * sqrt(3)
+	var cols = 6
+	var rows = 6
+	var x_offset = HEX_SIZE * 1.5
+	var y_offset = HEX_SIZE * sqrt(3)
 	
 	var grid_width = (cols - 1) * x_offset
 	var grid_height = (rows - 1) * y_offset
@@ -59,7 +65,7 @@ func create_hex_grid():
 				if x % 2 != 0:
 					y_pos += y_offset / 2
 				hex.position = Vector2(x_pos, y_pos) + center_offset
-				hex.HEX_RADIUS=hex_size
+				hex.HEX_RADIUS=HEX_SIZE
 				hex.INDEX=x+y*cols-n_del
 				hex.WEIGHT=randf_range(0.1,10.0)
 				add_child(hex)
@@ -70,9 +76,10 @@ func create_hex_grid():
 
 func _on_timer_timeout() -> void:
 	update_infuence()
+	calcul_money()
 
 func update_infuence()-> void:
-	for i in tab_conection:
+	for i in TAB_CONECTION:
 		var inf_a = 0
 		var inf_b = 0
 		var inf_c = 0
@@ -83,7 +90,7 @@ func update_infuence()-> void:
 		
 		var weight = array_hex[i].get_weight()
 		var weight_inf=0.0 # Changer avec une variable inter à calculer 1 fois au débu
-		for connection in tab_conection[i]:
+		for connection in TAB_CONECTION[i]:
 			var weight_c = array_hex[connection].get_weight()
 			weight_inf+=weight_c
 			inf_a+=array_hex[connection].get_infuence_A() * weight_c
@@ -113,6 +120,13 @@ func update_infuence()-> void:
 		array_hex[i].set_infuence(new_a,new_b,new_c)
 	for hex in array_hex:
 		hex.update_influence()
+		
+func set_player(player1:Node2D,player2:Node2D)->void:
+	self.player1=player1
+	self.player2=player2
+		
+func calcul_money()->void:
+	var tt=1
 		
 		
 	
