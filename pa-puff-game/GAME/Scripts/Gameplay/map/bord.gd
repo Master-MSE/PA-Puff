@@ -1,4 +1,7 @@
 extends Node2D
+
+@onready var money  : Label = $Money
+
 const HEX_SCENE = preload("res://GAME/Assets/Models/hexagone.tscn")
 const HEX_SIZE = 50
 const INFLUENCE_FACTOR=0.01
@@ -40,9 +43,7 @@ var player2:Node2D
 var array_hex=[]
 
 func _ready():
-	
 	create_hex_grid()
-	get_player()
 
 func create_hex_grid():
 	var cols = 6
@@ -67,7 +68,7 @@ func create_hex_grid():
 				hex.position = Vector2(x_pos, y_pos) + center_offset
 				hex.HEX_RADIUS=HEX_SIZE
 				hex.INDEX=x+y*cols-n_del
-				hex.WEIGHT=randf_range(0.1,10.0)
+				hex.WEIGHT=randi_range(100,10000)
 				add_child(hex)
 				array_hex.append(hex)
 			else :
@@ -77,7 +78,7 @@ func create_hex_grid():
 func _on_timer_timeout() -> void:
 	update_infuence()
 	calcul_money()
-
+	show_money()
 func update_infuence()-> void:
 	for i in TAB_CONECTION:
 		var inf_a = 0
@@ -126,7 +127,22 @@ func set_player(player1:Node2D,player2:Node2D)->void:
 	self.player2=player2
 		
 func calcul_money()->void:
-	var tt=1
+	for hexagone in array_hex:
+		self.player1.give_money(hexagone.get_money_A())
+		self.player2.give_money(hexagone.get_money_B())
+		self.player1.take_money(hexagone.get_cost_A())
+		self.player2.take_money(hexagone.get_cost_B())
+		
+		
+var money_A=0.0
+var money_B=0.0
+func show_money() -> void:
+	var old_money_A=money_A
+	var old_money_B=money_B
+	money_A=self.player1.check_money()
+	money_B=self.player2.check_money()
+	self.money.text="Money A: %s\n Gain A : %s \nMoney B: %s\n Gain B : %s" % [money_A,money_A-old_money_A,money_B,money_B-old_money_B]
+		
 		
 		
 	

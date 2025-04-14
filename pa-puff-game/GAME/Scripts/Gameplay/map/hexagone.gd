@@ -6,8 +6,14 @@ extends StaticBody2D
 
 @export var HEX_RADIUS = 49
 @export var INDEX = 0
-@export var WEIGHT = 1.0
+@export var WEIGHT = 1000.0
 
+var porduction_A = 100
+var porduction_B = 100
+var price_A = 2
+var price_B = 2
+var maintenance_A = 50
+var maintenance_B = 50
 
 var inf_A :float = 0.0
 var inf_B :float = 0.0
@@ -124,3 +130,12 @@ func get_reputation_B()->float:
 	return self.reputation_B
 func get_weight()->float:
 	return self.WEIGHT
+func get_money_A()->float:
+	return min(self.inf_A*self.usineA*self.porduction_A,self.WEIGHT*self.inf_A)*self.price_A
+func get_money_B()->float:
+	return min(self.inf_B*self.usineB*self.porduction_B,self.WEIGHT*self.inf_B)*self.price_B
+	
+func get_cost_A()->float:
+	return self.usineA*self.maintenance_A
+func get_cost_B()->float:
+	return self.usineB*self.maintenance_B
