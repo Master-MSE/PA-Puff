@@ -2,10 +2,9 @@ extends Node2D
 
 @onready var money  : Label = $Money
 
-const HEX_SCENE = preload("res://GAME/Assets/Models/hexagone.tscn")
+const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
 const HEX_SIZE = 50
-const INFLUENCE_FACTOR=0.01
-const REPUTATION_FACTOR=1.0
+
 
 const TAB_CONECTION={
 	0:[1,4,5,6],
@@ -102,15 +101,16 @@ func update_infuence()-> void:
 		inf_a/=sum_inf
 		inf_b/=sum_inf
 		inf_c/=sum_inf
-			
-		new_a = lerp(new_a, inf_a, INFLUENCE_FACTOR*weight_inf/weight)
-		new_b = lerp(new_b, inf_b, INFLUENCE_FACTOR*weight_inf/weight)
-		new_c = lerp(new_c, inf_c, INFLUENCE_FACTOR*weight_inf/weight)
+		
+		new_a = lerp(new_a, inf_a, Constants.INFLUENCE_FACTOR*weight_inf/weight)
+		new_b = lerp(new_b, inf_b, Constants.INFLUENCE_FACTOR*weight_inf/weight)
+		new_c = lerp(new_c, inf_c, Constants.INFLUENCE_FACTOR*weight_inf/weight)
 		
 		
 		
-		new_a+=array_hex[i].get_internal_influence_A() * REPUTATION_FACTOR * array_hex[i].get_reputation_A()
-		new_b+=array_hex[i].get_internal_influence_B() * REPUTATION_FACTOR * array_hex[i].get_reputation_B()
+		new_a+=array_hex[i].get_internal_influence_A()
+		new_b+=array_hex[i].get_internal_influence_B()
+		
 		var total_sum = new_a + new_b + new_c
 		new_a/=total_sum
 		new_b/=total_sum
@@ -127,15 +127,17 @@ func set_player(player1:Node2D,player2:Node2D)->void:
 	self.player2=player2
 		
 func calcul_money()->void:
-	for hexagone in array_hex:
-		self.player1.give_money(hexagone.get_money_A())
-		self.player2.give_money(hexagone.get_money_B())
-		self.player1.take_money(hexagone.get_cost_A())
-		self.player2.take_money(hexagone.get_cost_B())
+
+	for hexagon in array_hex:
+		self.player1.give_money(hexagon.get_money_A(self.player1.get_price()))
+		self.player2.give_money(hexagon.get_money_B(self.player2.get_price()))
+		self.player1.take_money(hexagon.get_cost_A(self.player1.get_maintenance()))
+		self.player2.take_money(hexagon.get_cost_B(self.player2.get_maintenance()))
 		
 		
 var money_A=0.0
 var money_B=0.0
+
 func show_money() -> void:
 	var old_money_A=money_A
 	var old_money_B=money_B

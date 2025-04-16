@@ -8,12 +8,8 @@ extends StaticBody2D
 @export var INDEX = 0
 @export var WEIGHT = 1000.0
 
-var porduction_A = 100
-var porduction_B = 100
-var price_A = 2
-var price_B = 2
-var maintenance_A = 50
-var maintenance_B = 50
+
+
 
 var inf_A :float = 0.0
 var inf_B :float = 0.0
@@ -120,22 +116,18 @@ func update_influence()->void:
 	
 	
 func get_internal_influence_A()->float:
-	return self.usineA*0.2
+	return self.usineA*Constants.INFLUENCE_FACTOR
 func get_internal_influence_B()->float:
-	return self.usineB*0.2
+	return self.usineB*Constants.INFLUENCE_FACTOR
 	
-func get_reputation_A()->float:
-	return self.reputation_A
-func get_reputation_B()->float:
-	return self.reputation_B
 func get_weight()->float:
 	return self.WEIGHT
-func get_money_A()->float:
-	return min(self.inf_A*self.usineA*self.porduction_A,self.WEIGHT*self.inf_A)*self.price_A
-func get_money_B()->float:
-	return min(self.inf_B*self.usineB*self.porduction_B,self.WEIGHT*self.inf_B)*self.price_B
+func get_money_A(price:float)->float:
+	return self.WEIGHT*self.inf_A*price
+func get_money_B(price:float)->float:
+	return self.WEIGHT*self.inf_B*price
 	
-func get_cost_A()->float:
-	return self.usineA*self.maintenance_A
-func get_cost_B()->float:
-	return self.usineB*self.maintenance_B
+func get_cost_A(maintenance)->float:
+	return self.usineA*maintenance
+func get_cost_B(maintenance)->float:
+	return self.usineB*maintenance
