@@ -1,20 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://bqn04lelfcapw"]
+[gd_scene load_steps=5 format=3 uid="uid://bqn04lelfcapw"]
 
 [ext_resource type="Script" uid="uid://caborm26f4c2l" path="res://GAME/Scripts/Gameplay/main/main.gd" id="1_40uvt"]
-[ext_resource type="PackedScene" uid="uid://c51qevheo5fcu" path="res://GAME/Assets/Models/bord.tscn" id="2_40uvt"]
+[ext_resource type="PackedScene" uid="uid://c51qevheo5fcu" path="res://GAME/Scenes/Map/board.tscn" id="2_40uvt"]
 [ext_resource type="Script" uid="uid://drv08ddvvxsj3" path="res://GAME/Scripts/Utility/fps.gd" id="3_adpu7"]
+[ext_resource type="PackedScene" uid="uid://dtyf63w0ot123" path="res://GAME/Scenes/Multiplayer/player.tscn" id="4_g718x"]
 
-[node name="main" type="Node2D"]
+[node name="Main" type="Node2D"]
 script = ExtResource("1_40uvt")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="Bord" parent="." instance=ExtResource("2_40uvt")]
+[node name="Board" parent="." instance=ExtResource("2_40uvt")]
 
-[node name="fps" type="Label" parent="."]
+[node name="Fps" type="Label" parent="."]
 offset_left = 482.0
 offset_top = -291.0
 offset_right = 522.0
 offset_bottom = -268.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 script = ExtResource("3_adpu7")
+
+[node name="Player1" parent="." instance=ExtResource("4_g718x")]
+
+[node name="Player2" parent="." instance=ExtResource("4_g718x")]
