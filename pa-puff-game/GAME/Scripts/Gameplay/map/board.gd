@@ -5,7 +5,6 @@ extends Node2D
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
 const HEX_SIZE = 50
 
-
 const TAB_CONECTION={
 	0:[1,4,5,6],
 	1:[0,2,6],
@@ -52,8 +51,9 @@ func create_hex_grid():
 	
 	var grid_width = (cols - 1) * x_offset
 	var grid_height = (rows - 1) * y_offset
-	var center_offset = Vector2(-grid_width / 2, -grid_height / 2)
-
+	#var center_offset = Vector2(-grid_width / 2, -grid_height / 2)
+	var center_offset = Vector2(grid_width,100)
+	
 	var n_del=0
 	for y in range(rows):
 		for x in range(cols):
@@ -78,6 +78,7 @@ func _on_timer_timeout() -> void:
 	update_infuence()
 	calcul_money()
 	show_money()
+	
 func update_infuence()-> void:
 	for i in TAB_CONECTION:
 		var inf_a = 0
@@ -125,6 +126,7 @@ func update_infuence()-> void:
 func set_player(player1:Node2D,player2:Node2D)->void:
 	self.player1=player1
 	self.player2=player2
+	
 		
 func calcul_money()->void:
 
@@ -144,9 +146,3 @@ func show_money() -> void:
 	money_A=self.player1.check_money()
 	money_B=self.player2.check_money()
 	self.money.text="Money A: %s\n Gain A : %s \nMoney B: %s\n Gain B : %s" % [money_A,money_A-old_money_A,money_B,money_B-old_money_B]
-		
-		
-		
-	
-		
-	

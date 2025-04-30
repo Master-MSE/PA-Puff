@@ -47,10 +47,20 @@ func update_inf():
 	inf_A=0.0
 	
 func on_left_click():
-	self.usineA+=1
-	
+	#self.usineA+=1
+	rpc("add_usineA",INDEX)
 func on_right_click():
-	self.usineB+=1
+	#self.usineB+=1
+	rpc("add_usineB",INDEX)
+	
+@rpc("any_peer")
+func add_usineA(index):
+	if index==INDEX:
+		self.usineA+=1
+@rpc("any_peer")
+func add_usineB(index):
+	if index==INDEX:
+		self.usineB+=1
 	
 
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
@@ -96,6 +106,7 @@ func _on_mouse_exited() -> void:
 		var y = (rad+1) * sin(angle)
 		points.append(Vector2(x, y))
 	texture_border.polygon=points
+	
 	
 func get_infuence_A()->float:
 	return inf_A

@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7hdleshw3brn"]
+
+[ext_resource type="Script" uid="uid://cpsdalkxgvmgx" path="res://GAME/Scripts/Utility/connection.gd" id="1_tol2y"]
+[ext_resource type="PackedScene" uid="uid://blr8ut1q7fctb" path="res://GAME/Scenes/Map/host_board.tscn" id="2_m458i"]
+[ext_resource type="PackedScene" uid="uid://c51qevheo5fcu" path="res://GAME/Scenes/Map/join_board.tscn" id="3_olk71"]
+
+[node name="Connection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tol2y")
+host_field_scene = ExtResource("2_m458i")
+join_field_scene = ExtResource("3_olk71")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.446777, 0.446777, 0.446777, 1)
+
+[node name="Join" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 0
+offset_left = 800.0
+offset_top = 300.0
+offset_right = 900.0
+offset_bottom = 350.0
+text = "Join"
+
+[node name="Host" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 0
+offset_left = 200.0
+offset_top = 300.0
+offset_right = 300.0
+offset_bottom = 350.0
+text = "Host"
+
+[connection signal="pressed" from="Join" to="." method="_on_join_pressed"]
+[connection signal="pressed" from="Host" to="." method="_on_host_pressed"]
