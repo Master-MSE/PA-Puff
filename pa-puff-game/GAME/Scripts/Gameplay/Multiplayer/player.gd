@@ -11,11 +11,11 @@ var maintenance_factor = 1.0
 func _ready():
 	self.money = 10000.0
 
-func give_money(money:float)->void:
-	self.money+=money
+func give_money(_money:float)->void:
+	self.money+=_money
 	
-func take_money(money:float)->void:
-	self.money-=money
+func take_money(_money:float)->void:
+	self.money-=_money
 	
 func check_money()->float:
 	return self.money
