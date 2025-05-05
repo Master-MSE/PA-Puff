@@ -1,4 +1,5 @@
 extends Node2D
+class_name Player
 
 var money=0.0
 var reputation=0.0
