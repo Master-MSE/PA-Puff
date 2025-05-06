@@ -3,8 +3,7 @@ extends Node2D
 @onready var money  : Label = $Money
 
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
-const HEX_SIZE = 50
-
+const HEX_SIZE = 30
 
 const TAB_CONECTION={
 	0:[1,4,5,6],
@@ -52,8 +51,9 @@ func create_hex_grid():
 	
 	var grid_width = (cols - 1) * x_offset
 	var grid_height = (rows - 1) * y_offset
-	var center_offset = Vector2(-grid_width / 2, -grid_height / 2)
-
+	#var center_offset = Vector2(-grid_width / 2, -grid_height / 2)
+	var center_offset = Vector2(grid_width*2,grid_height/1.5)
+	
 	var n_del=0
 	for y in range(rows):
 		for x in range(cols):
@@ -78,7 +78,9 @@ func _on_timer_timeout() -> void:
 	update_infuence()
 	calcul_money()
 	show_money()
+	
 func update_infuence()-> void:
+	var value_infuence : Dictionary
 	for i in TAB_CONECTION:
 		var inf_a = 0
 		var inf_b = 0
@@ -119,20 +121,22 @@ func update_infuence()-> void:
 		
 		
 		array_hex[i].set_infuence(new_a,new_b,new_c)
+		value_infuence[i]=[new_a,new_b,new_c]
+		
+	rpc("update_influence_peer",value_infuence)
+	
 	for hex in array_hex:
 		hex.update_influence()
+	
 		
-func set_player(player1:Node2D,player2:Node2D)->void:
-	self.player1=player1
-	self.player2=player2
 		
 func calcul_money()->void:
 
 	for hexagon in array_hex:
-		self.player1.give_money(hexagon.get_money_A(self.player1.get_price()))
-		self.player2.give_money(hexagon.get_money_B(self.player2.get_price()))
-		self.player1.take_money(hexagon.get_cost_A(self.player1.get_maintenance()))
-		self.player2.take_money(hexagon.get_cost_B(self.player2.get_maintenance()))
+		get_parent().player1.give_money(hexagon.get_money_A(get_parent().player1.get_price()))
+		get_parent().player2.give_money(hexagon.get_money_B(get_parent().player2.get_price()))
+		get_parent().player1.take_money(hexagon.get_cost_A(get_parent().player1.get_maintenance()))
+		get_parent().player2.take_money(hexagon.get_cost_B(get_parent().player2.get_maintenance()))
 		
 		
 var money_A=0.0
@@ -141,12 +145,14 @@ var money_B=0.0
 func show_money() -> void:
 	var old_money_A=money_A
 	var old_money_B=money_B
-	money_A=self.player1.check_money()
-	money_B=self.player2.check_money()
+	money_A=get_parent().player1.check_money()
+	money_B=get_parent().player2.check_money()
 	self.money.text="Money A: %s\n Gain A : %s \nMoney B: %s\n Gain B : %s" % [money_A,money_A-old_money_A,money_B,money_B-old_money_B]
-		
-		
-		
-	
-		
-	
+
+@rpc("any_peer")
+func update_influence_peer(list_of_value)->void:
+	for key in list_of_value:
+		var value=list_of_value[key]
+		var hexagon=array_hex[key]
+		hexagon.set_infuence(value[0],value[1],value[2])
+		hexagon.update_influence()

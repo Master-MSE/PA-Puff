@@ -5,14 +5,8 @@
 [node name="Board" type="Node2D"]
 script = ExtResource("1_j8ftq")
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 0.1
-autostart = true
-
 [node name="Money" type="Label" parent="."]
 offset_left = -534.0
 offset_top = -275.0
 offset_right = -494.0
 offset_bottom = -252.0
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
