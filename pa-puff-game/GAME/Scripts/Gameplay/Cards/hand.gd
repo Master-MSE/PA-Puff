@@ -1,4 +1,5 @@
-extends Panel
+extends Control
+class_name Hand
 
 @export var card_scene: PackedScene
 @export var player: Player

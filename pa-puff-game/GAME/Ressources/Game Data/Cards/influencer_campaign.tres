@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="CardInfluencerCampaign" load_steps=2 format=3 uid="uid://bi7gkmpi4w0aj"]
+
+[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/Cards/Cards Resources/influencer_campaign.gd" id="1_yv810"]
+
+[resource]
+script = ExtResource("1_yv810")
+title = "Influencer Campaign"
+description = "Instantly gives the player 2000 money"
