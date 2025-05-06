@@ -3,6 +3,8 @@ extends Node2D
 @onready var money  : Label = $Money
 
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
+const card_scene = preload("res://GAME/Scenes/Cards/Card.tscn")
+
 const HEX_SIZE = 50
 
 
@@ -78,6 +80,7 @@ func _on_timer_timeout() -> void:
 	update_infuence()
 	calcul_money()
 	show_money()
+	
 func update_infuence()-> void:
 	for i in TAB_CONECTION:
 		var inf_a = 0
@@ -125,7 +128,8 @@ func update_infuence()-> void:
 func set_player(player1:Node2D,player2:Node2D)->void:
 	self.player1=player1
 	self.player2=player2
-		
+	
+	
 func calcul_money()->void:
 
 	for hexagon in array_hex:

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://7f0g3kybiqqs"]
+
+[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/Cards/hand.gd" id="1_d3vnd"]
+[ext_resource type="PackedScene" uid="uid://bwdxm4m3ducd4" path="res://GAME/Scenes/Cards/Card.tscn" id="2_s813s"]
+
+[node name="Hand" type="Panel"]
+script = ExtResource("1_d3vnd")
+card_scene = ExtResource("2_s813s")
+
+[node name="CardsBox" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 349.0
+offset_right = 122.0
+offset_bottom = 433.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

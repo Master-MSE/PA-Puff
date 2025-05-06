@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Constants="*res://GAME/Scripts/Utility/constants.gd"
+CardManager="*res://GAME/Scripts/Gameplay/Cards/card_manager.gd"
 
 [file_customization]
 
