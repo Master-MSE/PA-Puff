@@ -81,6 +81,8 @@ func _on_timer_timeout() -> void:
 	
 func update_infuence()-> void:
 	var value_infuence : Dictionary
+	var inf_a_g = 0
+	var inf_b_g = 0
 	for i in TAB_CONECTION:
 		var inf_a = 0
 		var inf_b = 0
@@ -122,12 +124,18 @@ func update_infuence()-> void:
 		
 		array_hex[i].set_infuence(new_a,new_b,new_c)
 		value_infuence[i]=[new_a,new_b,new_c]
+		inf_a_g+=new_a
+		inf_b_g+=new_b
 		
 	rpc("update_influence_peer",value_infuence)
 	
 	for hex in array_hex:
 		hex.update_influence()
-	
+		
+	inf_a_g/=array_hex.size()
+	inf_b_g/=array_hex.size()
+	get_parent().player1.set_global_influence(inf_a_g)
+	get_parent().player2.set_global_influence(inf_b_g)
 		
 		
 func calcul_money()->void:
