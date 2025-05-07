@@ -6,6 +6,7 @@
 
 [node name="Hexagone" type="StaticBody2D"]
 material = SubResource("CanvasItemMaterial_vf11p")
+rotation = 1.5708
 input_pickable = true
 script = ExtResource("1_grvpm")
 

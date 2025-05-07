@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://0evvkfs5qokj"]
 
-[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/map/temp_card.gd" id="1_7sh0p"]
+[ext_resource type="Script" uid="uid://ccomxvegglgs4" path="res://GAME/Scripts/Gameplay/map/temp_card.gd" id="1_7sh0p"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_7sh0p")

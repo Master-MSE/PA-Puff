@@ -1,0 +1,107 @@
+extends Node2D
+const HEX_SIZE = 20
+const GEOJSON_PATH = "res://GAME/Ressources/Game Data/switzerland.geojson"
+const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
+
+
+
+var country_polygons = []
+var lon_max=-100000.0
+var lon_min=100000.0
+var lat_max=-100000.0
+var lat_min=100000.0
+var array_hex : Dictionary
+
+func _ready():
+	load_geojson()
+	#generate_hex_map()
+	create_hex_grid()
+	
+func load_geojson():
+	var file = FileAccess.open(GEOJSON_PATH, FileAccess.READ)
+	var json = JSON.parse_string(file.get_as_text())
+	if json == null:
+		push_error("Erreur de parsing GeoJSON")
+		return
+	var features = json["features"]
+	for feature in features:
+		var geom = feature["geometry"]
+		if geom["type"] == "Polygon":
+			for ring in geom["coordinates"]:
+				var poly = []
+				for point in ring:
+					poly.append(Vector2(point[0], -point[1])) # lon, lat
+					lon_max=max(lon_max,point[0])
+					lon_min=min(lon_min,point[0])
+					lat_max=max(lat_max,-point[1])
+					lat_min=min(lat_min,-point[1])
+				country_polygons.append(poly)
+		elif geom["type"] == "MultiPolygon":
+			for polygon in geom["coordinates"]:
+				for ring in polygon:
+					var poly = []
+					for point in ring:
+						poly.append(Vector2(point[0], -point[1]))
+						lon_max=max(lon_max,point[0])
+						lon_min=min(lon_min,point[0])
+						lat_max=max(lat_max,-point[1])
+						lat_min=min(lat_min,-point[1])
+					country_polygons.append(poly)
+
+func is_point_inside_polygons(p: Vector2) -> bool:
+	for poly in country_polygons:
+		if Geometry2D.is_point_in_polygon(p, rectifing_polygone(poly)):
+			return true
+	return false
+	
+func rectifing_polygone(_poly: Array)-> Array:
+	var array = []
+	var weith=(lon_max-lon_min)
+	var heith=(lat_max-lat_min)
+	var r_w=800/weith
+	var r_h=400/heith
+	var cor_x = (lon_min+weith/2)
+	var cor_y = (lat_min+heith/2)
+	for point in _poly:
+		array.append(Vector2((point[0]-cor_x)*r_w, (point[1]-cor_y)*r_h))
+	return array
+	
+func add_hexagon (key : Vector2, value : StaticBody2D) :
+	array_hex[key] = value
+			
+func create_hex_grid():
+	var width = sqrt(3) * HEX_SIZE
+	var height = 2 * HEX_SIZE
+	var horiz_spacing = width
+	var vert_spacing = 1.5 * HEX_SIZE
+
+	var min_x = -400
+	var max_x = 400
+	var min_y = -200
+	var max_y = 200
+
+	var n_del = 0
+	var index = 0
+	var r = 0
+	while true:
+		var y = r * vert_spacing
+		if y + min_y > max_y:
+			break
+		var q = 0
+		while true:
+			var x = q * horiz_spacing + (r % 2) * horiz_spacing / 2.0
+			if x + min_x > max_x:
+				break
+			var world_pos = Vector2(x + min_x, y + min_y)
+			if is_point_inside_polygons(world_pos):
+				var hex = HEX_SCENE.instantiate()
+				hex.position = world_pos
+				hex.HEX_RADIUS = HEX_SIZE
+				hex.INDEX = index
+				hex.WEIGHT = randi_range(100, 10000)
+				add_child(hex)
+				add_hexagon(Vector2(x,r),hex)
+				index += 1
+			q += 1
+		r += 1
+	
