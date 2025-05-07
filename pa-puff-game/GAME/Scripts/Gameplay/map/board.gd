@@ -4,42 +4,15 @@ extends Node2D
 
 const GEOJSON_PATH = "res://GAME/Ressources/Game Data/switzerland.geojson"
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
-const HEX_SIZE = 30
+const HEX_SIZE = 20
 
-const TAB_CONECTION={
-	0:[1,4,5,6],
-	1:[0,2,6],
-	2:[1,3,6,7],
-	3:[2],
-	4:[0,5,9],
-	5:[0,4,6,9,10,11],
-	6:[0,1,2,5,7,11],
-	7:[2,6,11,12],
-	8:[12,13],
-	9:[4,5,10,14],
-	10:[5,9,11,14,15],
-	11:[5,6,7,10],
-	12:[7,8,13,17],
-	13:[8,12,17,18],
-	14:[9,10,15,19],
-	15:[10,14,19,20],
-	16:[17,20,21,22],
-	17:[12,13,16,18,22],
-	18:[13,17,22,23],
-	19:[14,15],
-	20:[15,16,21,25],
-	21:[16,20,22,25,26,27],
-	22:[16,17,18,21,23,27],
-	23:[18,22,27],
-	24:[25	],
-	25:[20,21,24,26],
-	26:[21,25,27],
-	27:[21,22,23,26],
-}
+
 
 var player1:Node2D
 var player2:Node2D
 var array_hex : Dictionary
+var tab_conection : Dictionary
+
 var country_polygons = []
 var lon_max=-100000.0
 var lon_min=100000.0
@@ -49,6 +22,7 @@ var lat_min=100000.0
 func _ready():
 	load_geojson()
 	create_hex_grid()
+	init_hex()
 
 func load_geojson():
 	var file = FileAccess.open(GEOJSON_PATH, FileAccess.READ)
@@ -132,12 +106,35 @@ func create_hex_grid():
 				hex.INDEX = index
 				hex.WEIGHT = randi_range(100, 10000)
 				add_child(hex)
-				add_hexagon(Vector2(x,r),hex)
+				add_hexagon(Vector2(q,r),hex)
 				index += 1
 			q += 1
 		r += 1
 	
-
+func init_hex():
+	var directions_even = [
+	Vector2(+1,  0), Vector2( 0, +1), Vector2(-1, +1),
+	Vector2(-1,  0), Vector2(-1, -1), Vector2( 0, -1)]
+	var directions_odd = [
+	Vector2(+1,  0), Vector2(+1, +1), Vector2( 0, +1),
+	Vector2(-1,  0), Vector2( 0, -1), Vector2(+1, -1)]
+	for key in array_hex:
+		var x = key[0]
+		var y = key[1]
+		var connection_key=[]
+		var directions
+		if int(y)% 2 == 0:
+			directions = directions_even
+		else:
+			directions = directions_odd
+		for dir in directions:
+			var neighbor = Vector2(x, y) + dir
+			if array_hex.has(neighbor):
+				connection_key.append(neighbor)
+		tab_conection[key]=connection_key
+		
+		
+	
 func _on_timer_timeout() -> void:
 	update_infuence()
 	calcul_money()
@@ -147,7 +144,7 @@ func update_infuence()-> void:
 	var value_infuence : Dictionary
 	var inf_a_g = 0
 	var inf_b_g = 0
-	for i in TAB_CONECTION:
+	for i in tab_conection:
 		var inf_a = 0
 		var inf_b = 0
 		var inf_c = 0
@@ -158,7 +155,7 @@ func update_infuence()-> void:
 		
 		var weight = array_hex[i].get_weight()
 		var weight_inf=0.0 # Changer avec une variable inter à calculer 1 fois au débu
-		for connection in TAB_CONECTION[i]:
+		for connection in tab_conection[i]:
 			var weight_c = array_hex[connection].get_weight()
 			weight_inf+=weight_c
 			inf_a+=array_hex[connection].get_infuence_A() * weight_c
@@ -194,7 +191,7 @@ func update_infuence()-> void:
 	rpc("update_influence_peer",value_infuence)
 	
 	for hex in array_hex:
-		hex.update_influence()
+		array_hex[hex].update_influence()
 		
 	inf_a_g/=array_hex.size()
 	inf_b_g/=array_hex.size()
@@ -204,7 +201,8 @@ func update_infuence()-> void:
 		
 func calcul_money()->void:
 
-	for hexagon in array_hex:
+	for key in array_hex:
+		var hexagon=array_hex[key]
 		get_parent().player1.give_money(hexagon.get_money_A(get_parent().player1.get_price()))
 		get_parent().player2.give_money(hexagon.get_money_B(get_parent().player2.get_price()))
 		get_parent().player1.take_money(hexagon.get_cost_A(get_parent().player1.get_maintenance()))

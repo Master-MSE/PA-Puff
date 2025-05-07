@@ -64,11 +64,13 @@ func init_game():
 	
 	if player_info == 1:
 		var game_scene = host_field_scene.instantiate()
+		game_scene.position=Vector2(600,300) 
 		get_parent().add_child(game_scene)
 		get_parent().card_me.set_color_card(1)
 		get_parent().card_rial.set_color_card(2)
 	else:
 		var game_scene = join_field_scene.instantiate()
+		game_scene.position=Vector2(600,300) 
 		get_parent().add_child(game_scene)
 		get_parent().card_me.set_color_card(2)
 		get_parent().card_rial.set_color_card(1)
