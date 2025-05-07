@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://bqn04lelfcapw"]
 
-[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/main/main.gd" id="1_40uvt"]
+[ext_resource type="Script" uid="uid://caborm26f4c2l" path="res://GAME/Scripts/Gameplay/main/main.gd" id="1_40uvt"]
 [ext_resource type="PackedScene" uid="uid://0evvkfs5qokj" path="res://GAME/Scenes/Map/temp_card.tscn" id="2_1qnt6"]
-[ext_resource type="Script" path="res://GAME/Scripts/Utility/fps.gd" id="3_adpu7"]
+[ext_resource type="Script" uid="uid://drv08ddvvxsj3" path="res://GAME/Scripts/Utility/fps.gd" id="3_adpu7"]
 [ext_resource type="PackedScene" uid="uid://dtyf63w0ot123" path="res://GAME/Scenes/Multiplayer/player.tscn" id="4_g718x"]
 [ext_resource type="PackedScene" uid="uid://b7hdleshw3brn" path="res://GAME/Scenes/Multiplayer/connection.tscn" id="5_6xawj"]
 
@@ -21,8 +21,11 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 script = ExtResource("3_adpu7")
 
 [node name="Player1" parent="." instance=ExtResource("4_g718x")]
+position = Vector2(30, 300)
 
 [node name="Player2" parent="." instance=ExtResource("4_g718x")]
+position = Vector2(950, 300)
+PLAYER_HOST = false
 
 [node name="Connection" parent="." instance=ExtResource("5_6xawj")]
 top_level = true
