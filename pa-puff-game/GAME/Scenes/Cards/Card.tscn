@@ -42,9 +42,10 @@ unique_name_in_owner = true
 layout_mode = 2
 offset_left = 21.0
 offset_top = 20.0
-offset_right = 271.0
+offset_right = 226.0
 offset_bottom = 43.0
 text = "Hello :)"
+horizontal_alignment = 1
 
 [node name="Description" type="Label" parent="Panel"]
 unique_name_in_owner = true
