@@ -12,7 +12,7 @@ var tween: Tween
 func _ready() -> void:
 	await get_tree().process_frame
 	initial_local_pos = position
-	
+	$Panel/Logo.texture = card_data.logo
 
 func setup(data: CardBase, player: Player) -> void:
 	card_data = data

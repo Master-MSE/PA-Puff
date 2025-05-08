@@ -64,7 +64,7 @@ offset_right = 193.0
 offset_bottom = 392.0
 text = "Play card"
 
-[node name="TextureRect" type="TextureRect" parent="Panel"]
+[node name="CardBackground" type="TextureRect" parent="Panel"]
 show_behind_parent = true
 layout_mode = 2
 offset_right = 250.0
@@ -73,6 +73,14 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 texture = ExtResource("3_ubf5v")
+metadata/_edit_lock_ = true
+
+[node name="Logo" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 57.0
+offset_right = 187.0
+offset_bottom = 88.0
 metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
