@@ -2,7 +2,7 @@ extends Node2D
 
 @onready var money  : Label = $Money
 
-const GEOJSON_PATH = "res://GAME/Ressources/Game Data/switzerland.geojson"
+const GEOJSON_PATH = "res://GAME/Ressources/Game Data/france.geojson"
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
 const HEX_SIZE = 20
 
@@ -63,14 +63,15 @@ func is_point_inside_polygons(p: Vector2) -> bool:
 	
 func rectifing_polygone(_poly: Array)-> Array:
 	var array = []
-	var weith=(lon_max-lon_min)
-	var heith=(lat_max-lat_min)
-	var r_w=800/weith
-	var r_h=400/heith
-	var cor_x = (lon_min+weith/2)
-	var cor_y = (lat_min+heith/2)
+	var box_width = 800
+	var box_height= 400
+	var poly_width =(lon_max-lon_min)
+	var poly_height =(lat_max-lat_min)
+	var _scale = min(box_width / poly_width, box_height / poly_height)
+	var center_lon = lon_min + poly_width / 2.0
+	var center_lat = lat_min + poly_height / 2.0
 	for point in _poly:
-		array.append(Vector2((point[0]-cor_x)*r_w, (point[1]-cor_y)*r_h))
+		array.append(Vector2((point[0]-center_lon)*_scale*0.75, (point[1]-center_lat)*_scale))
 	return array
 	
 func add_hexagon (key : Vector2, value : StaticBody2D) :
