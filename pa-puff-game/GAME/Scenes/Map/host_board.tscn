@@ -6,8 +6,7 @@
 script = ExtResource("1_tnuyt")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.5
-autostart = true
+wait_time = 0.1
 
 [node name="Money" type="Label" parent="."]
 offset_left = 20.0

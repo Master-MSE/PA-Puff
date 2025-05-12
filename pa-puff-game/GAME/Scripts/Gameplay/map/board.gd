@@ -1,6 +1,7 @@
 extends Node2D
 
 @onready var money  : Label = $Money
+@onready var timer : Timer = $Timer
 
 const GEOJSON_PATH = "res://GAME/Ressources/Game Data/france.geojson"
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
@@ -229,3 +230,11 @@ func update_influence_peer(list_of_value)->void:
 		var hexagon=array_hex[key]
 		hexagon.set_infuence(value[0],value[1],value[2])
 		hexagon.update_influence()
+func start_timer()->void:
+	if not timer==null:
+		if $Timer.is_stopped():
+			$Timer.start()
+func stop_timer()->void:
+	if not timer==null:
+		if not $Timer.is_stopped():
+			$Timer.stop()
