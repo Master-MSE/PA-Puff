@@ -11,8 +11,6 @@ const PORT = 7000
 const DEFAULT_SERVER_IP = "localhost" # IPv4 localhost
 const MAX_CONNECTIONS = 2
 
-var player_info = 0
-
 
 func _ready():
 	multiplayer.peer_connected.connect(_on_peer_connected)
@@ -33,7 +31,7 @@ func join_game(address = ""):
 	if error:
 		return error
 	multiplayer.multiplayer_peer = peer
-	player_info=2
+	get_parent().player_info=2
 	init_game()
 	self.visible = false
 	
@@ -47,7 +45,7 @@ func create_game():
 	if error:
 		return error
 	multiplayer.multiplayer_peer = peer
-	player_info=1
+	get_parent().player_info=1
 	init_game()	
 	self.visible = false
 	
@@ -62,7 +60,7 @@ func _on_peer_disconnected(peer_id):
 	
 func init_game():
 	
-	if player_info == 1:
+	if get_parent().player_info == 1:
 		var game_scene = host_field_scene.instantiate()
 		game_scene.position=Vector2(600,300) 
 		get_parent().add_child(game_scene)

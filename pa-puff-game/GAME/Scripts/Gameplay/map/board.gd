@@ -77,9 +77,9 @@ func rectifing_polygone(_poly: Array)-> Array:
 func add_hexagon (key : Vector2, value : StaticBody2D) :
 	array_hex[key] = value
 func create_hex_grid():
-	var width = sqrt(3) * HEX_SIZE
-	var height = 2 * HEX_SIZE
-	var horiz_spacing = width
+	var _width = sqrt(3) * HEX_SIZE
+	var _height = 2 * HEX_SIZE
+	var horiz_spacing = _width
 	var vert_spacing = 1.5 * HEX_SIZE
 
 	var min_x = -400
@@ -87,7 +87,6 @@ func create_hex_grid():
 	var min_y = -200
 	var max_y = 200
 
-	var n_del = 0
 	var index = 0
 	var r = 0
 	while true:
@@ -105,7 +104,8 @@ func create_hex_grid():
 				hex.position = world_pos
 				hex.HEX_RADIUS = HEX_SIZE
 				hex.INDEX = index
-				hex.WEIGHT = randi_range(100, 10000)
+				hex.set_position_UI(Vector2(650,0)-Vector2(x,y))
+				hex.WEIGHT = randi_range(1,3)*1000
 				add_child(hex)
 				add_hexagon(Vector2(q,r),hex)
 				index += 1
@@ -208,6 +208,8 @@ func calcul_money()->void:
 		get_parent().player2.give_money(hexagon.get_money_B(get_parent().player2.get_price()))
 		get_parent().player1.take_money(hexagon.get_cost_A(get_parent().player1.get_maintenance()))
 		get_parent().player2.take_money(hexagon.get_cost_B(get_parent().player2.get_maintenance()))
+		get_parent().player1.set_synchronize()
+		get_parent().player2.set_synchronize()
 		
 		
 var money_A=0.0
