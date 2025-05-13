@@ -8,10 +8,10 @@ var player_owner: Player
 @export var hover_vertical_offset: Vector2
 var initial_local_pos: Vector2
 var tween: Tween
+var focused: bool = false
+
 
 func _ready() -> void:
-	await get_tree().process_frame
-	initial_local_pos = position
 	$Panel/Logo.texture = card_data.logo
 
 func setup(data: CardBase, player: Player) -> void:
@@ -26,6 +26,12 @@ func _on_button_pressed() -> void:
 	$".".queue_free()
 
 func enter() -> void:
+	if focused:
+		return
+	
+	focused = true
+	await get_tree().process_frame
+	initial_local_pos = position
 	if tween != null:
 		tween.stop()
 		tween = null
@@ -33,6 +39,10 @@ func enter() -> void:
 	tween_setting.tween_property(tween, self, initial_local_pos+hover_vertical_offset, 1)
 
 func exit() -> void:
+	if !focused:
+		return
+	
+	focused=false
 	if tween != null:
 		tween.stop()
 		tween = null
