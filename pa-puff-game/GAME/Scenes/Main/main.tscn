@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqn04lelfcapw"]
+[gd_scene load_steps=7 format=3 uid="uid://bqn04lelfcapw"]
 
 [ext_resource type="Script" path="res://GAME/Scripts/Gameplay/main/main.gd" id="1_40uvt"]
-[ext_resource type="PackedScene" uid="uid://c51qevheo5fcu" path="res://GAME/Scenes/Map/board.tscn" id="2_40uvt"]
+[ext_resource type="PackedScene" uid="uid://ds0dbryg7xr5m" path="res://GAME/Scenes/Map/temp_card.tscn" id="2_1qnt6"]
 [ext_resource type="PackedScene" uid="uid://7f0g3kybiqqs" path="res://GAME/Scenes/Cards/Hand.tscn" id="2_giqo0"]
 [ext_resource type="Script" path="res://GAME/Scripts/Utility/fps.gd" id="3_adpu7"]
 [ext_resource type="PackedScene" uid="uid://dtyf63w0ot123" path="res://GAME/Scenes/Multiplayer/player.tscn" id="4_g718x"]
+[ext_resource type="PackedScene" uid="uid://bnnf8r7gco841" path="res://GAME/Scenes/Multiplayer/connection.tscn" id="5_6xawj"]
 
 [node name="Main" type="Node2D" node_paths=PackedStringArray("hand_player_1", "hand_player_2")]
 script = ExtResource("1_40uvt")
@@ -12,14 +13,13 @@ hand_player_1 = NodePath("HUD/Screen/HandPlayer1Anchor/HandPlayer1")
 hand_player_2 = NodePath("HUD/Screen/HandPlayer2Anchor/HandPlayer2")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-
-[node name="Board" parent="." instance=ExtResource("2_40uvt")]
+anchor_mode = 0
 
 [node name="Fps" type="Label" parent="."]
-offset_left = 482.0
-offset_top = -291.0
-offset_right = 522.0
-offset_bottom = -268.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 60.0
+offset_bottom = 43.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 script = ExtResource("3_adpu7")
 
@@ -27,7 +27,9 @@ script = ExtResource("3_adpu7")
 playername = "Player 1"
 
 [node name="Player2" parent="." instance=ExtResource("4_g718x")]
+position = Vector2(950, 300)
 playername = "Player 2"
+PLAYER_HOST = false
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
@@ -97,6 +99,18 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "Hand Player 2
 "
+
+[node name="Connection" parent="." instance=ExtResource("5_6xawj")]
+top_level = true
+
+[node name="Card_rival" parent="." instance=ExtResource("2_1qnt6")]
+visible = false
+position = Vector2(550, 60)
+rotation = 3.14159
+
+[node name="Card_me" parent="." instance=ExtResource("2_1qnt6")]
+visible = false
+position = Vector2(550, 550)
 
 [connection signal="button_up" from="HUD/Screen/VBoxContainer/BtnDraw1" to="." method="_on_btn_draw_1_button_up"]
 [connection signal="button_up" from="HUD/Screen/VBoxContainer/BtnHand1" to="." method="_on_btn_hand_1_button_up"]

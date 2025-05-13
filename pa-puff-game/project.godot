@@ -20,6 +20,11 @@ config/icon="res://icon.svg"
 Constants="*res://GAME/Scripts/Utility/constants.gd"
 CardManager="*res://GAME/Scripts/Gameplay/Cards/card_manager.gd"
 
+[editor]
+
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
+
 [file_customization]
 
 folder_colors={

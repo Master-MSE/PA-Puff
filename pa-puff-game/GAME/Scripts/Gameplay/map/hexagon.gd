@@ -42,23 +42,27 @@ func _ready():
 	
 func _process(delta: float) -> void:
 	texture_base.color=Color(1-inf_B,1-(inf_A+inf_B),1-inf_A)
-	
-func update_inf():
-	inf_A=0.0
-	
-func on_left_click():
-	self.usineA+=1
-	
-func on_right_click():
-	self.usineB+=1
-	
 
+	
+	
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.pressed:
 		if event.button_index == MOUSE_BUTTON_LEFT:
-			on_left_click()
-		elif event.button_index == MOUSE_BUTTON_RIGHT:
-			on_right_click()
+			if get_parent().get_parent().connection.player_info == 1:
+				rpc("add_usineA",INDEX)
+				self.usineA+=1
+			else:
+				rpc("add_usineB",INDEX)
+				self.usineB+=1
+
+@rpc("any_peer")
+func add_usineA(index):
+	if index==INDEX:
+		self.usineA+=1
+@rpc("any_peer")
+func add_usineB(index):
+	if index==INDEX:
+		self.usineB+=1
 
 func _on_mouse_entered() -> void:
 	print("I: ",self.INDEX," P: ",self.WEIGHT)
@@ -97,6 +101,7 @@ func _on_mouse_exited() -> void:
 		points.append(Vector2(x, y))
 	texture_border.polygon=points
 	
+	
 func get_infuence_A()->float:
 	return inf_A
 func get_infuence_B()->float:
@@ -122,6 +127,7 @@ func get_internal_influence_B()->float:
 	
 func get_weight()->float:
 	return self.WEIGHT
+	
 func get_money_A(price:float)->float:
 	return self.WEIGHT*self.inf_A*price
 func get_money_B(price:float)->float:
