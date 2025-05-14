@@ -8,6 +8,7 @@ class_name Player
 var money=0.0
 var reputation=0.0
 var global_influence=0.0
+var total_usine=0
 
 var price_factor=1.0
 var influence_factor=1.0
@@ -20,11 +21,9 @@ func _ready():
 
 func give_money(_money:float)->void:
 	self.money+=_money
-	set_synchronize()
 	
 func take_money(_money:float)->void:
 	self.money-=_money
-	set_synchronize()
 	
 func check_money()->float:
 	return self.money
@@ -40,7 +39,6 @@ func get_hand() -> Array[CardBase]:
 	
 func set_global_influence(influence):
 	self.global_influence=influence
-	set_synchronize()
 	
 func set_synchronize():
 	rpc("get_synchronize",

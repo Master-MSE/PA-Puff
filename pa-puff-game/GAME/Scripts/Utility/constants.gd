@@ -3,3 +3,9 @@ const INFLUENCE_FACTOR=0.01
 const INTERNAL_INFLUENCE_FACTOR = 0.2
 const MAINTENANCE_COST = 50.0
 const BASE_PRICE = 1.0
+enum GameState {
+	START,
+	PLAY,
+	WAIT,
+	END
+}

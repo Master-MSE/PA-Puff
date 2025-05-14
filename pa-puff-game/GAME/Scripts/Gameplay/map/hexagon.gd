@@ -8,8 +8,7 @@ extends StaticBody2D
 @export var INDEX = 0
 @export var WEIGHT = 1000.0
 
-
-
+static var lock_UI :bool = false
 
 var inf_A :float = 0.0
 var inf_B :float = 0.0
@@ -21,22 +20,23 @@ var new_inf_B :float = 0.0
 var new_inf_C :float = 1.0
 var usineA : int =0
 var usineB : int =0
-var is_colored = false
 
 func _ready():
-	# Calculer les points de l'hexagone
+	create_hex(HEX_RADIUS,PI / 2)
+	
+func create_hex(radius:float,base_angle : float=0)->void:
 	var points = []
 	for i in range(6):
-		var angle = i * PI / 3;
-		var x = HEX_RADIUS * cos(angle)
-		var y = HEX_RADIUS * sin(angle)
+		var angle = i * PI / 3+base_angle;
+		var x = radius * cos(angle)
+		var y = radius * sin(angle)
 		points.append(Vector2(x, y))
 	texture_base.polygon=points
 	collision.polygon=points
 	for i in range(6):
-		var angle = i * PI / 3;
-		var x = (HEX_RADIUS+1) * cos(angle)
-		var y = (HEX_RADIUS+1) * sin(angle)
+		var angle = i * PI / 3+base_angle;
+		var x = (radius+1) * cos(angle)
+		var y = (radius+1) * sin(angle)
 		points.append(Vector2(x, y))
 	texture_border.polygon=points
 	
@@ -48,59 +48,36 @@ func _process(delta: float) -> void:
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.pressed:
 		if event.button_index == MOUSE_BUTTON_LEFT:
-			if get_parent().get_parent().connection.player_info == 1:
-				rpc("add_usineA",INDEX)
-				self.usineA+=1
-			else:
-				rpc("add_usineB",INDEX)
-				self.usineB+=1
+			lock_UI=true
 
-@rpc("any_peer")
-func add_usineA(index):
+func call_add_usineA(value):
+	rpc("add_usineA",value,INDEX)
+func call_add_usineB(value):
+	rpc("add_usineB",value,INDEX)
+
+@rpc("any_peer","call_local")
+func add_usineA(value,index):
 	if index==INDEX:
-		self.usineA+=1
-@rpc("any_peer")
-func add_usineB(index):
+		self.usineA+=value
+@rpc("any_peer","call_local")
+func add_usineB(value,index):
 	if index==INDEX:
-		self.usineB+=1
+		self.usineB+=value
 
 func _on_mouse_entered() -> void:
 	print("I: ",self.INDEX," P: ",self.WEIGHT)
 	self.z_index=1
-	var points = []
-	var rad = HEX_RADIUS+5
-	for i in range(6):
-		var angle = i * PI / 3;
-		var x = rad * cos(angle)
-		var y = rad * sin(angle)
-		points.append(Vector2(x, y))
-	texture_base.polygon=points
-	for i in range(6):
-		var angle = i * PI / 3;
-		var x = (rad+2) * cos(angle)
-		var y = (rad+2) * sin(angle)
-		points.append(Vector2(x, y))
-	texture_border.polygon=points
+	create_hex(HEX_RADIUS+5,PI / 2)
+	if not lock_UI:
+		$UI_Hexagon.visible=true
 	
 
 
 func _on_mouse_exited() -> void:
 	self.z_index=0
-	var points = []
-	var rad = HEX_RADIUS
-	for i in range(6):
-		var angle = i * PI / 3;
-		var x = rad * cos(angle)
-		var y = rad * sin(angle)
-		points.append(Vector2(x, y))
-	texture_base.polygon=points
-	for i in range(6):
-		var angle = i * PI / 3;
-		var x = (rad+1) * cos(angle)
-		var y = (rad+1) * sin(angle)
-		points.append(Vector2(x, y))
-	texture_border.polygon=points
-	
+	create_hex(HEX_RADIUS,PI / 2)
+	if not lock_UI:
+		$UI_Hexagon.visible=false
 	
 func get_infuence_A()->float:
 	return inf_A
@@ -137,3 +114,7 @@ func get_cost_A(maintenance)->float:
 	return self.usineA*maintenance
 func get_cost_B(maintenance)->float:
 	return self.usineB*maintenance
+	
+func set_position_UI(_position: Vector2)->void:
+	$UI_Hexagon.position = _position
+	

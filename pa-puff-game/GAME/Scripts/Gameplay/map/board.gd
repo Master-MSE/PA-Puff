@@ -1,82 +1,144 @@
 extends Node2D
 
 @onready var money  : Label = $Money
+@onready var timer : Timer = $Timer
 
+const GEOJSON_PATH = "res://GAME/Ressources/Game Data/france.geojson"
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
 const card_scene = preload("res://GAME/Scenes/Cards/Card.tscn")
 
-const HEX_SIZE = 30
+const HEX_SIZE = 20
 
 
-const TAB_CONECTION={
-	0:[1,4,5,6],
-	1:[0,2,6],
-	2:[1,3,6,7],
-	3:[2],
-	4:[0,5,9],
-	5:[0,4,6,9,10,11],
-	6:[0,1,2,5,7,11],
-	7:[2,6,11,12],
-	8:[12,13],
-	9:[4,5,10,14],
-	10:[5,9,11,14,15],
-	11:[5,6,7,10],
-	12:[7,8,13,17],
-	13:[8,12,17,18],
-	14:[9,10,15,19],
-	15:[10,14,19,20],
-	16:[17,20,21,22],
-	17:[12,13,16,18,22],
-	18:[13,17,22,23],
-	19:[14,15],
-	20:[15,16,21,25],
-	21:[16,20,22,25,26,27],
-	22:[16,17,18,21,23,27],
-	23:[18,22,27],
-	24:[25	],
-	25:[20,21,24,26],
-	26:[21,25,27],
-	27:[21,22,23,26],
-}
 
 var player1:Node2D
 var player2:Node2D
-var array_hex=[]
+var array_hex : Dictionary
+var tab_conection : Dictionary
+
+var country_polygons = []
+var lon_max=-100000.0
+var lon_min=100000.0
+var lat_max=-100000.0
+var lat_min=100000.0
 
 func _ready():
+	load_geojson()
 	create_hex_grid()
+	init_hex()
 
+func load_geojson():
+	var file = FileAccess.open(GEOJSON_PATH, FileAccess.READ)
+	var json = JSON.parse_string(file.get_as_text())
+	if json == null:
+		push_error("Erreur de parsing GeoJSON")
+		return
+	var features = json["features"]
+	for feature in features:
+		var geom = feature["geometry"]
+		if geom["type"] == "Polygon":
+			for ring in geom["coordinates"]:
+				var poly = []
+				for point in ring:
+					poly.append(Vector2(point[0], -point[1])) # lon, lat
+					lon_max=max(lon_max,point[0])
+					lon_min=min(lon_min,point[0])
+					lat_max=max(lat_max,-point[1])
+					lat_min=min(lat_min,-point[1])
+				country_polygons.append(poly)
+		elif geom["type"] == "MultiPolygon":
+			for polygon in geom["coordinates"]:
+				for ring in polygon:
+					var poly = []
+					for point in ring:
+						poly.append(Vector2(point[0], -point[1]))
+						lon_max=max(lon_max,point[0])
+						lon_min=min(lon_min,point[0])
+						lat_max=max(lat_max,-point[1])
+						lat_min=min(lat_min,-point[1])
+					country_polygons.append(poly)
+
+func is_point_inside_polygons(p: Vector2) -> bool:
+	for poly in country_polygons:
+		if Geometry2D.is_point_in_polygon(p, rectifing_polygone(poly)):
+			return true
+	return false
+	
+func rectifing_polygone(_poly: Array)-> Array:
+	var array = []
+	var box_width = 800
+	var box_height= 400
+	var poly_width =(lon_max-lon_min)
+	var poly_height =(lat_max-lat_min)
+	var _scale = min(box_width / poly_width, box_height / poly_height)
+	var center_lon = lon_min + poly_width / 2.0
+	var center_lat = lat_min + poly_height / 2.0
+	for point in _poly:
+		array.append(Vector2((point[0]-center_lon)*_scale*0.75, (point[1]-center_lat)*_scale))
+	return array
+	
+func add_hexagon (key : Vector2, value : StaticBody2D) :
+	array_hex[key] = value
 func create_hex_grid():
-	var cols = 6
-	var rows = 6
-	var x_offset = HEX_SIZE * 1.5
-	var y_offset = HEX_SIZE * sqrt(3)
-	
-	var grid_width = (cols - 1) * x_offset
-	var grid_height = (rows - 1) * y_offset
-	#var center_offset = Vector2(-grid_width / 2, -grid_height / 2)
-	var center_offset = Vector2(grid_width*2,grid_height/1.5)
-	
-	var n_del=0
-	for y in range(rows):
-		for x in range(cols):
-			if (x+y*cols) % 5 != 0:
-				var hex = HEX_SCENE.instantiate()
-				var x_pos = x * x_offset
-				var y_pos = y * y_offset
-				
-				if x % 2 != 0:
-					y_pos += y_offset / 2
-				hex.position = Vector2(x_pos, y_pos) + center_offset
-				hex.HEX_RADIUS=HEX_SIZE
-				hex.INDEX=x+y*cols-n_del
-				hex.WEIGHT=randi_range(100,10000)
-				add_child(hex)
-				array_hex.append(hex)
-			else :
-				n_del+=1
-	
+	var _width = sqrt(3) * HEX_SIZE
+	var _height = 2 * HEX_SIZE
+	var horiz_spacing = _width
+	var vert_spacing = 1.5 * HEX_SIZE
 
+	var min_x = -400
+	var max_x = 400
+	var min_y = -200
+	var max_y = 200
+
+	var index = 0
+	var r = 0
+	while true:
+		var y = r * vert_spacing
+		if y + min_y > max_y:
+			break
+		var q = 0
+		while true:
+			var x = q * horiz_spacing + (r % 2) * horiz_spacing / 2.0
+			if x + min_x > max_x:
+				break
+			var world_pos = Vector2(x + min_x, y + min_y)
+			if is_point_inside_polygons(world_pos):
+				var hex = HEX_SCENE.instantiate()
+				hex.position = world_pos
+				hex.HEX_RADIUS = HEX_SIZE
+				hex.INDEX = index
+				hex.set_position_UI(Vector2(650,0)-Vector2(x,y))
+				hex.WEIGHT = randi_range(1,3)*1000
+				add_child(hex)
+				add_hexagon(Vector2(q,r),hex)
+				index += 1
+			q += 1
+		r += 1
+	
+func init_hex():
+	var directions_even = [
+	Vector2(+1,  0), Vector2( 0, +1), Vector2(-1, +1),
+	Vector2(-1,  0), Vector2(-1, -1), Vector2( 0, -1)]
+	var directions_odd = [
+	Vector2(+1,  0), Vector2(+1, +1), Vector2( 0, +1),
+	Vector2(-1,  0), Vector2( 0, -1), Vector2(+1, -1)]
+	for key in array_hex:
+		var x = key[0]
+		var y = key[1]
+		var connection_key=[]
+		var directions
+		if int(y)% 2 == 0:
+			directions = directions_even
+		else:
+			directions = directions_odd
+		for dir in directions:
+			var neighbor = Vector2(x, y) + dir
+			if array_hex.has(neighbor):
+				connection_key.append(neighbor)
+		tab_conection[key]=connection_key
+		
+		
+	
 func _on_timer_timeout() -> void:
 	update_infuence()
 	calcul_money()
@@ -86,7 +148,7 @@ func update_infuence()-> void:
 	var value_infuence : Dictionary
 	var inf_a_g = 0
 	var inf_b_g = 0
-	for i in TAB_CONECTION:
+	for i in tab_conection:
 		var inf_a = 0
 		var inf_b = 0
 		var inf_c = 0
@@ -97,7 +159,7 @@ func update_infuence()-> void:
 		
 		var weight = array_hex[i].get_weight()
 		var weight_inf=0.0 # Changer avec une variable inter à calculer 1 fois au débu
-		for connection in TAB_CONECTION[i]:
+		for connection in tab_conection[i]:
 			var weight_c = array_hex[connection].get_weight()
 			weight_inf+=weight_c
 			inf_a+=array_hex[connection].get_infuence_A() * weight_c
@@ -133,8 +195,8 @@ func update_infuence()-> void:
 	rpc("update_influence_peer",value_infuence)
 	
 	for hex in array_hex:
-		hex.update_influence()
-
+		array_hex[hex].update_influence()
+		
 	inf_a_g/=array_hex.size()
 	inf_b_g/=array_hex.size()
 	get_parent().player1.set_global_influence(inf_a_g)
@@ -147,11 +209,14 @@ func set_player(player1:Node2D,player2:Node2D)->void:
 	
 func calcul_money()->void:
 
-	for hexagon in array_hex:
+	for key in array_hex:
+		var hexagon=array_hex[key]
 		get_parent().player1.give_money(hexagon.get_money_A(get_parent().player1.get_price()))
 		get_parent().player2.give_money(hexagon.get_money_B(get_parent().player2.get_price()))
 		get_parent().player1.take_money(hexagon.get_cost_A(get_parent().player1.get_maintenance()))
 		get_parent().player2.take_money(hexagon.get_cost_B(get_parent().player2.get_maintenance()))
+		get_parent().player1.set_synchronize()
+		get_parent().player2.set_synchronize()
 		
 		
 var money_A=0.0
@@ -171,3 +236,11 @@ func update_influence_peer(list_of_value)->void:
 		var hexagon=array_hex[key]
 		hexagon.set_infuence(value[0],value[1],value[2])
 		hexagon.update_influence()
+func start_timer()->void:
+	if not timer==null:
+		if $Timer.is_stopped():
+			$Timer.start()
+func stop_timer()->void:
+	if not timer==null:
+		if not $Timer.is_stopped():
+			$Timer.stop()
