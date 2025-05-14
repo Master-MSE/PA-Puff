@@ -5,6 +5,8 @@ extends Node2D
 
 const GEOJSON_PATH = "res://GAME/Ressources/Game Data/france.geojson"
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
+const card_scene = preload("res://GAME/Scenes/Cards/Card.tscn")
+
 const HEX_SIZE = 20
 
 
@@ -200,7 +202,11 @@ func update_infuence()-> void:
 	get_parent().player1.set_global_influence(inf_a_g)
 	get_parent().player2.set_global_influence(inf_b_g)
 		
-		
+
+func set_player(player1:Node2D,player2:Node2D)->void:
+	self.player1=player1
+	self.player2=player2
+	
 func calcul_money()->void:
 
 	for key in array_hex:
