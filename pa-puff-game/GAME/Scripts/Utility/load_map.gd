@@ -1,6 +1,6 @@
 extends Node2D
-const HEX_SIZE = 20
-const GEOJSON_PATH = "res://GAME/Ressources/Game Data/france.geojson"
+const HEX_SIZE = 5
+const GEOJSON_PATH = "res://GAME/Ressources/Game Data/switzerland.geojson"
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
 
 

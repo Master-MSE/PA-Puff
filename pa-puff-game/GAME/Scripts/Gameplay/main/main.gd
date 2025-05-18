@@ -46,14 +46,24 @@ var winner = 0
 func _process(delta: float) -> void:
 	
 	if game_state==Constants.GameState.START:
-		pass
+		if $HUD.visible:
+			$HUD.hide()
 	elif game_state==Constants.GameState.WAIT:
 		board = get_node("board")
 		board.stop_timer()
+		if $HUD.visible:
+			$HUD.hide()
 		if not $Time_end.is_stopped():
 			$Time_end.paused()
 	elif game_state==Constants.GameState.PLAY:
 		board = get_node("board")
+		if not $HUD.visible:
+			$HUD.show()
+		if not ($HUD/Screen/VBoxContainer.visible or $HUD/Screen/VBoxContainer2.visible):
+			if player_info == 1:
+				$HUD/Screen/VBoxContainer.show()
+			else :
+				$HUD/Screen/VBoxContainer2.show()
 		board.start_timer()
 		if $Time_end.is_stopped():
 			$Time_end.start()
@@ -61,6 +71,8 @@ func _process(delta: float) -> void:
 	elif game_state==Constants.GameState.END:
 		board = get_node("board")
 		board.stop_timer()
+		if $HUD.visible:
+			$HUD.hide()
 		if not $Time_end.is_stopped():
 			$Time_end.stop()
 		show_winner()

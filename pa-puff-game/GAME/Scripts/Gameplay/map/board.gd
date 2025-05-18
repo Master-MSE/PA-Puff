@@ -4,11 +4,11 @@ extends Node2D
 @onready var timer : Timer = $Timer
 
 const GEOJSON_PATH = "res://GAME/Ressources/Game Data/france.geojson"
+#const GEOJSON_PATH = "res://GAME/Ressources/Game Data/switzerland.geojson"
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
 const card_scene = preload("res://GAME/Scenes/Cards/Card.tscn")
 
 const HEX_SIZE = 20
-
 
 
 var player1:Node2D
@@ -167,9 +167,10 @@ func update_infuence()-> void:
 			inf_c+=array_hex[connection].get_infuence_C() * weight_c
 			
 		var sum_inf = inf_a + inf_b + inf_c
-		inf_a/=sum_inf
-		inf_b/=sum_inf
-		inf_c/=sum_inf
+		if not sum_inf == 0:
+			inf_a/=sum_inf
+			inf_b/=sum_inf
+			inf_c/=sum_inf
 		
 		new_a = lerp(new_a, inf_a, Constants.INFLUENCE_FACTOR*weight_inf/weight)
 		new_b = lerp(new_b, inf_b, Constants.INFLUENCE_FACTOR*weight_inf/weight)
@@ -181,9 +182,10 @@ func update_infuence()-> void:
 		new_b+=array_hex[i].get_internal_influence_B()
 		
 		var total_sum = new_a + new_b + new_c
-		new_a/=total_sum
-		new_b/=total_sum
-		new_c/=total_sum
+		if not total_sum==0:
+			new_a/=total_sum
+			new_b/=total_sum
+			new_c/=total_sum
 		
 		
 		

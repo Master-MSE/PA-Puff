@@ -34,7 +34,11 @@ position = Vector2(950, 300)
 playername = "Player 2"
 PLAYER_HOST = false
 
+[node name="Connection" parent="." instance=ExtResource("5_6xawj")]
+top_level = true
+
 [node name="HUD" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Screen" type="MarginContainer" parent="HUD"]
 anchors_preset = 15
@@ -52,8 +56,8 @@ size_flags_vertical = 4
 [node name="HandPlayer1" parent="HUD/Screen/HandPlayer1Anchor" node_paths=PackedStringArray("player") instance=ExtResource("2_giqo0")]
 visible = false
 layout_mode = 1
-offset_left = -506.0
-offset_right = 506.0
+offset_left = -612.0
+offset_right = 609.0
 offset_bottom = 204.0
 player = NodePath("../../../../Player1")
 
@@ -70,6 +74,7 @@ offset_bottom = 200.0
 player = NodePath("../../../../Player2")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HUD/Screen"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
@@ -88,6 +93,7 @@ size_flags_vertical = 8
 text = "Hand Player 1"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="HUD/Screen"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -104,9 +110,6 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "Hand Player 2
 "
-
-[node name="Connection" parent="." instance=ExtResource("5_6xawj")]
-top_level = true
 
 [node name="Card_rival" parent="." instance=ExtResource("2_1qnt6")]
 visible = false
