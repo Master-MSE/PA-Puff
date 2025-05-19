@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bnnf8r7gco841"]
+[gd_scene load_steps=4 format=3 uid="uid://bnnf8r7gco841"]
 
 [ext_resource type="Script" uid="uid://be5k7p5yjw3jk" path="res://GAME/Scripts/Utility/connection.gd" id="1_tol2y"]
-[ext_resource type="PackedScene" uid="uid://blr8ut1q7fctb" path="res://GAME/Scenes/Map/host_board.tscn" id="2_m458i"]
-[ext_resource type="PackedScene" uid="uid://c51qevheo5fcu" path="res://GAME/Scenes/Map/join_board.tscn" id="3_8vgng"]
+[ext_resource type="PackedScene" path="res://GAME/Scenes/Map/switzerland_board.tscn" id="2_m458i"]
 [ext_resource type="Script" uid="uid://e68b5s6exq74" path="res://GAME/Scripts/Utility/contol_text.gd" id="4_olk71"]
 
 [node name="Connection" type="Control"]
@@ -14,7 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_tol2y")
 host_field_scene = ExtResource("2_m458i")
-join_field_scene = ExtResource("3_8vgng")
+join_field_scene = ExtResource("2_m458i")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1

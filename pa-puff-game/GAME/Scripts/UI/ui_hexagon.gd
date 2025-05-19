@@ -1,15 +1,12 @@
 extends Control
 
 
-var player1
-var player2
+
 static var usine_price=1000
 
 func _ready() -> void:
 	self.visible = false
-	player1 = get_parent().get_parent().get_parent().player1
-	player2 = get_parent().get_parent().get_parent().player2
-	
+
 func _process(delta: float) -> void:
 	if self.visible :
 		var inf_A :float = get_parent().inf_A
@@ -27,32 +24,32 @@ func _process(delta: float) -> void:
 	
 func _on_button_buy_pressed() -> void:
 	if get_parent().get_parent().get_parent().player_info == 1:
-		if usine_price < player1.check_money():
-			player1.take_money(usine_price)
+		if usine_price < get_parent().get_parent().get_parent().player1.check_money():
+			get_parent().get_parent().get_parent().player1.take_money(usine_price)
 			get_parent().call_add_usineA(1)
 			usine_price+=1000
-			player2.set_synchronize()
+			get_parent().get_parent().get_parent().player1.set_synchronize()
 	else:
-		if usine_price < player2.check_money():
-			player2.take_money(usine_price)
+		if usine_price < get_parent().get_parent().get_parent().player2.check_money():
+			get_parent().get_parent().get_parent().player2.take_money(usine_price)
 			get_parent().call_add_usineB(1)
 			usine_price+=1000
-			player2.set_synchronize()
+			get_parent().get_parent().get_parent().player2.set_synchronize()
 
 
 func _on_button_sell_pressed() -> void:
 	if get_parent().get_parent().get_parent().player_info == 1:
 		if get_parent().usineA > 0:
-			player1.give_money(1000)
+			get_parent().get_parent().get_parent().player1.give_money(1000)
 			get_parent().call_add_usineA(-1)
 			usine_price-=1000
-			player1.set_synchronize()
+			get_parent().get_parent().get_parent().player1.set_synchronize()
 	else :
 		if get_parent().usineB > 0:
-			player2.give_money(1000)
+			get_parent().get_parent().get_parent().player2.give_money(1000)
 			get_parent().call_add_usineB(-1)
 			usine_price-=1000
-			player2.set_synchronize()
+			get_parent().get_parent().get_parent().player2.set_synchronize()
 
 
 func _on_button_end_pressed() -> void:

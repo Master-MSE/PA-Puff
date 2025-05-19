@@ -23,7 +23,7 @@ func _on_join_pressed() -> void:
 		$Join.disabled=true
 		$Host.disabled=true
 		var address : String = $Address_join.text
-		if address == "000.000.000.000":
+		if address.is_empty():
 			address = DEFAULT_SERVER_IP
 		join_game(address)
 	else :
@@ -39,6 +39,8 @@ func _on_host_pressed() -> void:
 
 func check_address()->bool:
 	var address : String= $Address_join.text
+	if address.is_empty():
+		return true
 	if  address.is_valid_ip_address():
 		return true
 	return false

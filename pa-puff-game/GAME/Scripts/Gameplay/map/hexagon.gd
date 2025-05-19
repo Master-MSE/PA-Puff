@@ -6,6 +6,7 @@ extends StaticBody2D
 
 @export var HEX_RADIUS = 49
 @export var INDEX = 0
+@export var ID : Vector2 = Vector2(0,0)
 @export var WEIGHT = 1000.0
 
 static var lock_UI :bool = false
@@ -22,6 +23,12 @@ var usineA : int =0
 var usineB : int =0
 
 func _ready():
+	if not self.mouse_entered.is_connected(_on_mouse_entered):
+		self.mouse_entered.connect(_on_mouse_entered)
+	if not self.mouse_exited.is_connected(_on_mouse_exited):
+		self.mouse_exited.connect(_on_mouse_exited)
+	if not self.input_event.is_connected(_on_input_event):
+		self.input_event.connect(_on_input_event)
 	create_hex(HEX_RADIUS,PI / 2)
 	
 func create_hex(radius:float,base_angle : float=0)->void:
@@ -67,15 +74,14 @@ func add_usineB(value,index):
 func _on_mouse_entered() -> void:
 	print("I: ",self.INDEX," P: ",self.WEIGHT)
 	self.z_index=1
-	create_hex(HEX_RADIUS+5,PI / 2)
+	#create_hex(HEX_RADIUS+5,PI / 2)
 	if not lock_UI:
 		$UI_Hexagon.visible=true
 	
-
-
+	
 func _on_mouse_exited() -> void:
 	self.z_index=0
-	create_hex(HEX_RADIUS,PI / 2)
+	#create_hex(HEX_RADIUS,PI / 2)
 	if not lock_UI:
 		$UI_Hexagon.visible=false
 	

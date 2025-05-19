@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://j0a2ro2dd2us"]
 
-[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/map/hexagon.gd" id="1_grvpm"]
+[ext_resource type="Script" uid="uid://bnxf2ewugoffp" path="res://GAME/Scripts/Gameplay/map/hexagon.gd" id="1_grvpm"]
 [ext_resource type="PackedScene" uid="uid://bxvbrbsdtw58r" path="res://GAME/Scenes/Map/ui_hexagon.tscn" id="2_s4rbs"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vf11p"]
@@ -17,17 +17,14 @@ visible = false
 light_mask = 2
 visibility_layer = 2
 color = Color(0, 0, 0, 1)
-polygon = PackedVector2Array(50, 0, 25, 43.3, -25, 43.3, -50, 0, -25, -43.3, 25, -43.3)
+polygon = PackedVector2Array(-1.06359, -49.9887, 42.7584, -25.9154, 43.822, 24.0733, 1.06359, 49.9887, -42.7584, 25.9154, -43.822, -24.0733)
 uv = PackedVector2Array(166, 125, 240, 31, 411, 31, 465, 131, 404, 256, 252, 259)
 
 [node name="Texture_base" type="Polygon2D" parent="."]
 light_mask = 4
 visibility_layer = 4
-polygon = PackedVector2Array(49, 0, 24.5, 42.4, -24.5, 42.4, -49, 0, -24.5, -42.4, 24.5, -42.4)
+polygon = PackedVector2Array(-0.287922, -48.9992, 42.2553, -24.7487, 42.5432, 24.2504, 0.287922, 48.9992, -42.2553, 24.7487, -42.5432, -24.2504)
 uv = PackedVector2Array(166, 125, 240, 31, 411, 31, 465, 131, 404, 256, 252, 259)
 
 [node name="UI_Hexagon" parent="." instance=ExtResource("2_s4rbs")]
-
-[connection signal="input_event" from="." to="." method="_on_input_event"]
-[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+visible = false

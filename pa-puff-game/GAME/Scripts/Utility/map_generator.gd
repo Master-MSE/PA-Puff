@@ -1,9 +1,7 @@
 extends Node2D
-const HEX_SIZE = 5
+const HEX_SIZE = 10
 const GEOJSON_PATH = "res://GAME/Ressources/Game Data/switzerland.geojson"
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
-
-
 
 var country_polygons = []
 var lon_max=-100000.0
@@ -11,10 +9,34 @@ var lon_min=100000.0
 var lat_max=-100000.0
 var lat_min=100000.0
 var array_hex : Dictionary
+var hex_map = []
+var NAME = "switzerland"
 
 func _ready():
 	load_geojson()
-	create_hex_grid()
+	var root = Node2D.new()
+	root.name = "Board"
+	# add timer
+	var timer = Timer.new()
+	timer.name="Timer"
+	timer.autostart = false
+	timer.wait_time=0.1
+	# add Script
+	root.set_script(load("res://GAME/Scripts/Gameplay/map/board2.gd"))
+	root.add_child(timer)
+	timer.owner=root
+		
+	create_hex_grid(root)
+	
+	var packed_scene = PackedScene.new()
+	var success = packed_scene.pack(root)
+	if success == OK:
+		# 4. Sauvegarder sur le disque
+		ResourceSaver.save(packed_scene, "res://GAME/Scenes/Map/%s_board.tscn"%[NAME])
+		print("Scène créée et sauvegardée !")
+	else:
+		print("Erreur lors de la création du PackedScene.")
+	
 	
 func _process(delta: float) -> void:
 	queue_redraw()
@@ -75,7 +97,7 @@ func rectifing_polygone(_poly: Array)-> Array:
 func add_hexagon (key : Vector2, value : StaticBody2D) :
 	array_hex[key] = value
 			
-func create_hex_grid():
+func create_hex_grid(root : Node2D):
 	var width = sqrt(3) * HEX_SIZE
 	var height = 2 * HEX_SIZE
 	var horiz_spacing = width
@@ -90,6 +112,7 @@ func create_hex_grid():
 	var index = 0
 	var r = 0
 	while true:
+		hex_map.append([])
 		var y = r * vert_spacing
 		if y + min_y > max_y:
 			break
@@ -98,16 +121,37 @@ func create_hex_grid():
 			var x = q * horiz_spacing + (r % 2) * horiz_spacing / 2.0
 			if x + min_x > max_x:
 				break
+			
+			var weight = 0.0
+			var inf_A :float = 0.0
+			var inf_B :float = 0.0
+			var inf_C :float = 1.0
+			var new_inf_A :float = 0.0
+			var new_inf_B :float = 0.0
+			var new_inf_C :float = 1.0
+			var usineA : int =0
+			var usineB : int =0
+	
+			
 			var world_pos = Vector2(x + min_x, y + min_y)
 			if is_point_inside_polygons(world_pos):
+				weight = 1000.0
 				var hex = HEX_SCENE.instantiate()
 				hex.position = world_pos
 				hex.HEX_RADIUS = HEX_SIZE
 				hex.INDEX = index
+				hex.ID = Vector2(q,r)
+				hex.name = "%d,%d"%[q,r]
 				hex.WEIGHT = randi_range(100, 10000)
-				add_child(hex)
-				add_hexagon(Vector2(x,r),hex)
+				root.add_child(hex)
+				hex.owner = root
+				add_hexagon(Vector2(q,r),hex)
 				index += 1
+			hex_map[r].append("1")
+				
+				
 			q += 1
 		r += 1
+
+
 	
