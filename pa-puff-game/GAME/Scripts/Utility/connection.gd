@@ -19,16 +19,32 @@ func _ready():
 
 
 func _on_join_pressed() -> void:
-	join_game()
-
+	if check_address():
+		$Join.disabled=true
+		$Host.disabled=true
+		var address : String = $Address_join.text
+		if address == "000.000.000.000":
+			address = DEFAULT_SERVER_IP
+		join_game(address)
+	else :
+		$Text.text="Bad Address"
+		
 func _on_host_pressed() -> void:
+	$Join.visible=false
+	$Host.visible=false
+	$Address_join.visible=false
+	$Text.text="Wait Player"
+	$Address.text= "Address: %s" % [IP.get_local_addresses()[5]]
 	create_game()
 
+func check_address()->bool:
+	var address : String= $Address_join.text
+	if  address.is_valid_ip_address():
+		return true
+	return false
+
 func join_game(address = ""):
-	$Join.disabled=true
-	$Host.disabled=true
-	if address.is_empty():
-		address = DEFAULT_SERVER_IP
+
 	var peer = ENetMultiplayerPeer.new()
 	peer.create_client(address, PORT)
 	peer.get_peer(1).set_timeout(0, 0, 1000)
@@ -42,6 +58,7 @@ func  _on_connection_success()->void:
 	$Text.text="Connection Success! \nWait Start"
 	$Join.visible=false
 	$Host.visible=false
+	$Address_join.visible=false
 	init_game()
 func  _on_connection_failed()->void:
 	$Text.text="Connection failed! \ntry again"
@@ -54,9 +71,7 @@ func create_game():
 	peer.create_server(PORT, MAX_CONNECTIONS)
 	multiplayer.multiplayer_peer = peer
 	get_parent().player_info=1
-	$Join.visible=false
-	$Host.visible=false
-	$Text.text="Wait Player"
+
 	
 	
 	
