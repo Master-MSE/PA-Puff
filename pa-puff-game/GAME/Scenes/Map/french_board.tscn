@@ -1,0 +1,2547 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4orvi718o7ry"]
+
+[ext_resource type="Script" uid="uid://baspx10o6xlol" path="res://GAME/Scripts/Gameplay/map/board2.gd" id="1_7c3dm"]
+[ext_resource type="PackedScene" uid="uid://j0a2ro2dd2us" path="res://GAME/Scenes/Map/hexagon.tscn" id="2_3q6kj"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vf11p"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_7c3dm")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="22,1" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -185)
+HEX_RADIUS = 10
+ID = Vector2(22, 1)
+WEIGHT = 9262
+
+[node name="23,1" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -185)
+HEX_RADIUS = 10
+INDEX = 1
+ID = Vector2(23, 1)
+WEIGHT = 6369
+
+[node name="24,1" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -185)
+HEX_RADIUS = 10
+INDEX = 2
+ID = Vector2(24, 1)
+WEIGHT = 6285
+
+[node name="22,2" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -170)
+HEX_RADIUS = 10
+INDEX = 3
+ID = Vector2(22, 2)
+WEIGHT = 5093
+
+[node name="23,2" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -170)
+HEX_RADIUS = 10
+INDEX = 4
+ID = Vector2(23, 2)
+WEIGHT = 7679
+
+[node name="24,2" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -170)
+HEX_RADIUS = 10
+INDEX = 5
+ID = Vector2(24, 2)
+WEIGHT = 7327
+
+[node name="25,2" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, -170)
+HEX_RADIUS = 10
+INDEX = 6
+ID = Vector2(25, 2)
+WEIGHT = 4567
+
+[node name="21,3" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -155)
+HEX_RADIUS = 10
+INDEX = 7
+ID = Vector2(21, 3)
+WEIGHT = 8132
+
+[node name="22,3" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -155)
+HEX_RADIUS = 10
+INDEX = 8
+ID = Vector2(22, 3)
+WEIGHT = 4011
+
+[node name="23,3" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -155)
+HEX_RADIUS = 10
+INDEX = 9
+ID = Vector2(23, 3)
+WEIGHT = 7497
+
+[node name="24,3" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -155)
+HEX_RADIUS = 10
+INDEX = 10
+ID = Vector2(24, 3)
+WEIGHT = 5721
+
+[node name="25,3" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -155)
+HEX_RADIUS = 10
+INDEX = 11
+ID = Vector2(25, 3)
+WEIGHT = 1386
+
+[node name="26,3" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -155)
+HEX_RADIUS = 10
+INDEX = 12
+ID = Vector2(26, 3)
+WEIGHT = 2918
+
+[node name="27,3" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -155)
+HEX_RADIUS = 10
+INDEX = 13
+ID = Vector2(27, 3)
+WEIGHT = 1302
+
+[node name="16,4" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, -140)
+HEX_RADIUS = 10
+INDEX = 14
+ID = Vector2(16, 4)
+WEIGHT = 2285
+
+[node name="20,4" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, -140)
+HEX_RADIUS = 10
+INDEX = 15
+ID = Vector2(20, 4)
+WEIGHT = 6592
+
+[node name="21,4" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, -140)
+HEX_RADIUS = 10
+INDEX = 16
+ID = Vector2(21, 4)
+WEIGHT = 5638
+
+[node name="22,4" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -140)
+HEX_RADIUS = 10
+INDEX = 17
+ID = Vector2(22, 4)
+WEIGHT = 3093
+
+[node name="23,4" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -140)
+HEX_RADIUS = 10
+INDEX = 18
+ID = Vector2(23, 4)
+WEIGHT = 1928
+
+[node name="24,4" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -140)
+HEX_RADIUS = 10
+INDEX = 19
+ID = Vector2(24, 4)
+WEIGHT = 6141
+
+[node name="25,4" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, -140)
+HEX_RADIUS = 10
+INDEX = 20
+ID = Vector2(25, 4)
+WEIGHT = 2912
+
+[node name="26,4" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, -140)
+HEX_RADIUS = 10
+INDEX = 21
+ID = Vector2(26, 4)
+WEIGHT = 7425
+
+[node name="27,4" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, -140)
+HEX_RADIUS = 10
+INDEX = 22
+ID = Vector2(27, 4)
+WEIGHT = 1371
+
+[node name="28,4" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, -140)
+HEX_RADIUS = 10
+INDEX = 23
+ID = Vector2(28, 4)
+WEIGHT = 4489
+
+[node name="16,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, -125)
+HEX_RADIUS = 10
+INDEX = 24
+ID = Vector2(16, 5)
+WEIGHT = 7024
+
+[node name="17,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, -125)
+HEX_RADIUS = 10
+INDEX = 25
+ID = Vector2(17, 5)
+WEIGHT = 4175
+
+[node name="18,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -125)
+HEX_RADIUS = 10
+INDEX = 26
+ID = Vector2(18, 5)
+WEIGHT = 4178
+
+[node name="19,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, -125)
+HEX_RADIUS = 10
+INDEX = 27
+ID = Vector2(19, 5)
+WEIGHT = 5149
+
+[node name="20,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, -125)
+HEX_RADIUS = 10
+INDEX = 28
+ID = Vector2(20, 5)
+WEIGHT = 6037
+
+[node name="21,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -125)
+HEX_RADIUS = 10
+INDEX = 29
+ID = Vector2(21, 5)
+WEIGHT = 3076
+
+[node name="22,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -125)
+HEX_RADIUS = 10
+INDEX = 30
+ID = Vector2(22, 5)
+WEIGHT = 2776
+
+[node name="23,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -125)
+HEX_RADIUS = 10
+INDEX = 31
+ID = Vector2(23, 5)
+WEIGHT = 3587
+
+[node name="24,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -125)
+HEX_RADIUS = 10
+INDEX = 32
+ID = Vector2(24, 5)
+WEIGHT = 6217
+
+[node name="25,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -125)
+HEX_RADIUS = 10
+INDEX = 33
+ID = Vector2(25, 5)
+WEIGHT = 8646
+
+[node name="26,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -125)
+HEX_RADIUS = 10
+INDEX = 34
+ID = Vector2(26, 5)
+WEIGHT = 4055
+
+[node name="27,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -125)
+HEX_RADIUS = 10
+INDEX = 35
+ID = Vector2(27, 5)
+WEIGHT = 3953
+
+[node name="28,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, -125)
+HEX_RADIUS = 10
+INDEX = 36
+ID = Vector2(28, 5)
+WEIGHT = 7185
+
+[node name="29,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, -125)
+HEX_RADIUS = 10
+INDEX = 37
+ID = Vector2(29, 5)
+WEIGHT = 8254
+
+[node name="30,5" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, -125)
+HEX_RADIUS = 10
+INDEX = 38
+ID = Vector2(30, 5)
+WEIGHT = 8019
+
+[node name="17,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, -110)
+HEX_RADIUS = 10
+INDEX = 39
+ID = Vector2(17, 6)
+WEIGHT = 1426
+
+[node name="18,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, -110)
+HEX_RADIUS = 10
+INDEX = 40
+ID = Vector2(18, 6)
+WEIGHT = 6646
+
+[node name="19,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, -110)
+HEX_RADIUS = 10
+INDEX = 41
+ID = Vector2(19, 6)
+WEIGHT = 4231
+
+[node name="20,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, -110)
+HEX_RADIUS = 10
+INDEX = 42
+ID = Vector2(20, 6)
+WEIGHT = 490
+
+[node name="21,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, -110)
+HEX_RADIUS = 10
+INDEX = 43
+ID = Vector2(21, 6)
+WEIGHT = 5689
+
+[node name="22,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -110)
+HEX_RADIUS = 10
+INDEX = 44
+ID = Vector2(22, 6)
+WEIGHT = 8197
+
+[node name="23,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -110)
+HEX_RADIUS = 10
+INDEX = 45
+ID = Vector2(23, 6)
+WEIGHT = 2208
+
+[node name="24,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -110)
+HEX_RADIUS = 10
+INDEX = 46
+ID = Vector2(24, 6)
+WEIGHT = 6163
+
+[node name="25,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, -110)
+HEX_RADIUS = 10
+INDEX = 47
+ID = Vector2(25, 6)
+WEIGHT = 4789
+
+[node name="26,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, -110)
+HEX_RADIUS = 10
+INDEX = 48
+ID = Vector2(26, 6)
+WEIGHT = 3242
+
+[node name="27,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, -110)
+HEX_RADIUS = 10
+INDEX = 49
+ID = Vector2(27, 6)
+WEIGHT = 5598
+
+[node name="28,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, -110)
+HEX_RADIUS = 10
+INDEX = 50
+ID = Vector2(28, 6)
+WEIGHT = 5825
+
+[node name="29,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, -110)
+HEX_RADIUS = 10
+INDEX = 51
+ID = Vector2(29, 6)
+WEIGHT = 9297
+
+[node name="30,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, -110)
+HEX_RADIUS = 10
+INDEX = 52
+ID = Vector2(30, 6)
+WEIGHT = 8299
+
+[node name="31,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, -110)
+HEX_RADIUS = 10
+INDEX = 53
+ID = Vector2(31, 6)
+WEIGHT = 680
+
+[node name="32,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, -110)
+HEX_RADIUS = 10
+INDEX = 54
+ID = Vector2(32, 6)
+WEIGHT = 3961
+
+[node name="33,6" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(171.577, -110)
+HEX_RADIUS = 10
+INDEX = 55
+ID = Vector2(33, 6)
+WEIGHT = 980
+
+[node name="11,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-200.814, -95)
+HEX_RADIUS = 10
+INDEX = 56
+ID = Vector2(11, 7)
+WEIGHT = 4041
+
+[node name="12,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-183.494, -95)
+HEX_RADIUS = 10
+INDEX = 57
+ID = Vector2(12, 7)
+WEIGHT = 3378
+
+[node name="13,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-166.173, -95)
+HEX_RADIUS = 10
+INDEX = 58
+ID = Vector2(13, 7)
+WEIGHT = 1125
+
+[node name="14,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-148.853, -95)
+HEX_RADIUS = 10
+INDEX = 59
+ID = Vector2(14, 7)
+WEIGHT = 4708
+
+[node name="15,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-131.532, -95)
+HEX_RADIUS = 10
+INDEX = 60
+ID = Vector2(15, 7)
+WEIGHT = 8189
+
+[node name="16,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, -95)
+HEX_RADIUS = 10
+INDEX = 61
+ID = Vector2(16, 7)
+WEIGHT = 5620
+
+[node name="17,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, -95)
+HEX_RADIUS = 10
+INDEX = 62
+ID = Vector2(17, 7)
+WEIGHT = 3950
+
+[node name="18,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -95)
+HEX_RADIUS = 10
+INDEX = 63
+ID = Vector2(18, 7)
+WEIGHT = 4328
+
+[node name="19,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, -95)
+HEX_RADIUS = 10
+INDEX = 64
+ID = Vector2(19, 7)
+WEIGHT = 8261
+
+[node name="20,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, -95)
+HEX_RADIUS = 10
+INDEX = 65
+ID = Vector2(20, 7)
+WEIGHT = 9806
+
+[node name="21,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -95)
+HEX_RADIUS = 10
+INDEX = 66
+ID = Vector2(21, 7)
+WEIGHT = 7667
+
+[node name="22,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -95)
+HEX_RADIUS = 10
+INDEX = 67
+ID = Vector2(22, 7)
+WEIGHT = 8851
+
+[node name="23,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -95)
+HEX_RADIUS = 10
+INDEX = 68
+ID = Vector2(23, 7)
+WEIGHT = 769
+
+[node name="24,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -95)
+HEX_RADIUS = 10
+INDEX = 69
+ID = Vector2(24, 7)
+WEIGHT = 755
+
+[node name="25,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -95)
+HEX_RADIUS = 10
+INDEX = 70
+ID = Vector2(25, 7)
+WEIGHT = 6550
+
+[node name="26,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -95)
+HEX_RADIUS = 10
+INDEX = 71
+ID = Vector2(26, 7)
+WEIGHT = 8927
+
+[node name="27,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -95)
+HEX_RADIUS = 10
+INDEX = 72
+ID = Vector2(27, 7)
+WEIGHT = 6214
+
+[node name="28,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, -95)
+HEX_RADIUS = 10
+INDEX = 73
+ID = Vector2(28, 7)
+WEIGHT = 4379
+
+[node name="29,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, -95)
+HEX_RADIUS = 10
+INDEX = 74
+ID = Vector2(29, 7)
+WEIGHT = 6943
+
+[node name="30,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, -95)
+HEX_RADIUS = 10
+INDEX = 75
+ID = Vector2(30, 7)
+WEIGHT = 4452
+
+[node name="31,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, -95)
+HEX_RADIUS = 10
+INDEX = 76
+ID = Vector2(31, 7)
+WEIGHT = 3562
+
+[node name="32,7" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(162.917, -95)
+HEX_RADIUS = 10
+INDEX = 77
+ID = Vector2(32, 7)
+WEIGHT = 3851
+
+[node name="12,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-192.154, -80)
+HEX_RADIUS = 10
+INDEX = 78
+ID = Vector2(12, 8)
+WEIGHT = 6367
+
+[node name="13,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-174.833, -80)
+HEX_RADIUS = 10
+INDEX = 79
+ID = Vector2(13, 8)
+WEIGHT = 9250
+
+[node name="14,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-157.513, -80)
+HEX_RADIUS = 10
+INDEX = 80
+ID = Vector2(14, 8)
+WEIGHT = 362
+
+[node name="15,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, -80)
+HEX_RADIUS = 10
+INDEX = 81
+ID = Vector2(15, 8)
+WEIGHT = 3564
+
+[node name="16,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, -80)
+HEX_RADIUS = 10
+INDEX = 82
+ID = Vector2(16, 8)
+WEIGHT = 1823
+
+[node name="17,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, -80)
+HEX_RADIUS = 10
+INDEX = 83
+ID = Vector2(17, 8)
+WEIGHT = 5064
+
+[node name="18,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, -80)
+HEX_RADIUS = 10
+INDEX = 84
+ID = Vector2(18, 8)
+WEIGHT = 8588
+
+[node name="19,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, -80)
+HEX_RADIUS = 10
+INDEX = 85
+ID = Vector2(19, 8)
+WEIGHT = 7643
+
+[node name="20,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, -80)
+HEX_RADIUS = 10
+INDEX = 86
+ID = Vector2(20, 8)
+WEIGHT = 5889
+
+[node name="21,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, -80)
+HEX_RADIUS = 10
+INDEX = 87
+ID = Vector2(21, 8)
+WEIGHT = 2448
+
+[node name="22,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -80)
+HEX_RADIUS = 10
+INDEX = 88
+ID = Vector2(22, 8)
+WEIGHT = 7605
+
+[node name="23,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -80)
+HEX_RADIUS = 10
+INDEX = 89
+ID = Vector2(23, 8)
+WEIGHT = 2914
+
+[node name="24,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -80)
+HEX_RADIUS = 10
+INDEX = 90
+ID = Vector2(24, 8)
+WEIGHT = 8098
+
+[node name="25,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, -80)
+HEX_RADIUS = 10
+INDEX = 91
+ID = Vector2(25, 8)
+WEIGHT = 8324
+
+[node name="26,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, -80)
+HEX_RADIUS = 10
+INDEX = 92
+ID = Vector2(26, 8)
+WEIGHT = 2515
+
+[node name="27,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, -80)
+HEX_RADIUS = 10
+INDEX = 93
+ID = Vector2(27, 8)
+WEIGHT = 9125
+
+[node name="28,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, -80)
+HEX_RADIUS = 10
+INDEX = 94
+ID = Vector2(28, 8)
+WEIGHT = 3889
+
+[node name="29,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, -80)
+HEX_RADIUS = 10
+INDEX = 95
+ID = Vector2(29, 8)
+WEIGHT = 8907
+
+[node name="30,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, -80)
+HEX_RADIUS = 10
+INDEX = 96
+ID = Vector2(30, 8)
+WEIGHT = 4587
+
+[node name="31,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, -80)
+HEX_RADIUS = 10
+INDEX = 97
+ID = Vector2(31, 8)
+WEIGHT = 3408
+
+[node name="32,8" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, -80)
+HEX_RADIUS = 10
+INDEX = 98
+ID = Vector2(32, 8)
+WEIGHT = 4203
+
+[node name="11,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-200.814, -65)
+HEX_RADIUS = 10
+INDEX = 99
+ID = Vector2(11, 9)
+WEIGHT = 545
+
+[node name="12,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-183.494, -65)
+HEX_RADIUS = 10
+INDEX = 100
+ID = Vector2(12, 9)
+WEIGHT = 1535
+
+[node name="13,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-166.173, -65)
+HEX_RADIUS = 10
+INDEX = 101
+ID = Vector2(13, 9)
+WEIGHT = 3651
+
+[node name="14,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-148.853, -65)
+HEX_RADIUS = 10
+INDEX = 102
+ID = Vector2(14, 9)
+WEIGHT = 9799
+
+[node name="15,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-131.532, -65)
+HEX_RADIUS = 10
+INDEX = 103
+ID = Vector2(15, 9)
+WEIGHT = 5591
+
+[node name="16,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, -65)
+HEX_RADIUS = 10
+INDEX = 104
+ID = Vector2(16, 9)
+WEIGHT = 8762
+
+[node name="17,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, -65)
+HEX_RADIUS = 10
+INDEX = 105
+ID = Vector2(17, 9)
+WEIGHT = 703
+
+[node name="18,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -65)
+HEX_RADIUS = 10
+INDEX = 106
+ID = Vector2(18, 9)
+WEIGHT = 6528
+
+[node name="19,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, -65)
+HEX_RADIUS = 10
+INDEX = 107
+ID = Vector2(19, 9)
+WEIGHT = 7510
+
+[node name="20,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, -65)
+HEX_RADIUS = 10
+INDEX = 108
+ID = Vector2(20, 9)
+WEIGHT = 9205
+
+[node name="21,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -65)
+HEX_RADIUS = 10
+INDEX = 109
+ID = Vector2(21, 9)
+WEIGHT = 6940
+
+[node name="22,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -65)
+HEX_RADIUS = 10
+INDEX = 110
+ID = Vector2(22, 9)
+WEIGHT = 3023
+
+[node name="23,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -65)
+HEX_RADIUS = 10
+INDEX = 111
+ID = Vector2(23, 9)
+WEIGHT = 8452
+
+[node name="24,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -65)
+HEX_RADIUS = 10
+INDEX = 112
+ID = Vector2(24, 9)
+WEIGHT = 2928
+
+[node name="25,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -65)
+HEX_RADIUS = 10
+INDEX = 113
+ID = Vector2(25, 9)
+WEIGHT = 9260
+
+[node name="26,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -65)
+HEX_RADIUS = 10
+INDEX = 114
+ID = Vector2(26, 9)
+WEIGHT = 7130
+
+[node name="27,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -65)
+HEX_RADIUS = 10
+INDEX = 115
+ID = Vector2(27, 9)
+WEIGHT = 200
+
+[node name="28,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, -65)
+HEX_RADIUS = 10
+INDEX = 116
+ID = Vector2(28, 9)
+WEIGHT = 2650
+
+[node name="29,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, -65)
+HEX_RADIUS = 10
+INDEX = 117
+ID = Vector2(29, 9)
+WEIGHT = 5837
+
+[node name="30,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, -65)
+HEX_RADIUS = 10
+INDEX = 118
+ID = Vector2(30, 9)
+WEIGHT = 3535
+
+[node name="31,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, -65)
+HEX_RADIUS = 10
+INDEX = 119
+ID = Vector2(31, 9)
+WEIGHT = 3126
+
+[node name="32,9" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(162.917, -65)
+HEX_RADIUS = 10
+INDEX = 120
+ID = Vector2(32, 9)
+WEIGHT = 9067
+
+[node name="15,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, -50)
+HEX_RADIUS = 10
+INDEX = 121
+ID = Vector2(15, 10)
+WEIGHT = 7842
+
+[node name="16,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, -50)
+HEX_RADIUS = 10
+INDEX = 122
+ID = Vector2(16, 10)
+WEIGHT = 5456
+
+[node name="17,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, -50)
+HEX_RADIUS = 10
+INDEX = 123
+ID = Vector2(17, 10)
+WEIGHT = 9196
+
+[node name="18,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, -50)
+HEX_RADIUS = 10
+INDEX = 124
+ID = Vector2(18, 10)
+WEIGHT = 5474
+
+[node name="19,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, -50)
+HEX_RADIUS = 10
+INDEX = 125
+ID = Vector2(19, 10)
+WEIGHT = 3843
+
+[node name="20,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, -50)
+HEX_RADIUS = 10
+INDEX = 126
+ID = Vector2(20, 10)
+WEIGHT = 855
+
+[node name="21,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, -50)
+HEX_RADIUS = 10
+INDEX = 127
+ID = Vector2(21, 10)
+WEIGHT = 5156
+
+[node name="22,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -50)
+HEX_RADIUS = 10
+INDEX = 128
+ID = Vector2(22, 10)
+WEIGHT = 1334
+
+[node name="23,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -50)
+HEX_RADIUS = 10
+INDEX = 129
+ID = Vector2(23, 10)
+WEIGHT = 8795
+
+[node name="24,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -50)
+HEX_RADIUS = 10
+INDEX = 130
+ID = Vector2(24, 10)
+WEIGHT = 6699
+
+[node name="25,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, -50)
+HEX_RADIUS = 10
+INDEX = 131
+ID = Vector2(25, 10)
+WEIGHT = 826
+
+[node name="26,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, -50)
+HEX_RADIUS = 10
+INDEX = 132
+ID = Vector2(26, 10)
+WEIGHT = 6562
+
+[node name="27,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, -50)
+HEX_RADIUS = 10
+INDEX = 133
+ID = Vector2(27, 10)
+WEIGHT = 1155
+
+[node name="28,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, -50)
+HEX_RADIUS = 10
+INDEX = 134
+ID = Vector2(28, 10)
+WEIGHT = 344
+
+[node name="29,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, -50)
+HEX_RADIUS = 10
+INDEX = 135
+ID = Vector2(29, 10)
+WEIGHT = 9288
+
+[node name="30,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, -50)
+HEX_RADIUS = 10
+INDEX = 136
+ID = Vector2(30, 10)
+WEIGHT = 692
+
+[node name="31,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, -50)
+HEX_RADIUS = 10
+INDEX = 137
+ID = Vector2(31, 10)
+WEIGHT = 1603
+
+[node name="32,10" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, -50)
+HEX_RADIUS = 10
+INDEX = 138
+ID = Vector2(32, 10)
+WEIGHT = 6499
+
+[node name="16,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, -35)
+HEX_RADIUS = 10
+INDEX = 139
+ID = Vector2(16, 11)
+WEIGHT = 7551
+
+[node name="17,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, -35)
+HEX_RADIUS = 10
+INDEX = 140
+ID = Vector2(17, 11)
+WEIGHT = 8460
+
+[node name="18,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -35)
+HEX_RADIUS = 10
+INDEX = 141
+ID = Vector2(18, 11)
+WEIGHT = 6865
+
+[node name="19,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, -35)
+HEX_RADIUS = 10
+INDEX = 142
+ID = Vector2(19, 11)
+WEIGHT = 9148
+
+[node name="20,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, -35)
+HEX_RADIUS = 10
+INDEX = 143
+ID = Vector2(20, 11)
+WEIGHT = 1156
+
+[node name="21,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -35)
+HEX_RADIUS = 10
+INDEX = 144
+ID = Vector2(21, 11)
+WEIGHT = 5440
+
+[node name="22,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -35)
+HEX_RADIUS = 10
+INDEX = 145
+ID = Vector2(22, 11)
+WEIGHT = 1384
+
+[node name="23,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -35)
+HEX_RADIUS = 10
+INDEX = 146
+ID = Vector2(23, 11)
+WEIGHT = 8973
+
+[node name="24,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -35)
+HEX_RADIUS = 10
+INDEX = 147
+ID = Vector2(24, 11)
+WEIGHT = 8405
+
+[node name="25,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -35)
+HEX_RADIUS = 10
+INDEX = 148
+ID = Vector2(25, 11)
+WEIGHT = 5904
+
+[node name="26,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -35)
+HEX_RADIUS = 10
+INDEX = 149
+ID = Vector2(26, 11)
+WEIGHT = 2232
+
+[node name="27,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -35)
+HEX_RADIUS = 10
+INDEX = 150
+ID = Vector2(27, 11)
+WEIGHT = 3187
+
+[node name="28,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, -35)
+HEX_RADIUS = 10
+INDEX = 151
+ID = Vector2(28, 11)
+WEIGHT = 414
+
+[node name="29,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, -35)
+HEX_RADIUS = 10
+INDEX = 152
+ID = Vector2(29, 11)
+WEIGHT = 6832
+
+[node name="30,11" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, -35)
+HEX_RADIUS = 10
+INDEX = 153
+ID = Vector2(30, 11)
+WEIGHT = 3334
+
+[node name="15,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, -20)
+HEX_RADIUS = 10
+INDEX = 154
+ID = Vector2(15, 12)
+WEIGHT = 8350
+
+[node name="16,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, -20)
+HEX_RADIUS = 10
+INDEX = 155
+ID = Vector2(16, 12)
+WEIGHT = 4689
+
+[node name="17,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, -20)
+HEX_RADIUS = 10
+INDEX = 156
+ID = Vector2(17, 12)
+WEIGHT = 8342
+
+[node name="18,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, -20)
+HEX_RADIUS = 10
+INDEX = 157
+ID = Vector2(18, 12)
+WEIGHT = 955
+
+[node name="19,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, -20)
+HEX_RADIUS = 10
+INDEX = 158
+ID = Vector2(19, 12)
+WEIGHT = 5649
+
+[node name="20,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, -20)
+HEX_RADIUS = 10
+INDEX = 159
+ID = Vector2(20, 12)
+WEIGHT = 5063
+
+[node name="21,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, -20)
+HEX_RADIUS = 10
+INDEX = 160
+ID = Vector2(21, 12)
+WEIGHT = 7782
+
+[node name="22,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -20)
+HEX_RADIUS = 10
+INDEX = 161
+ID = Vector2(22, 12)
+WEIGHT = 5839
+
+[node name="23,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -20)
+HEX_RADIUS = 10
+INDEX = 162
+ID = Vector2(23, 12)
+WEIGHT = 646
+
+[node name="24,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -20)
+HEX_RADIUS = 10
+INDEX = 163
+ID = Vector2(24, 12)
+WEIGHT = 6807
+
+[node name="25,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, -20)
+HEX_RADIUS = 10
+INDEX = 164
+ID = Vector2(25, 12)
+WEIGHT = 849
+
+[node name="26,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, -20)
+HEX_RADIUS = 10
+INDEX = 165
+ID = Vector2(26, 12)
+WEIGHT = 7892
+
+[node name="27,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, -20)
+HEX_RADIUS = 10
+INDEX = 166
+ID = Vector2(27, 12)
+WEIGHT = 5038
+
+[node name="28,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, -20)
+HEX_RADIUS = 10
+INDEX = 167
+ID = Vector2(28, 12)
+WEIGHT = 5942
+
+[node name="29,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, -20)
+HEX_RADIUS = 10
+INDEX = 168
+ID = Vector2(29, 12)
+WEIGHT = 7539
+
+[node name="30,12" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, -20)
+HEX_RADIUS = 10
+INDEX = 169
+ID = Vector2(30, 12)
+WEIGHT = 4460
+
+[node name="17,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, -5)
+HEX_RADIUS = 10
+INDEX = 170
+ID = Vector2(17, 13)
+WEIGHT = 8849
+
+[node name="18,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -5)
+HEX_RADIUS = 10
+INDEX = 171
+ID = Vector2(18, 13)
+WEIGHT = 9402
+
+[node name="19,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, -5)
+HEX_RADIUS = 10
+INDEX = 172
+ID = Vector2(19, 13)
+WEIGHT = 4885
+
+[node name="20,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, -5)
+HEX_RADIUS = 10
+INDEX = 173
+ID = Vector2(20, 13)
+WEIGHT = 792
+
+[node name="21,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -5)
+HEX_RADIUS = 10
+INDEX = 174
+ID = Vector2(21, 13)
+WEIGHT = 1696
+
+[node name="22,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -5)
+HEX_RADIUS = 10
+INDEX = 175
+ID = Vector2(22, 13)
+WEIGHT = 613
+
+[node name="23,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -5)
+HEX_RADIUS = 10
+INDEX = 176
+ID = Vector2(23, 13)
+WEIGHT = 861
+
+[node name="24,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -5)
+HEX_RADIUS = 10
+INDEX = 177
+ID = Vector2(24, 13)
+WEIGHT = 4071
+
+[node name="25,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -5)
+HEX_RADIUS = 10
+INDEX = 178
+ID = Vector2(25, 13)
+WEIGHT = 9897
+
+[node name="26,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -5)
+HEX_RADIUS = 10
+INDEX = 179
+ID = Vector2(26, 13)
+WEIGHT = 3076
+
+[node name="27,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -5)
+HEX_RADIUS = 10
+INDEX = 180
+ID = Vector2(27, 13)
+WEIGHT = 3446
+
+[node name="28,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, -5)
+HEX_RADIUS = 10
+INDEX = 181
+ID = Vector2(28, 13)
+WEIGHT = 3882
+
+[node name="29,13" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, -5)
+HEX_RADIUS = 10
+INDEX = 182
+ID = Vector2(29, 13)
+WEIGHT = 4211
+
+[node name="18,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, 10)
+HEX_RADIUS = 10
+INDEX = 183
+ID = Vector2(18, 14)
+WEIGHT = 4638
+
+[node name="19,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, 10)
+HEX_RADIUS = 10
+INDEX = 184
+ID = Vector2(19, 14)
+WEIGHT = 664
+
+[node name="20,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, 10)
+HEX_RADIUS = 10
+INDEX = 185
+ID = Vector2(20, 14)
+WEIGHT = 1228
+
+[node name="21,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, 10)
+HEX_RADIUS = 10
+INDEX = 186
+ID = Vector2(21, 14)
+WEIGHT = 6172
+
+[node name="22,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, 10)
+HEX_RADIUS = 10
+INDEX = 187
+ID = Vector2(22, 14)
+WEIGHT = 2456
+
+[node name="23,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, 10)
+HEX_RADIUS = 10
+INDEX = 188
+ID = Vector2(23, 14)
+WEIGHT = 6669
+
+[node name="24,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, 10)
+HEX_RADIUS = 10
+INDEX = 189
+ID = Vector2(24, 14)
+WEIGHT = 2667
+
+[node name="25,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, 10)
+HEX_RADIUS = 10
+INDEX = 190
+ID = Vector2(25, 14)
+WEIGHT = 7441
+
+[node name="26,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, 10)
+HEX_RADIUS = 10
+INDEX = 191
+ID = Vector2(26, 14)
+WEIGHT = 7410
+
+[node name="27,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, 10)
+HEX_RADIUS = 10
+INDEX = 192
+ID = Vector2(27, 14)
+WEIGHT = 2077
+
+[node name="28,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, 10)
+HEX_RADIUS = 10
+INDEX = 193
+ID = Vector2(28, 14)
+WEIGHT = 9008
+
+[node name="29,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, 10)
+HEX_RADIUS = 10
+INDEX = 194
+ID = Vector2(29, 14)
+WEIGHT = 1201
+
+[node name="30,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, 10)
+HEX_RADIUS = 10
+INDEX = 195
+ID = Vector2(30, 14)
+WEIGHT = 3222
+
+[node name="31,14" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, 10)
+HEX_RADIUS = 10
+INDEX = 196
+ID = Vector2(31, 14)
+WEIGHT = 2690
+
+[node name="17,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, 25)
+HEX_RADIUS = 10
+INDEX = 197
+ID = Vector2(17, 15)
+WEIGHT = 3277
+
+[node name="18,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, 25)
+HEX_RADIUS = 10
+INDEX = 198
+ID = Vector2(18, 15)
+WEIGHT = 2018
+
+[node name="19,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, 25)
+HEX_RADIUS = 10
+INDEX = 199
+ID = Vector2(19, 15)
+WEIGHT = 5760
+
+[node name="20,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, 25)
+HEX_RADIUS = 10
+INDEX = 200
+ID = Vector2(20, 15)
+WEIGHT = 1742
+
+[node name="21,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, 25)
+HEX_RADIUS = 10
+INDEX = 201
+ID = Vector2(21, 15)
+WEIGHT = 5041
+
+[node name="22,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, 25)
+HEX_RADIUS = 10
+INDEX = 202
+ID = Vector2(22, 15)
+WEIGHT = 6061
+
+[node name="23,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, 25)
+HEX_RADIUS = 10
+INDEX = 203
+ID = Vector2(23, 15)
+WEIGHT = 8417
+
+[node name="24,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, 25)
+HEX_RADIUS = 10
+INDEX = 204
+ID = Vector2(24, 15)
+WEIGHT = 5140
+
+[node name="25,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, 25)
+HEX_RADIUS = 10
+INDEX = 205
+ID = Vector2(25, 15)
+WEIGHT = 6912
+
+[node name="26,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, 25)
+HEX_RADIUS = 10
+INDEX = 206
+ID = Vector2(26, 15)
+WEIGHT = 4262
+
+[node name="27,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, 25)
+HEX_RADIUS = 10
+INDEX = 207
+ID = Vector2(27, 15)
+WEIGHT = 765
+
+[node name="28,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, 25)
+HEX_RADIUS = 10
+INDEX = 208
+ID = Vector2(28, 15)
+WEIGHT = 8183
+
+[node name="29,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, 25)
+HEX_RADIUS = 10
+INDEX = 209
+ID = Vector2(29, 15)
+WEIGHT = 4873
+
+[node name="30,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, 25)
+HEX_RADIUS = 10
+INDEX = 210
+ID = Vector2(30, 15)
+WEIGHT = 2264
+
+[node name="31,15" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, 25)
+HEX_RADIUS = 10
+INDEX = 211
+ID = Vector2(31, 15)
+WEIGHT = 2391
+
+[node name="18,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, 40)
+HEX_RADIUS = 10
+INDEX = 212
+ID = Vector2(18, 16)
+WEIGHT = 9293
+
+[node name="19,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, 40)
+HEX_RADIUS = 10
+INDEX = 213
+ID = Vector2(19, 16)
+WEIGHT = 1358
+
+[node name="20,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, 40)
+HEX_RADIUS = 10
+INDEX = 214
+ID = Vector2(20, 16)
+WEIGHT = 1253
+
+[node name="21,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, 40)
+HEX_RADIUS = 10
+INDEX = 215
+ID = Vector2(21, 16)
+WEIGHT = 323
+
+[node name="22,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, 40)
+HEX_RADIUS = 10
+INDEX = 216
+ID = Vector2(22, 16)
+WEIGHT = 1590
+
+[node name="23,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, 40)
+HEX_RADIUS = 10
+INDEX = 217
+ID = Vector2(23, 16)
+WEIGHT = 8156
+
+[node name="24,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, 40)
+HEX_RADIUS = 10
+INDEX = 218
+ID = Vector2(24, 16)
+WEIGHT = 8605
+
+[node name="25,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, 40)
+HEX_RADIUS = 10
+INDEX = 219
+ID = Vector2(25, 16)
+WEIGHT = 709
+
+[node name="26,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, 40)
+HEX_RADIUS = 10
+INDEX = 220
+ID = Vector2(26, 16)
+WEIGHT = 4931
+
+[node name="27,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, 40)
+HEX_RADIUS = 10
+INDEX = 221
+ID = Vector2(27, 16)
+WEIGHT = 4730
+
+[node name="28,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, 40)
+HEX_RADIUS = 10
+INDEX = 222
+ID = Vector2(28, 16)
+WEIGHT = 1992
+
+[node name="29,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, 40)
+HEX_RADIUS = 10
+INDEX = 223
+ID = Vector2(29, 16)
+WEIGHT = 6846
+
+[node name="30,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, 40)
+HEX_RADIUS = 10
+INDEX = 224
+ID = Vector2(30, 16)
+WEIGHT = 3696
+
+[node name="31,16" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, 40)
+HEX_RADIUS = 10
+INDEX = 225
+ID = Vector2(31, 16)
+WEIGHT = 3011
+
+[node name="17,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, 55)
+HEX_RADIUS = 10
+INDEX = 226
+ID = Vector2(17, 17)
+WEIGHT = 1970
+
+[node name="18,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, 55)
+HEX_RADIUS = 10
+INDEX = 227
+ID = Vector2(18, 17)
+WEIGHT = 4700
+
+[node name="19,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, 55)
+HEX_RADIUS = 10
+INDEX = 228
+ID = Vector2(19, 17)
+WEIGHT = 3363
+
+[node name="20,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, 55)
+HEX_RADIUS = 10
+INDEX = 229
+ID = Vector2(20, 17)
+WEIGHT = 2146
+
+[node name="21,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, 55)
+HEX_RADIUS = 10
+INDEX = 230
+ID = Vector2(21, 17)
+WEIGHT = 4042
+
+[node name="22,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, 55)
+HEX_RADIUS = 10
+INDEX = 231
+ID = Vector2(22, 17)
+WEIGHT = 9225
+
+[node name="23,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, 55)
+HEX_RADIUS = 10
+INDEX = 232
+ID = Vector2(23, 17)
+WEIGHT = 2377
+
+[node name="24,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, 55)
+HEX_RADIUS = 10
+INDEX = 233
+ID = Vector2(24, 17)
+WEIGHT = 159
+
+[node name="25,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, 55)
+HEX_RADIUS = 10
+INDEX = 234
+ID = Vector2(25, 17)
+WEIGHT = 8338
+
+[node name="26,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, 55)
+HEX_RADIUS = 10
+INDEX = 235
+ID = Vector2(26, 17)
+WEIGHT = 8269
+
+[node name="27,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, 55)
+HEX_RADIUS = 10
+INDEX = 236
+ID = Vector2(27, 17)
+WEIGHT = 8048
+
+[node name="28,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, 55)
+HEX_RADIUS = 10
+INDEX = 237
+ID = Vector2(28, 17)
+WEIGHT = 9886
+
+[node name="29,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, 55)
+HEX_RADIUS = 10
+INDEX = 238
+ID = Vector2(29, 17)
+WEIGHT = 8703
+
+[node name="30,17" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, 55)
+HEX_RADIUS = 10
+INDEX = 239
+ID = Vector2(30, 17)
+WEIGHT = 8809
+
+[node name="17,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, 70)
+HEX_RADIUS = 10
+INDEX = 240
+ID = Vector2(17, 18)
+WEIGHT = 3809
+
+[node name="18,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, 70)
+HEX_RADIUS = 10
+INDEX = 241
+ID = Vector2(18, 18)
+WEIGHT = 5926
+
+[node name="19,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, 70)
+HEX_RADIUS = 10
+INDEX = 242
+ID = Vector2(19, 18)
+WEIGHT = 3460
+
+[node name="20,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, 70)
+HEX_RADIUS = 10
+INDEX = 243
+ID = Vector2(20, 18)
+WEIGHT = 4259
+
+[node name="21,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, 70)
+HEX_RADIUS = 10
+INDEX = 244
+ID = Vector2(21, 18)
+WEIGHT = 3471
+
+[node name="22,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, 70)
+HEX_RADIUS = 10
+INDEX = 245
+ID = Vector2(22, 18)
+WEIGHT = 6678
+
+[node name="23,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, 70)
+HEX_RADIUS = 10
+INDEX = 246
+ID = Vector2(23, 18)
+WEIGHT = 3145
+
+[node name="24,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, 70)
+HEX_RADIUS = 10
+INDEX = 247
+ID = Vector2(24, 18)
+WEIGHT = 9825
+
+[node name="25,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, 70)
+HEX_RADIUS = 10
+INDEX = 248
+ID = Vector2(25, 18)
+WEIGHT = 7881
+
+[node name="26,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, 70)
+HEX_RADIUS = 10
+INDEX = 249
+ID = Vector2(26, 18)
+WEIGHT = 6633
+
+[node name="27,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, 70)
+HEX_RADIUS = 10
+INDEX = 250
+ID = Vector2(27, 18)
+WEIGHT = 1593
+
+[node name="28,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, 70)
+HEX_RADIUS = 10
+INDEX = 251
+ID = Vector2(28, 18)
+WEIGHT = 6734
+
+[node name="29,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, 70)
+HEX_RADIUS = 10
+INDEX = 252
+ID = Vector2(29, 18)
+WEIGHT = 3663
+
+[node name="30,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, 70)
+HEX_RADIUS = 10
+INDEX = 253
+ID = Vector2(30, 18)
+WEIGHT = 1859
+
+[node name="31,18" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, 70)
+HEX_RADIUS = 10
+INDEX = 254
+ID = Vector2(31, 18)
+WEIGHT = 3461
+
+[node name="17,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, 85)
+HEX_RADIUS = 10
+INDEX = 255
+ID = Vector2(17, 19)
+WEIGHT = 1173
+
+[node name="18,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, 85)
+HEX_RADIUS = 10
+INDEX = 256
+ID = Vector2(18, 19)
+WEIGHT = 3324
+
+[node name="19,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, 85)
+HEX_RADIUS = 10
+INDEX = 257
+ID = Vector2(19, 19)
+WEIGHT = 2213
+
+[node name="20,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, 85)
+HEX_RADIUS = 10
+INDEX = 258
+ID = Vector2(20, 19)
+WEIGHT = 5401
+
+[node name="21,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, 85)
+HEX_RADIUS = 10
+INDEX = 259
+ID = Vector2(21, 19)
+WEIGHT = 3418
+
+[node name="22,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, 85)
+HEX_RADIUS = 10
+INDEX = 260
+ID = Vector2(22, 19)
+WEIGHT = 2590
+
+[node name="23,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, 85)
+HEX_RADIUS = 10
+INDEX = 261
+ID = Vector2(23, 19)
+WEIGHT = 2686
+
+[node name="24,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, 85)
+HEX_RADIUS = 10
+INDEX = 262
+ID = Vector2(24, 19)
+WEIGHT = 1734
+
+[node name="25,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, 85)
+HEX_RADIUS = 10
+INDEX = 263
+ID = Vector2(25, 19)
+WEIGHT = 9757
+
+[node name="26,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, 85)
+HEX_RADIUS = 10
+INDEX = 264
+ID = Vector2(26, 19)
+WEIGHT = 4934
+
+[node name="27,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, 85)
+HEX_RADIUS = 10
+INDEX = 265
+ID = Vector2(27, 19)
+WEIGHT = 5624
+
+[node name="28,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, 85)
+HEX_RADIUS = 10
+INDEX = 266
+ID = Vector2(28, 19)
+WEIGHT = 7879
+
+[node name="29,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, 85)
+HEX_RADIUS = 10
+INDEX = 267
+ID = Vector2(29, 19)
+WEIGHT = 6582
+
+[node name="30,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, 85)
+HEX_RADIUS = 10
+INDEX = 268
+ID = Vector2(30, 19)
+WEIGHT = 7988
+
+[node name="31,19" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, 85)
+HEX_RADIUS = 10
+INDEX = 269
+ID = Vector2(31, 19)
+WEIGHT = 7899
+
+[node name="17,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, 100)
+HEX_RADIUS = 10
+INDEX = 270
+ID = Vector2(17, 20)
+WEIGHT = 1249
+
+[node name="18,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, 100)
+HEX_RADIUS = 10
+INDEX = 271
+ID = Vector2(18, 20)
+WEIGHT = 4139
+
+[node name="19,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, 100)
+HEX_RADIUS = 10
+INDEX = 272
+ID = Vector2(19, 20)
+WEIGHT = 5836
+
+[node name="20,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, 100)
+HEX_RADIUS = 10
+INDEX = 273
+ID = Vector2(20, 20)
+WEIGHT = 9798
+
+[node name="21,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, 100)
+HEX_RADIUS = 10
+INDEX = 274
+ID = Vector2(21, 20)
+WEIGHT = 9222
+
+[node name="22,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, 100)
+HEX_RADIUS = 10
+INDEX = 275
+ID = Vector2(22, 20)
+WEIGHT = 4872
+
+[node name="23,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, 100)
+HEX_RADIUS = 10
+INDEX = 276
+ID = Vector2(23, 20)
+WEIGHT = 5550
+
+[node name="24,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, 100)
+HEX_RADIUS = 10
+INDEX = 277
+ID = Vector2(24, 20)
+WEIGHT = 2824
+
+[node name="25,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, 100)
+HEX_RADIUS = 10
+INDEX = 278
+ID = Vector2(25, 20)
+WEIGHT = 3802
+
+[node name="26,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, 100)
+HEX_RADIUS = 10
+INDEX = 279
+ID = Vector2(26, 20)
+WEIGHT = 6835
+
+[node name="27,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, 100)
+HEX_RADIUS = 10
+INDEX = 280
+ID = Vector2(27, 20)
+WEIGHT = 7425
+
+[node name="28,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, 100)
+HEX_RADIUS = 10
+INDEX = 281
+ID = Vector2(28, 20)
+WEIGHT = 4064
+
+[node name="29,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, 100)
+HEX_RADIUS = 10
+INDEX = 282
+ID = Vector2(29, 20)
+WEIGHT = 4427
+
+[node name="30,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, 100)
+HEX_RADIUS = 10
+INDEX = 283
+ID = Vector2(30, 20)
+WEIGHT = 7871
+
+[node name="31,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, 100)
+HEX_RADIUS = 10
+INDEX = 284
+ID = Vector2(31, 20)
+WEIGHT = 1454
+
+[node name="32,20" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, 100)
+HEX_RADIUS = 10
+INDEX = 285
+ID = Vector2(32, 20)
+WEIGHT = 9073
+
+[node name="16,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, 115)
+HEX_RADIUS = 10
+INDEX = 286
+ID = Vector2(16, 21)
+WEIGHT = 9820
+
+[node name="17,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, 115)
+HEX_RADIUS = 10
+INDEX = 287
+ID = Vector2(17, 21)
+WEIGHT = 724
+
+[node name="18,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, 115)
+HEX_RADIUS = 10
+INDEX = 288
+ID = Vector2(18, 21)
+WEIGHT = 1572
+
+[node name="19,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, 115)
+HEX_RADIUS = 10
+INDEX = 289
+ID = Vector2(19, 21)
+WEIGHT = 5516
+
+[node name="20,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, 115)
+HEX_RADIUS = 10
+INDEX = 290
+ID = Vector2(20, 21)
+WEIGHT = 9829
+
+[node name="21,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, 115)
+HEX_RADIUS = 10
+INDEX = 291
+ID = Vector2(21, 21)
+WEIGHT = 1710
+
+[node name="22,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, 115)
+HEX_RADIUS = 10
+INDEX = 292
+ID = Vector2(22, 21)
+WEIGHT = 1921
+
+[node name="23,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, 115)
+HEX_RADIUS = 10
+INDEX = 293
+ID = Vector2(23, 21)
+WEIGHT = 2454
+
+[node name="24,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, 115)
+HEX_RADIUS = 10
+INDEX = 294
+ID = Vector2(24, 21)
+WEIGHT = 2317
+
+[node name="25,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, 115)
+HEX_RADIUS = 10
+INDEX = 295
+ID = Vector2(25, 21)
+WEIGHT = 4934
+
+[node name="27,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, 115)
+HEX_RADIUS = 10
+INDEX = 296
+ID = Vector2(27, 21)
+WEIGHT = 9659
+
+[node name="28,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, 115)
+HEX_RADIUS = 10
+INDEX = 297
+ID = Vector2(28, 21)
+WEIGHT = 1367
+
+[node name="29,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, 115)
+HEX_RADIUS = 10
+INDEX = 298
+ID = Vector2(29, 21)
+WEIGHT = 4408
+
+[node name="30,21" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, 115)
+HEX_RADIUS = 10
+INDEX = 299
+ID = Vector2(30, 21)
+WEIGHT = 3817
+
+[node name="17,22" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, 130)
+HEX_RADIUS = 10
+INDEX = 300
+ID = Vector2(17, 22)
+WEIGHT = 4468
+
+[node name="18,22" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, 130)
+HEX_RADIUS = 10
+INDEX = 301
+ID = Vector2(18, 22)
+WEIGHT = 7526
+
+[node name="19,22" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, 130)
+HEX_RADIUS = 10
+INDEX = 302
+ID = Vector2(19, 22)
+WEIGHT = 6070
+
+[node name="20,22" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, 130)
+HEX_RADIUS = 10
+INDEX = 303
+ID = Vector2(20, 22)
+WEIGHT = 5585
+
+[node name="21,22" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, 130)
+HEX_RADIUS = 10
+INDEX = 304
+ID = Vector2(21, 22)
+WEIGHT = 1925
+
+[node name="22,22" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, 130)
+HEX_RADIUS = 10
+INDEX = 305
+ID = Vector2(22, 22)
+WEIGHT = 1296
+
+[node name="23,22" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, 130)
+HEX_RADIUS = 10
+INDEX = 306
+ID = Vector2(23, 22)
+WEIGHT = 9777
+
+[node name="24,22" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, 130)
+HEX_RADIUS = 10
+INDEX = 307
+ID = Vector2(24, 22)
+WEIGHT = 6218
+
+[node name="22,23" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, 145)
+HEX_RADIUS = 10
+INDEX = 308
+ID = Vector2(22, 23)
+WEIGHT = 810
+
+[node name="23,23" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, 145)
+HEX_RADIUS = 10
+INDEX = 309
+ID = Vector2(23, 23)
+WEIGHT = 4426
+
+[node name="24,23" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, 145)
+HEX_RADIUS = 10
+INDEX = 310
+ID = Vector2(24, 23)
+WEIGHT = 5143
+
+[node name="35,23" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(214.878, 145)
+HEX_RADIUS = 10
+INDEX = 311
+ID = Vector2(35, 23)
+WEIGHT = 9237
+
+[node name="35,24" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(206.218, 160)
+HEX_RADIUS = 10
+INDEX = 312
+ID = Vector2(35, 24)
+WEIGHT = 1402
+
+[node name="36,24" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(223.538, 160)
+HEX_RADIUS = 10
+INDEX = 313
+ID = Vector2(36, 24)
+WEIGHT = 3951
+
+[node name="34,25" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(197.558, 175)
+HEX_RADIUS = 10
+INDEX = 314
+ID = Vector2(34, 25)
+WEIGHT = 8867
+
+[node name="35,25" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(214.878, 175)
+HEX_RADIUS = 10
+INDEX = 315
+ID = Vector2(35, 25)
+WEIGHT = 4752
+
+[node name="35,26" parent="." instance=ExtResource("2_3q6kj")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(206.218, 190)
+HEX_RADIUS = 10
+INDEX = 316
+ID = Vector2(35, 26)
+WEIGHT = 8880

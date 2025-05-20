@@ -1,6 +1,7 @@
 extends Node2D
 const HEX_SIZE = 10
-const GEOJSON_PATH = "res://GAME/Ressources/Game Data/switzerland.geojson"
+const GEOJSON_PATH = "res://GAME/Ressources/Game Data/Map/france.geojson"
+const NAME = "french"
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
 
 var country_polygons = []
@@ -10,7 +11,7 @@ var lat_max=-100000.0
 var lat_min=100000.0
 var array_hex : Dictionary
 var hex_map = []
-var NAME = "switzerland"
+
 
 func _ready():
 	load_geojson()
