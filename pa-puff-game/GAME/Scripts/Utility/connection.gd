@@ -127,6 +127,8 @@ func _on_menu_bar_item_selected(index: int) -> void:
 	rpc("set_country_id",index)
 
 func _on_choice_pressed() -> void:
+	$Country_box.visible=false
+	$Choice.visible=false
 	rpc("init_map")
 	init_game()
 	

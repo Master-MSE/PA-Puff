@@ -27,4 +27,3 @@ polygon = PackedVector2Array(-0.287922, -48.9992, 42.2553, -24.7487, 42.5432, 24
 uv = PackedVector2Array(166, 125, 240, 31, 411, 31, 465, 131, 404, 256, 252, 259)
 
 [node name="UI_Hexagon" parent="." instance=ExtResource("2_s4rbs")]
-visible = false

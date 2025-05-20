@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Constants="*res://GAME/Scripts/Utility/constants.gd"
 CardManager="*res://GAME/Scripts/Gameplay/Cards/card_manager.gd"
+BoardManager="*res://GAME/Scripts/Gameplay/map/board_manager.gd"
 
 [editor]
 

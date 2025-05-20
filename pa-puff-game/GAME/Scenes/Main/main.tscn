@@ -28,7 +28,7 @@ script = ExtResource("3_adpu7")
 playername = "Player 1"
 
 [node name="Player2" parent="." instance=ExtResource("4_g718x")]
-position = Vector2(950, 300)
+position = Vector2(-1, 258)
 playername = "Player 2"
 PLAYER_HOST = false
 

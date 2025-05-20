@@ -38,7 +38,7 @@ func _on_button_buy_pressed() -> void:
 
 
 func _on_button_sell_pressed() -> void:
-	if get_parent().get_parent().get_parent().player_info == 1:
+	if get_parent().get_parent().player_info == 1:
 		if get_parent().usineA > 0:
 			get_parent().get_parent().get_parent().player1.give_money(1000)
 			get_parent().call_add_usineA(-1)
