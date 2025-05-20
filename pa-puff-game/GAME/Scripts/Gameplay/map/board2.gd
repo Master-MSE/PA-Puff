@@ -7,8 +7,7 @@ const card_scene = preload("res://GAME/Scenes/Cards/Card.tscn")
 
 const HEX_SIZE = 20
 
-var player1:Node2D
-var player2:Node2D
+
 var array_hex : Dictionary
 var tab_conection : Dictionary
 
@@ -118,9 +117,6 @@ func update_infuence()-> void:
 	get_parent().player2.set_global_influence(inf_b_g)
 		
 
-func set_player(player1:Node2D,player2:Node2D)->void:
-	self.player1=player1
-	self.player2=player2
 	
 func calcul_money()->void:
 

@@ -75,6 +75,7 @@ func join_game(address = ""):
 	peer.create_client(address, PORT)
 	peer.get_peer(1).set_timeout(0, 0, 1000)
 	get_parent().player_info=2
+	get_parent().set_player_hand()
 	multiplayer.multiplayer_peer = peer
 	multiplayer.connection_failed.connect(Callable(self, "_on_connection_failed"))
 	multiplayer.connected_to_server.connect(Callable(self, "_on_connection_success"))
@@ -108,6 +109,7 @@ func create_game():
 	peer.create_server(PORT, MAX_CONNECTIONS)
 	multiplayer.multiplayer_peer = peer
 	get_parent().player_info=1
+	get_parent().set_player_hand()
 
 	
 	
