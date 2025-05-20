@@ -1,7 +1,5 @@
 extends Control
 
-
-
 static var usine_price=1000
 
 func _ready() -> void:

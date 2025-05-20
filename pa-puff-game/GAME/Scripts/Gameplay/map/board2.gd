@@ -79,7 +79,7 @@ func update_infuence()-> void:
 			inf_c+=array_hex[connection].get_infuence_C() * weight_c
 			
 		var sum_inf = inf_a + inf_b + inf_c
-		if not sum_inf == 0:
+		if  sum_inf > 0.1:
 			inf_a/=sum_inf
 			inf_b/=sum_inf
 			inf_c/=sum_inf
@@ -94,7 +94,7 @@ func update_infuence()-> void:
 		new_b+=array_hex[i].get_internal_influence_B()
 		
 		var total_sum = new_a + new_b + new_c
-		if not total_sum==0:
+		if  total_sum > 0.1:
 			new_a/=total_sum
 			new_b/=total_sum
 			new_c/=total_sum

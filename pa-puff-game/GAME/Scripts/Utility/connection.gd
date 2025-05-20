@@ -66,7 +66,7 @@ func init_game():
 		game_scene = italy_field_scene.instantiate()
 	
 	game_scene.name="board"
-	game_scene.position=Vector2(600,300) 
+	game_scene.position=Vector2(500,300) 
 	get_parent().add_child(game_scene)
 
 func join_game(address = ""):

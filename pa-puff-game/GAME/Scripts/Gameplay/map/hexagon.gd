@@ -3,13 +3,17 @@ extends StaticBody2D
 @onready var texture_base : Polygon2D = $Texture_base
 @onready var texture_border : Polygon2D = $Texture_border
 @onready var collision : CollisionPolygon2D = $CollisionPolygon2D
+@onready var ui : Control = $UI_Hexagon
 
 @export var HEX_RADIUS = 49
 @export var INDEX = 0
 @export var ID : Vector2 = Vector2(0,0)
 @export var WEIGHT = 1000.0
+@export var UI_POSTION : Vector2 = Vector2(0,0)
 
 static var lock_UI :bool = false
+
+
 
 var inf_A :float = 0.0
 var inf_B :float = 0.0
@@ -30,6 +34,7 @@ func _ready():
 	if not self.input_event.is_connected(_on_input_event):
 		self.input_event.connect(_on_input_event)
 	create_hex(HEX_RADIUS,PI / 2)
+	set_position_UI(UI_POSTION)
 	
 func create_hex(radius:float,base_angle : float=0)->void:
 	var points = []
@@ -122,5 +127,5 @@ func get_cost_B(maintenance)->float:
 	return self.usineB*maintenance
 	
 func set_position_UI(_position: Vector2)->void:
-	$UI_Hexagon.position = _position
+	ui.position = _position
 	

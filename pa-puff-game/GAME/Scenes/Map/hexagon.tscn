@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://j0a2ro2dd2us"]
 
-[ext_resource type="Script" uid="uid://bnxf2ewugoffp" path="res://GAME/Scripts/Gameplay/map/hexagon.gd" id="1_grvpm"]
+[ext_resource type="Script" uid="uid://dl26gwrm46t4q" path="res://GAME/Scripts/Gameplay/map/hexagon.gd" id="1_grvpm"]
 [ext_resource type="PackedScene" uid="uid://bxvbrbsdtw58r" path="res://GAME/Scenes/Map/ui_hexagon.tscn" id="2_s4rbs"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vf11p"]

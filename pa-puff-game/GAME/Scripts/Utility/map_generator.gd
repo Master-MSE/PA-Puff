@@ -140,10 +140,11 @@ func create_hex_grid(root : Node2D):
 				var hex = HEX_SCENE.instantiate()
 				hex.position = world_pos
 				hex.HEX_RADIUS = HEX_SIZE
+				hex.UI_POSTION=Vector2(650,0)-Vector2(x,y)
 				hex.INDEX = index
 				hex.ID = Vector2(q,r)
 				hex.name = "%d,%d"%[q,r]
-				hex.WEIGHT = randi_range(100, 10000)
+				hex.WEIGHT = randi_range(1,3)*1000
 				root.add_child(hex)
 				hex.owner = root
 				add_hexagon(Vector2(q,r),hex)
