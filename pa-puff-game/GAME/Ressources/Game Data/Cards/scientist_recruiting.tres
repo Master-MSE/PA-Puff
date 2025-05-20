@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CardScientistsRecruit" load_steps=2 format=3 uid="uid://c8wycbju83wc1"]
+
+[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/Cards/Cards Resources/scientists_recruit.gd" id="1_nohw7"]
+
+[resource]
+script = ExtResource("1_nohw7")
+title = "Scientists Recruiting"
+description = "Recruits scientists to improve your products.
+Cost : -10% revenue
+Reward : +10% influence"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardFakeStudy" load_steps=2 format=3 uid="uid://51uvs634y8vt"]
+
+[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/Cards/Cards Resources/fake_study.gd" id="1_umx54"]
+
+[resource]
+script = ExtResource("1_umx54")
+price = 10000
+title = "Fake study"
+description = "Pay for a scientific study full of lies ! Careful, it might come to bite back !
+Cost : 10000
+Reward +/- 50% influence"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CardStaffLayoff" load_steps=2 format=3 uid="uid://bu8iwxilgtik"]
+
+[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/Cards/Cards Resources/staff_layoff.gd" id="1_cgtrb"]
+
+[resource]
+script = ExtResource("1_cgtrb")
+title = "Staff Layoff"
+description = "Layoff a good chunk of your staff.
+Cost : -30% influence
+Reward : +30% revenue"

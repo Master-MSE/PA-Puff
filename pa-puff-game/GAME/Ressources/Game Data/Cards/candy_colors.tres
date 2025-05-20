@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardCandyColors" load_steps=2 format=3 uid="uid://bjpn385o6knra"]
+
+[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/Cards/Cards Resources/candy_colors.gd" id="1_a6yov"]
+
+[resource]
+script = ExtResource("1_a6yov")
+price = 2000
+title = "Candy colored vapes"
+description = "Your scientists found out that vapes with crazy colors like candy will interesting young people.
+Cost : 2000
+Reward : +20% influence"
