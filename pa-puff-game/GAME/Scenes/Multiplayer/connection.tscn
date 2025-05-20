@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bnnf8r7gco841"]
+[gd_scene load_steps=5 format=3 uid="uid://bnnf8r7gco841"]
 
-[ext_resource type="Script" path="res://GAME/Scripts/Utility/connection.gd" id="1_tol2y"]
-[ext_resource type="PackedScene" path="res://GAME/Scenes/Map/host_board.tscn" id="2_m458i"]
-[ext_resource type="PackedScene" path="res://GAME/Scenes/Map/join_board.tscn" id="3_8vgng"]
+[ext_resource type="Script" uid="uid://cpsdalkxgvmgx" path="res://GAME/Scripts/Utility/connection.gd" id="1_tol2y"]
+[ext_resource type="PackedScene" uid="uid://6auelw8m0urt" path="res://GAME/Scenes/Map/switzerland_board.tscn" id="2_olk71"]
+[ext_resource type="PackedScene" path="res://GAME/Scenes/Map/french_board.tscn" id="3_olk71"]
+[ext_resource type="Script" uid="uid://c3ltm5jm6oohj" path="res://GAME/Scripts/Utility/contol_text.gd" id="4_olk71"]
 
 [node name="Connection" type="Control"]
 layout_mode = 3
@@ -12,8 +13,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_tol2y")
-host_field_scene = ExtResource("2_m458i")
-join_field_scene = ExtResource("3_8vgng")
+switzerland_field_scene = ExtResource("2_olk71")
+french_field_scene = ExtResource("3_olk71")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -61,6 +62,50 @@ offset_right = 613.0
 offset_bottom = 463.0
 text = "Start"
 
+[node name="Address" type="Label" parent="."]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 356.0
+offset_right = 409.0
+offset_bottom = 386.0
+
+[node name="Address_join" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 613.0
+offset_top = 370.0
+offset_right = 1086.0
+offset_bottom = 405.0
+shortcut_keys_enabled = false
+script = ExtResource("4_olk71")
+
+[node name="Country_box" type="OptionButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 170.0
+offset_top = 380.0
+offset_right = 330.0
+offset_bottom = 411.0
+selected = 0
+item_count = 3
+popup/item_0/text = "Switzerland"
+popup/item_0/id = 0
+popup/item_1/text = "French"
+popup/item_1/id = 1
+popup/item_2/text = "Italie"
+popup/item_2/id = 2
+
+[node name="Choice" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 360.0
+offset_top = 380.0
+offset_right = 460.0
+offset_bottom = 411.0
+text = "Choise"
+
 [connection signal="pressed" from="Join" to="." method="_on_join_pressed"]
 [connection signal="pressed" from="Host" to="." method="_on_host_pressed"]
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="text_changed" from="Address_join" to="Address_join" method="_on_text_changed"]
+[connection signal="item_selected" from="Country_box" to="." method="_on_menu_bar_item_selected"]
+[connection signal="pressed" from="Choice" to="." method="_on_choice_pressed"]

@@ -6,7 +6,7 @@ class_name Player
 @export var PLAYER_HOST = true
 
 var money=0.0
-var reputation=0.0
+var reputation=100.0
 var global_influence=0.0
 var total_usine=0
 

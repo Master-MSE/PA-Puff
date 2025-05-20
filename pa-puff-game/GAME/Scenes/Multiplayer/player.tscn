@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dtyf63w0ot123"]
 
-[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/Multiplayer/player.gd" id="1_3g21w"]
-[ext_resource type="Script" path="res://GAME/Scripts/UI/show_player_info.gd" id="2_nccnk"]
+[ext_resource type="Script" uid="uid://giu1bxjqpfao" path="res://GAME/Scripts/Gameplay/Multiplayer/player.gd" id="1_3g21w"]
+[ext_resource type="Script" uid="uid://b4pidava3cuc2" path="res://GAME/Scripts/UI/show_player_info.gd" id="2_nccnk"]
 
 [node name="player" type="Node2D"]
 script = ExtResource("1_3g21w")
