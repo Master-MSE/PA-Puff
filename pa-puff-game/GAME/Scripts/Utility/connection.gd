@@ -117,7 +117,7 @@ func _on_peer_connected(peer_id):
 	if get_parent().player_info==1:
 		$Country_box.visible=true
 		$Choice.visible=true
-		$Text.text="Choise country"
+		$Text.text="Please select the country"
 		
 		
 func _on_peer_disconnected(peer_id):

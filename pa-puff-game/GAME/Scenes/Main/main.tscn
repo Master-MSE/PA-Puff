@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://bqn04lelfcapw"]
 
-[ext_resource type="Script" uid="uid://caborm26f4c2l" path="res://GAME/Scripts/Gameplay/main/main.gd" id="1_40uvt"]
+[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/main/main.gd" id="1_40uvt"]
 [ext_resource type="PackedScene" uid="uid://7f0g3kybiqqs" path="res://GAME/Scenes/Cards/Hand.tscn" id="2_giqo0"]
-[ext_resource type="Script" uid="uid://drv08ddvvxsj3" path="res://GAME/Scripts/Utility/fps.gd" id="3_adpu7"]
+[ext_resource type="Script" path="res://GAME/Scripts/Utility/fps.gd" id="3_adpu7"]
 [ext_resource type="PackedScene" uid="uid://dtyf63w0ot123" path="res://GAME/Scenes/Multiplayer/player.tscn" id="4_g718x"]
 [ext_resource type="PackedScene" uid="uid://bnnf8r7gco841" path="res://GAME/Scenes/Multiplayer/connection.tscn" id="5_6xawj"]
 

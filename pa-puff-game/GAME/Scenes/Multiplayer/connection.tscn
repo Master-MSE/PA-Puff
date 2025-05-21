@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://bnnf8r7gco841"]
 
-[ext_resource type="Script" uid="uid://cpsdalkxgvmgx" path="res://GAME/Scripts/Utility/connection.gd" id="1_tol2y"]
-[ext_resource type="PackedScene" uid="uid://6auelw8m0urt" path="res://GAME/Scenes/Map/switzerland_board.tscn" id="2_olk71"]
+[ext_resource type="Script" path="res://GAME/Scripts/Utility/connection.gd" id="1_tol2y"]
+[ext_resource type="PackedScene" uid="uid://pv2j44gxxq1l" path="res://GAME/Scenes/Map/switzerland_board.tscn" id="2_olk71"]
 [ext_resource type="PackedScene" path="res://GAME/Scenes/Map/french_board.tscn" id="3_olk71"]
-[ext_resource type="Script" uid="uid://c3ltm5jm6oohj" path="res://GAME/Scripts/Utility/contol_text.gd" id="4_olk71"]
+[ext_resource type="Script" path="res://GAME/Scripts/Utility/contol_text.gd" id="4_olk71"]
 
 [node name="Connection" type="Control"]
 layout_mode = 3
@@ -88,7 +88,6 @@ offset_bottom = 411.0
 selected = 0
 item_count = 3
 popup/item_0/text = "Switzerland"
-popup/item_0/id = 0
 popup/item_1/text = "French"
 popup/item_1/id = 1
 popup/item_2/text = "Italie"
@@ -101,7 +100,7 @@ offset_left = 360.0
 offset_top = 380.0
 offset_right = 460.0
 offset_bottom = 411.0
-text = "Choise"
+text = "Select"
 
 [connection signal="pressed" from="Join" to="." method="_on_join_pressed"]
 [connection signal="pressed" from="Host" to="." method="_on_host_pressed"]
