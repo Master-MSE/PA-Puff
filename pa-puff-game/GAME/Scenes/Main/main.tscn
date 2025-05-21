@@ -1,19 +1,17 @@
-[gd_scene load_steps=8 format=3 uid="uid://bqn04lelfcapw"]
+[gd_scene load_steps=7 format=3 uid="uid://bqn04lelfcapw"]
 
-[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/main/main.gd" id="1_40uvt"]
-[ext_resource type="PackedScene" uid="uid://ds0dbryg7xr5m" path="res://GAME/Scenes/Map/temp_card.tscn" id="2_1qnt6"]
+[ext_resource type="Script" uid="uid://caborm26f4c2l" path="res://GAME/Scripts/Gameplay/main/main.gd" id="1_40uvt"]
 [ext_resource type="PackedScene" uid="uid://7f0g3kybiqqs" path="res://GAME/Scenes/Cards/Hand.tscn" id="2_giqo0"]
-[ext_resource type="Script" path="res://GAME/Scripts/Utility/fps.gd" id="3_adpu7"]
+[ext_resource type="Script" uid="uid://drv08ddvvxsj3" path="res://GAME/Scripts/Utility/fps.gd" id="3_adpu7"]
 [ext_resource type="PackedScene" uid="uid://dtyf63w0ot123" path="res://GAME/Scenes/Multiplayer/player.tscn" id="4_g718x"]
 [ext_resource type="PackedScene" uid="uid://bnnf8r7gco841" path="res://GAME/Scenes/Multiplayer/connection.tscn" id="5_6xawj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6xawj"]
 bg_color = Color(0, 0, 0, 0.721569)
 
-[node name="Main" type="Node2D" node_paths=PackedStringArray("hand_player_1", "hand_player_2")]
+[node name="Main" type="Node2D" node_paths=PackedStringArray("hand_player")]
 script = ExtResource("1_40uvt")
-hand_player_1 = NodePath("HUD/Screen/HandPlayer1Anchor/HandPlayer1")
-hand_player_2 = NodePath("HUD/Screen/HandPlayer2Anchor/HandPlayer2")
+hand_player = NodePath("HUD/Screen/HandPlayer1Anchor/HandPlayer")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
@@ -30,11 +28,15 @@ script = ExtResource("3_adpu7")
 playername = "Player 1"
 
 [node name="Player2" parent="." instance=ExtResource("4_g718x")]
-position = Vector2(950, 300)
+position = Vector2(-1, 258)
 playername = "Player 2"
 PLAYER_HOST = false
 
+[node name="Connection" parent="." instance=ExtResource("5_6xawj")]
+top_level = true
+
 [node name="HUD" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Screen" type="MarginContainer" parent="HUD"]
 anchors_preset = 15
@@ -49,27 +51,16 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="HandPlayer1" parent="HUD/Screen/HandPlayer1Anchor" node_paths=PackedStringArray("player") instance=ExtResource("2_giqo0")]
+[node name="HandPlayer" parent="HUD/Screen/HandPlayer1Anchor" node_paths=PackedStringArray("player") instance=ExtResource("2_giqo0")]
 visible = false
 layout_mode = 1
-offset_left = -506.0
-offset_right = 506.0
+offset_left = -612.0
+offset_right = 609.0
 offset_bottom = 204.0
 player = NodePath("../../../../Player1")
 
-[node name="HandPlayer2Anchor" type="Control" parent="HUD/Screen"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-
-[node name="HandPlayer2" parent="HUD/Screen/HandPlayer2Anchor" node_paths=PackedStringArray("player") instance=ExtResource("2_giqo0")]
-visible = false
-layout_mode = 1
-offset_top = -200.0
-offset_bottom = 200.0
-player = NodePath("../../../../Player2")
-
 [node name="VBoxContainer" type="VBoxContainer" parent="HUD/Screen"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
@@ -85,37 +76,7 @@ custom_minimum_size = Vector2(300, 100)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
-text = "Hand Player 1"
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="HUD/Screen"]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-
-[node name="BtnDraw2" type="Button" parent="HUD/Screen/VBoxContainer2"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-size_flags_horizontal = 8
-
-[node name="BtnHand2" type="Button" parent="HUD/Screen/VBoxContainer2"]
-custom_minimum_size = Vector2(300, 100)
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-text = "Hand Player 2
-"
-
-[node name="Connection" parent="." instance=ExtResource("5_6xawj")]
-top_level = true
-
-[node name="Card_rival" parent="." instance=ExtResource("2_1qnt6")]
-visible = false
-position = Vector2(550, 60)
-rotation = 3.14159
-
-[node name="Card_me" parent="." instance=ExtResource("2_1qnt6")]
-visible = false
-position = Vector2(550, 550)
+text = "Hand Player"
 
 [node name="Time_end" type="Timer" parent="."]
 wait_time = 60.0
@@ -140,6 +101,4 @@ vertical_alignment = 1
 
 [connection signal="button_up" from="HUD/Screen/VBoxContainer/BtnDraw1" to="." method="_on_btn_draw_1_button_up"]
 [connection signal="button_up" from="HUD/Screen/VBoxContainer/BtnHand1" to="." method="_on_btn_hand_1_button_up"]
-[connection signal="button_up" from="HUD/Screen/VBoxContainer2/BtnDraw2" to="." method="_on_btn_draw_2_button_up"]
-[connection signal="button_up" from="HUD/Screen/VBoxContainer2/BtnHand2" to="." method="_on_btn_hand_2_button_up"]
 [connection signal="timeout" from="Time_end" to="." method="_on_time_end_timeout"]

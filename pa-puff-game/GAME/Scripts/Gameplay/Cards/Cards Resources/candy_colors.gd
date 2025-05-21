@@ -9,3 +9,4 @@ func execute(player: Player) -> void:
 	
 	player.take_money(price)
 	player.influence_factor += 0.2
+	player.set_synchronize()

@@ -13,3 +13,5 @@ func execute(player: Player) -> void:
 		player.influence_factor -= 0.5
 	else:
 		player.influence_factor += 0.5
+	
+	player.set_synchronize()
