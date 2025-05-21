@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="CardScientistsRecruit" load_steps=2 format=3 uid="uid://c8wycbju83wc1"]
+[gd_resource type="Resource" script_class="CardScientistsRecruit" load_steps=3 format=3 uid="uid://c8wycbju83wc1"]
 
+[ext_resource type="Texture2D" uid="uid://bvtsr8l51aify" path="res://GAME/Assets/Sprites/Cards/scientist_recruit.png" id="1_dboef"]
 [ext_resource type="Script" path="res://GAME/Scripts/Gameplay/Cards/Cards Resources/scientists_recruit.gd" id="1_nohw7"]
 
 [resource]
@@ -8,3 +9,4 @@ title = "Scientists Recruiting"
 description = "Recruits scientists to improve your products.
 Cost : -10% revenue
 Reward : +10% influence"
+logo = ExtResource("1_dboef")
