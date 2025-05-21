@@ -1,10 +1,13 @@
-[gd_resource type="Resource" script_class="CardInfluencerCampaign" load_steps=3 format=3 uid="uid://bi7gkmpi4w0aj"]
+[gd_resource type="Resource" script_class="CardInfluencerCampain" load_steps=3 format=3 uid="uid://bi7gkmpi4w0aj"]
 
 [ext_resource type="Texture2D" uid="uid://diw2htv70srmq" path="res://GAME/Assets/Sprites/Cards/influencer_campaign.png" id="1_0sed1"]
 [ext_resource type="Script" path="res://GAME/Scripts/Gameplay/Cards/Cards Resources/influencer_campaign.gd" id="1_yv810"]
 
 [resource]
 script = ExtResource("1_yv810")
+price = 5000
 title = "Influencer Campaign"
-description = "Instantly gives the player 2000 money"
+description = "Recruit influencers to talk about your vapes !
+Cost : 5000
+Reward : +30% influence"
 logo = ExtResource("1_0sed1")
