@@ -7,11 +7,13 @@ extends Node2D
 
 @export var hand_player : Hand
 	
-func set_player_hand():
+func set_player():
 	if player_info == 1:
 		hand_player.player=player1
+		player1.show()
 	else:
 		hand_player.player=player2
+		player2.show()
 
 func _on_btn_hand_1_button_up() -> void:
 	if hand_player.visible:

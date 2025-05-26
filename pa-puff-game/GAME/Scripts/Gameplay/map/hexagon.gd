@@ -27,6 +27,11 @@ var usineA : int =0
 var usineB : int =0
 
 func _ready():
+	var scale_ = HEX_RADIUS/25.0
+	$UsineA.scale = Vector2(scale_,scale_)
+	$UsineA.position = Vector2(10*scale_,0)
+	$UsineB.scale = Vector2(-scale_,scale_)
+	$UsineB.position = Vector2(-10*scale_,0)
 	if not self.mouse_entered.is_connected(_on_mouse_entered):
 		self.mouse_entered.connect(_on_mouse_entered)
 	if not self.mouse_exited.is_connected(_on_mouse_exited):
@@ -45,6 +50,7 @@ func create_hex(radius:float,base_angle : float=0)->void:
 		points.append(Vector2(x, y))
 	texture_base.polygon=points
 	collision.polygon=points
+	points = []
 	for i in range(6):
 		var angle = i * PI / 3+base_angle;
 		var x = (radius+1) * cos(angle)
@@ -54,7 +60,14 @@ func create_hex(radius:float,base_angle : float=0)->void:
 	
 func _process(delta: float) -> void:
 	texture_base.color=Color(1-inf_B,1-(inf_A+inf_B),1-inf_A)
-
+	if usineA > 0 :
+		$UsineA.show()
+	else:
+		$UsineA.hide()
+	if usineB > 0 :
+		$UsineB.show()
+	else:
+		$UsineB.hide()
 	
 	
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:

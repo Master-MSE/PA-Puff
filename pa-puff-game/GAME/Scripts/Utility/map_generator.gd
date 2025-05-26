@@ -1,6 +1,6 @@
 extends Node2D
 const HEX_SIZE = 10
-const GEOJSON_PATH = "res://GAME/Ressources/Game Data/Map/france.geojson"
+const GEOJSON_PATH = "res://GAME/Ressources/Game Data/Map/french.geojson"
 const NAME = "french"
 const HEX_SCENE = preload("res://GAME/Scenes/Map/hexagon.tscn")
 
@@ -9,11 +9,14 @@ var lon_max=-100000.0
 var lon_min=100000.0
 var lat_max=-100000.0
 var lat_min=100000.0
+var ui_position = Vector2(730,0)
 var array_hex : Dictionary
 var hex_map = []
-
+var hex_border = []
 
 func _ready():
+	hex_border.append(Vector2(0,0))
+	create_hex(HEX_SIZE/2.0,PI/2.0)
 	load_geojson()
 	var root = Node2D.new()
 	root.name = "Board"
@@ -26,7 +29,6 @@ func _ready():
 	root.set_script(load("res://GAME/Scripts/Gameplay/map/board2.gd"))
 	root.add_child(timer)
 	timer.owner=root
-		
 	create_hex_grid(root)
 	
 	var packed_scene = PackedScene.new()
@@ -44,6 +46,18 @@ func _process(delta: float) -> void:
 func _draw():
 	for poly in country_polygons:
 		draw_polygon(rectifing_polygone(poly), [Color.GREEN])
+		
+		
+func create_hex(radius:float,base_angle : float=0)->void:
+
+	for i in range(6):
+		var angle = i * PI / 3+base_angle;
+		var x = radius * cos(angle)
+		var y = radius * sin(angle)
+		hex_border.append(Vector2(x, y))
+
+
+
 	
 func load_geojson():
 	var file = FileAccess.open(GEOJSON_PATH, FileAccess.READ)
@@ -78,8 +92,10 @@ func load_geojson():
 
 func is_point_inside_polygons(p: Vector2) -> bool:
 	for poly in country_polygons:
-		if Geometry2D.is_point_in_polygon(p, rectifing_polygone(poly)):
-			return true
+		for point in hex_border:
+			var test_point = p + point
+			if Geometry2D.is_point_in_polygon(test_point, rectifing_polygone(poly)):
+				return true
 	return false
 	
 func rectifing_polygone(_poly: Array)-> Array:
@@ -140,7 +156,7 @@ func create_hex_grid(root : Node2D):
 				var hex = HEX_SCENE.instantiate()
 				hex.position = world_pos
 				hex.HEX_RADIUS = HEX_SIZE
-				hex.UI_POSTION=Vector2(650,0)-Vector2(x,y)
+				hex.UI_POSTION=ui_position-Vector2(x,y)
 				hex.INDEX = index
 				hex.ID = Vector2(q,r)
 				hex.name = "%d,%d"%[q,r]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bxvbrbsdtw58r"]
 
-[ext_resource type="Script" uid="uid://bwpaml2kp4kml" path="res://GAME/Scripts/UI/pie_chart.gd" id="1_6mlnf"]
-[ext_resource type="Script" uid="uid://d34kurpb27k2u" path="res://GAME/Scripts/UI/ui_hexagon.gd" id="1_530we"]
+[ext_resource type="Script" uid="uid://05h0wxf5f54l" path="res://GAME/Scripts/UI/pie_chart.gd" id="1_6mlnf"]
+[ext_resource type="Script" uid="uid://ctoac4sjnbgxi" path="res://GAME/Scripts/UI/ui_hexagon.gd" id="1_530we"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fb7e6"]
 bg_color = Color(0.6, 0.6, 0.6, 0.811765)
