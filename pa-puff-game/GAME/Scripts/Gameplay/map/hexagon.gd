@@ -91,15 +91,11 @@ func add_usineB(value,index):
 
 func _on_mouse_entered() -> void:
 	print("I: ",self.INDEX," P: ",self.WEIGHT)
-	self.z_index=1
-	#create_hex(HEX_RADIUS+5,PI / 2)
 	if not lock_UI:
 		$UI_Hexagon.visible=true
 	
 	
 func _on_mouse_exited() -> void:
-	self.z_index=0
-	#create_hex(HEX_RADIUS,PI / 2)
 	if not lock_UI:
 		$UI_Hexagon.visible=false
 	
@@ -122,9 +118,9 @@ func update_influence()->void:
 	
 	
 func get_internal_influence_A()->float:
-	return self.usineA*Constants.INFLUENCE_FACTOR
+	return self.usineA*Constants.INTERNAL_INFLUENCE_FACTOR
 func get_internal_influence_B()->float:
-	return self.usineB*Constants.INFLUENCE_FACTOR
+	return self.usineB*Constants.INTERNAL_INFLUENCE_FACTOR
 	
 func get_weight()->float:
 	return self.WEIGHT

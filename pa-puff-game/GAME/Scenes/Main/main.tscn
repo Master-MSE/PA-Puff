@@ -84,7 +84,7 @@ size_flags_vertical = 8
 text = "Hand Player"
 
 [node name="Time_end" type="Timer" parent="."]
-wait_time = 60.0
+wait_time = 180.0
 one_shot = true
 
 [node name="Win" type="Label" parent="."]
@@ -92,12 +92,13 @@ visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 203.0
-offset_top = 149.0
-offset_right = 949.0
-offset_bottom = 466.0
+offset_left = 47.0
+offset_top = 42.0
+offset_right = 1118.0
+offset_bottom = 609.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 0
 theme_override_font_sizes/font_size = 96
 theme_override_styles/normal = SubResource("StyleBoxFlat_6xawj")
 text = "Time out"

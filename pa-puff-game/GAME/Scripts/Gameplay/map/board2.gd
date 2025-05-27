@@ -134,8 +134,6 @@ var money_A=0.0
 var money_B=0.0
 
 func show_money() -> void:
-	var old_money_A=money_A
-	var old_money_B=money_B
 	money_A=get_parent().player1.check_money()
 	money_B=get_parent().player2.check_money()
 
