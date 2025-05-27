@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bnnf8r7gco841"]
+[gd_scene load_steps=6 format=3 uid="uid://bnnf8r7gco841"]
 
-[ext_resource type="Script" path="res://GAME/Scripts/Utility/connection.gd" id="1_tol2y"]
-[ext_resource type="PackedScene" uid="uid://pv2j44gxxq1l" path="res://GAME/Scenes/Map/switzerland_board.tscn" id="2_olk71"]
+[ext_resource type="Script" uid="uid://be5k7p5yjw3jk" path="res://GAME/Scripts/Utility/connection.gd" id="1_tol2y"]
+[ext_resource type="PackedScene" path="res://GAME/Scenes/Map/switzerland_board.tscn" id="2_olk71"]
 [ext_resource type="PackedScene" path="res://GAME/Scenes/Map/french_board.tscn" id="3_olk71"]
-[ext_resource type="Script" path="res://GAME/Scripts/Utility/contol_text.gd" id="4_olk71"]
+[ext_resource type="PackedScene" uid="uid://qdhecnm232jn" path="res://GAME/Scenes/Map/italy_board.tscn" id="4_m7ao8"]
+[ext_resource type="Script" uid="uid://e68b5s6exq74" path="res://GAME/Scripts/Utility/contol_text.gd" id="4_olk71"]
 
 [node name="Connection" type="Control"]
 layout_mode = 3
@@ -15,6 +16,7 @@ grow_vertical = 2
 script = ExtResource("1_tol2y")
 switzerland_field_scene = ExtResource("2_olk71")
 french_field_scene = ExtResource("3_olk71")
+italy_field_scene = ExtResource("4_m7ao8")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -88,6 +90,7 @@ offset_bottom = 411.0
 selected = 0
 item_count = 3
 popup/item_0/text = "Switzerland"
+popup/item_0/id = 0
 popup/item_1/text = "French"
 popup/item_1/id = 1
 popup/item_2/text = "Italie"

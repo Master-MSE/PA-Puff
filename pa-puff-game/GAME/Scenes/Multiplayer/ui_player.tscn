@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://blexi31wlb8bw"]
+
+[ext_resource type="Script" uid="uid://dvbjg168tjj77" path="res://GAME/Scripts/UI/ui_player.gd" id="1_fgnng"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fb7e6"]
+bg_color = Color(0.6, 0.6, 0.6, 0.811765)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+corner_radius_bottom_right = 20
+
+[node name="UI_Hexagon" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_fgnng")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 276.0
+offset_bottom = 80.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fb7e6")
+
+[node name="Money_text" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 10.0
+offset_right = 130.0
+offset_bottom = 35.0
+text = "Money"
+
+[node name="Reputation_text" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 40.0
+offset_right = 130.0
+offset_bottom = 65.0
+text = "Reputation"
+
+[node name="Money_value" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 10.0
+offset_right = 240.0
+offset_bottom = 35.0
+text = "0.0"
+
+[node name="Reputation_value" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 40.0
+offset_right = 240.0
+offset_bottom = 65.0
+text = "0.0"
