@@ -84,16 +84,24 @@ func set_winner(_winner:int) -> void:
 	winner=_winner
 
 func _on_time_end_timeout() -> void:
-	rpc("set_winner",0)
+	if player1.money>player2.money:
+		rpc("set_winner",3)
+	elif  player1.money < player2.money:
+		rpc("set_winner",4)
+	else :		
+		rpc("set_winner",0)
 	rpc("change_state",Constants.GameState.END)
 
 func show_winner():
 	$Win.visible=true
 	$Win.z_index=2
-	if winner == 0:
-		$Win.text = "Time out"
-	elif winner == 1:
+	if winner == 1:
 		$Win.text = "Player 1 win"
-	else :
+	elif winner == 2:
 		$Win.text = "Player 2 win"
-	
+	elif winner == 3:
+		$Win.text = "Time out \n Player 1 Win"
+	elif winner == 4:
+		$Win.text = "Time out \n Player 2 Win"
+	else:
+		$Win.text = "Time out \n Equality"

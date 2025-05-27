@@ -25,13 +25,13 @@ func _on_button_buy_pressed() -> void:
 		if usine_price < get_parent().get_parent().get_parent().player1.check_money():
 			get_parent().get_parent().get_parent().player1.take_money(usine_price)
 			get_parent().call_add_usineA(1)
-			usine_price+=1000
+			usine_price+=usine_price+1000
 			get_parent().get_parent().get_parent().player1.set_synchronize()
 	else:
 		if usine_price < get_parent().get_parent().get_parent().player2.check_money():
 			get_parent().get_parent().get_parent().player2.take_money(usine_price)
 			get_parent().call_add_usineB(1)
-			usine_price+=1000
+			usine_price+=usine_price+1000
 			get_parent().get_parent().get_parent().player2.set_synchronize()
 
 
@@ -40,13 +40,13 @@ func _on_button_sell_pressed() -> void:
 		if get_parent().usineA > 0:
 			get_parent().get_parent().get_parent().player1.give_money(1000)
 			get_parent().call_add_usineA(-1)
-			usine_price-=1000
+			usine_price=(usine_price-1000)/2
 			get_parent().get_parent().get_parent().player1.set_synchronize()
 	else :
 		if get_parent().usineB > 0:
 			get_parent().get_parent().get_parent().player2.give_money(1000)
 			get_parent().call_add_usineB(-1)
-			usine_price-=1000
+			usine_price=(usine_price-1000)/2
 			get_parent().get_parent().get_parent().player2.set_synchronize()
 
 

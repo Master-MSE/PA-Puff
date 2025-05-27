@@ -90,8 +90,8 @@ func update_infuence()-> void:
 		
 		
 		
-		new_a+=array_hex[i].get_internal_influence_A()
-		new_b+=array_hex[i].get_internal_influence_B()
+		new_a+=array_hex[i].get_internal_influence_A()*get_parent().player1.influence_factor
+		new_b+=array_hex[i].get_internal_influence_B()*get_parent().player2.influence_factor
 		
 		var total_sum = new_a + new_b + new_c
 		if  total_sum > 0.1:
@@ -134,8 +134,6 @@ var money_A=0.0
 var money_B=0.0
 
 func show_money() -> void:
-	var old_money_A=money_A
-	var old_money_B=money_B
 	money_A=get_parent().player1.check_money()
 	money_B=get_parent().player2.check_money()
 
