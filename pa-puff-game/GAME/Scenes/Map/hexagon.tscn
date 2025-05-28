@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://j0a2ro2dd2us"]
 
-[ext_resource type="Script" uid="uid://bnxf2ewugoffp" path="res://GAME/Scripts/Gameplay/map/hexagon.gd" id="1_grvpm"]
+[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/map/hexagon.gd" id="1_grvpm"]
 [ext_resource type="PackedScene" uid="uid://bxvbrbsdtw58r" path="res://GAME/Scenes/Map/ui_hexagon.tscn" id="2_s4rbs"]
 [ext_resource type="Texture2D" uid="uid://bxhwg8bltefth" path="res://GAME/Ressources/Game Data/Map/usine_a.png" id="3_x5p8c"]
 [ext_resource type="Texture2D" uid="uid://dyy568htyesmn" path="res://GAME/Ressources/Game Data/Map/usine_b.png" id="4_nxlnv"]
