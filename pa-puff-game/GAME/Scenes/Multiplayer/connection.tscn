@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://bnnf8r7gco841"]
+[gd_scene load_steps=9 format=3 uid="uid://bnnf8r7gco841"]
 
-[ext_resource type="Script" path="res://GAME/Scripts/Utility/connection.gd" id="1_tol2y"]
+[ext_resource type="Script" uid="uid://cpsdalkxgvmgx" path="res://GAME/Scripts/Utility/connection.gd" id="1_tol2y"]
 [ext_resource type="PackedScene" uid="uid://vmnbxcqjn1dr" path="res://GAME/Scenes/Map/switzerland_board.tscn" id="2_olk71"]
 [ext_resource type="PackedScene" path="res://GAME/Scenes/Map/french_board.tscn" id="3_olk71"]
 [ext_resource type="PackedScene" uid="uid://qdhecnm232jn" path="res://GAME/Scenes/Map/italy_board.tscn" id="4_m7ao8"]
-[ext_resource type="Script" path="res://GAME/Scripts/Utility/contol_text.gd" id="4_olk71"]
+[ext_resource type="Script" uid="uid://c3ltm5jm6oohj" path="res://GAME/Scripts/Utility/contol_text.gd" id="4_olk71"]
+[ext_resource type="PackedScene" path="res://GAME/Scenes/Map/us_board.tscn" id="5_k2ud3"]
+[ext_resource type="PackedScene" path="res://GAME/Scenes/Map/world_board.tscn" id="6_tun4e"]
+[ext_resource type="Texture2D" uid="uid://2cr15e78a2xp" path="res://GAME/Ressources/Game Data/Menu/puff_menu.png" id="7_tun4e"]
 
 [node name="Connection" type="Control"]
 layout_mode = 3
@@ -17,15 +20,18 @@ script = ExtResource("1_tol2y")
 switzerland_field_scene = ExtResource("2_olk71")
 french_field_scene = ExtResource("3_olk71")
 italy_field_scene = ExtResource("4_m7ao8")
+us_field_scene = ExtResource("5_k2ud3")
+world_field_scene = ExtResource("6_tun4e")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.446777, 0.446777, 0.446777, 1)
+texture = ExtResource("7_tun4e")
+expand_mode = 1
 
 [node name="Join" type="Button" parent="."]
 custom_minimum_size = Vector2(100, 50)
@@ -47,10 +53,10 @@ text = "Host"
 
 [node name="Text" type="Label" parent="."]
 layout_mode = 0
-offset_left = 477.0
-offset_top = 280.0
-offset_right = 705.0
-offset_bottom = 379.0
+offset_left = 432.0
+offset_top = 510.0
+offset_right = 660.0
+offset_bottom = 609.0
 text = "Wait join"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -63,13 +69,6 @@ offset_top = 432.0
 offset_right = 613.0
 offset_bottom = 463.0
 text = "Start"
-
-[node name="Address" type="Label" parent="."]
-layout_mode = 0
-offset_left = 205.0
-offset_top = 356.0
-offset_right = 409.0
-offset_bottom = 386.0
 
 [node name="Address_join" type="LineEdit" parent="."]
 layout_mode = 0
@@ -88,12 +87,17 @@ offset_top = 380.0
 offset_right = 330.0
 offset_bottom = 411.0
 selected = 0
-item_count = 3
+item_count = 5
 popup/item_0/text = "Switzerland"
+popup/item_0/id = 0
 popup/item_1/text = "French"
 popup/item_1/id = 1
 popup/item_2/text = "Italie"
 popup/item_2/id = 2
+popup/item_3/text = "US"
+popup/item_3/id = 3
+popup/item_4/text = "World"
+popup/item_4/id = 4
 
 [node name="Choice" type="Button" parent="."]
 visible = false
