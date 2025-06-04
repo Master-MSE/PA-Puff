@@ -1,0 +1,5556 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/map/board2.gd" id="1_f14og"]
+[ext_resource type="PackedScene" path="res://GAME/Scenes/Map/hexagon.tscn" id="2_rhdsy"]
+[ext_resource type="Script" path="res://GAME/Scripts/Gameplay/map/hexagon.gd" id="3_bxl5w"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vf11p"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_f14og")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+
+[node name="18,1" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -185)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+ID = Vector2(18, 1)
+WEIGHT = 1000
+UI_POSTION = Vector2(409.571, -15)
+
+[node name="7,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-278.756, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 1
+ID = Vector2(7, 2)
+WEIGHT = 1000
+UI_POSTION = Vector2(608.756, -30)
+
+[node name="8,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-261.436, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 2
+ID = Vector2(8, 2)
+WEIGHT = 2000
+UI_POSTION = Vector2(591.436, -30)
+
+[node name="9,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-244.115, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 3
+ID = Vector2(9, 2)
+WEIGHT = 2000
+UI_POSTION = Vector2(574.115, -30)
+
+[node name="10,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-226.795, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 4
+ID = Vector2(10, 2)
+WEIGHT = 3000
+UI_POSTION = Vector2(556.795, -30)
+
+[node name="11,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-209.474, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 5
+ID = Vector2(11, 2)
+WEIGHT = 3000
+UI_POSTION = Vector2(539.474, -30)
+
+[node name="12,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-192.154, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 6
+ID = Vector2(12, 2)
+WEIGHT = 1000
+UI_POSTION = Vector2(522.154, -30)
+
+[node name="13,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-174.833, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 7
+ID = Vector2(13, 2)
+WEIGHT = 1000
+UI_POSTION = Vector2(504.833, -30)
+
+[node name="14,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-157.513, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 8
+ID = Vector2(14, 2)
+WEIGHT = 2000
+UI_POSTION = Vector2(487.513, -30)
+
+[node name="15,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 9
+ID = Vector2(15, 2)
+WEIGHT = 3000
+UI_POSTION = Vector2(470.192, -30)
+
+[node name="16,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 10
+ID = Vector2(16, 2)
+WEIGHT = 2000
+UI_POSTION = Vector2(452.872, -30)
+
+[node name="17,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 11
+ID = Vector2(17, 2)
+WEIGHT = 3000
+UI_POSTION = Vector2(435.551, -30)
+
+[node name="18,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 12
+ID = Vector2(18, 2)
+WEIGHT = 3000
+UI_POSTION = Vector2(418.231, -30)
+
+[node name="19,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 13
+ID = Vector2(19, 2)
+WEIGHT = 1000
+UI_POSTION = Vector2(400.91, -30)
+
+[node name="20,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 14
+ID = Vector2(20, 2)
+WEIGHT = 1000
+UI_POSTION = Vector2(383.59, -30)
+
+[node name="21,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 15
+ID = Vector2(21, 2)
+WEIGHT = 1000
+UI_POSTION = Vector2(366.269, -30)
+
+[node name="22,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 16
+ID = Vector2(22, 2)
+WEIGHT = 3000
+UI_POSTION = Vector2(348.949, -30)
+
+[node name="23,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 17
+ID = Vector2(23, 2)
+WEIGHT = 2000
+UI_POSTION = Vector2(331.628, -30)
+
+[node name="24,2" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -170)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 18
+ID = Vector2(24, 2)
+WEIGHT = 2000
+UI_POSTION = Vector2(314.308, -30)
+
+[node name="6,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-287.417, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 19
+ID = Vector2(6, 3)
+WEIGHT = 1000
+UI_POSTION = Vector2(617.417, -45)
+
+[node name="7,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-270.096, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 20
+ID = Vector2(7, 3)
+WEIGHT = 1000
+UI_POSTION = Vector2(600.096, -45)
+
+[node name="8,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-252.776, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 21
+ID = Vector2(8, 3)
+WEIGHT = 2000
+UI_POSTION = Vector2(582.776, -45)
+
+[node name="9,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-235.455, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 22
+ID = Vector2(9, 3)
+WEIGHT = 3000
+UI_POSTION = Vector2(565.455, -45)
+
+[node name="10,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-218.135, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 23
+ID = Vector2(10, 3)
+WEIGHT = 2000
+UI_POSTION = Vector2(548.135, -45)
+
+[node name="11,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-200.814, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 24
+ID = Vector2(11, 3)
+WEIGHT = 1000
+UI_POSTION = Vector2(530.814, -45)
+
+[node name="12,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-183.494, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 25
+ID = Vector2(12, 3)
+WEIGHT = 3000
+UI_POSTION = Vector2(513.494, -45)
+
+[node name="13,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-166.173, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 26
+ID = Vector2(13, 3)
+WEIGHT = 2000
+UI_POSTION = Vector2(496.173, -45)
+
+[node name="14,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-148.853, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 27
+ID = Vector2(14, 3)
+WEIGHT = 3000
+UI_POSTION = Vector2(478.853, -45)
+
+[node name="15,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-131.532, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 28
+ID = Vector2(15, 3)
+WEIGHT = 1000
+UI_POSTION = Vector2(461.532, -45)
+
+[node name="16,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 29
+ID = Vector2(16, 3)
+WEIGHT = 1000
+UI_POSTION = Vector2(444.212, -45)
+
+[node name="17,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 30
+ID = Vector2(17, 3)
+WEIGHT = 2000
+UI_POSTION = Vector2(426.891, -45)
+
+[node name="18,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 31
+ID = Vector2(18, 3)
+WEIGHT = 2000
+UI_POSTION = Vector2(409.571, -45)
+
+[node name="19,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 32
+ID = Vector2(19, 3)
+WEIGHT = 2000
+UI_POSTION = Vector2(392.25, -45)
+
+[node name="20,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 33
+ID = Vector2(20, 3)
+WEIGHT = 3000
+UI_POSTION = Vector2(374.93, -45)
+
+[node name="21,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 34
+ID = Vector2(21, 3)
+WEIGHT = 1000
+UI_POSTION = Vector2(357.609, -45)
+
+[node name="22,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 35
+ID = Vector2(22, 3)
+WEIGHT = 3000
+UI_POSTION = Vector2(340.289, -45)
+
+[node name="23,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 36
+ID = Vector2(23, 3)
+WEIGHT = 1000
+UI_POSTION = Vector2(322.968, -45)
+
+[node name="24,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 37
+ID = Vector2(24, 3)
+WEIGHT = 3000
+UI_POSTION = Vector2(305.648, -45)
+
+[node name="25,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 38
+ID = Vector2(25, 3)
+WEIGHT = 1000
+UI_POSTION = Vector2(288.327, -45)
+
+[node name="26,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 39
+ID = Vector2(26, 3)
+WEIGHT = 2000
+UI_POSTION = Vector2(271.007, -45)
+
+[node name="27,3" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -155)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 40
+ID = Vector2(27, 3)
+WEIGHT = 2000
+UI_POSTION = Vector2(253.686, -45)
+
+[node name="6,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-296.077, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 41
+ID = Vector2(6, 4)
+WEIGHT = 3000
+UI_POSTION = Vector2(626.077, -60)
+
+[node name="7,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-278.756, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 42
+ID = Vector2(7, 4)
+WEIGHT = 3000
+UI_POSTION = Vector2(608.756, -60)
+
+[node name="8,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-261.436, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 43
+ID = Vector2(8, 4)
+WEIGHT = 1000
+UI_POSTION = Vector2(591.436, -60)
+
+[node name="9,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-244.115, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 44
+ID = Vector2(9, 4)
+WEIGHT = 2000
+UI_POSTION = Vector2(574.115, -60)
+
+[node name="10,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-226.795, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 45
+ID = Vector2(10, 4)
+WEIGHT = 3000
+UI_POSTION = Vector2(556.795, -60)
+
+[node name="11,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-209.474, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 46
+ID = Vector2(11, 4)
+WEIGHT = 2000
+UI_POSTION = Vector2(539.474, -60)
+
+[node name="12,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-192.154, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 47
+ID = Vector2(12, 4)
+WEIGHT = 1000
+UI_POSTION = Vector2(522.154, -60)
+
+[node name="13,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-174.833, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 48
+ID = Vector2(13, 4)
+WEIGHT = 3000
+UI_POSTION = Vector2(504.833, -60)
+
+[node name="14,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-157.513, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 49
+ID = Vector2(14, 4)
+WEIGHT = 3000
+UI_POSTION = Vector2(487.513, -60)
+
+[node name="15,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 50
+ID = Vector2(15, 4)
+WEIGHT = 2000
+UI_POSTION = Vector2(470.192, -60)
+
+[node name="16,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 51
+ID = Vector2(16, 4)
+WEIGHT = 1000
+UI_POSTION = Vector2(452.872, -60)
+
+[node name="17,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 52
+ID = Vector2(17, 4)
+WEIGHT = 1000
+UI_POSTION = Vector2(435.551, -60)
+
+[node name="18,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 53
+ID = Vector2(18, 4)
+WEIGHT = 1000
+UI_POSTION = Vector2(418.231, -60)
+
+[node name="19,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 54
+ID = Vector2(19, 4)
+WEIGHT = 2000
+UI_POSTION = Vector2(400.91, -60)
+
+[node name="20,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 55
+ID = Vector2(20, 4)
+WEIGHT = 3000
+UI_POSTION = Vector2(383.59, -60)
+
+[node name="21,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 56
+ID = Vector2(21, 4)
+WEIGHT = 2000
+UI_POSTION = Vector2(366.269, -60)
+
+[node name="22,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 57
+ID = Vector2(22, 4)
+WEIGHT = 2000
+UI_POSTION = Vector2(348.949, -60)
+
+[node name="23,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 58
+ID = Vector2(23, 4)
+WEIGHT = 2000
+UI_POSTION = Vector2(331.628, -60)
+
+[node name="24,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 59
+ID = Vector2(24, 4)
+WEIGHT = 2000
+UI_POSTION = Vector2(314.308, -60)
+
+[node name="25,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 60
+ID = Vector2(25, 4)
+WEIGHT = 3000
+UI_POSTION = Vector2(296.987, -60)
+
+[node name="26,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 61
+ID = Vector2(26, 4)
+WEIGHT = 1000
+UI_POSTION = Vector2(279.667, -60)
+
+[node name="27,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 62
+ID = Vector2(27, 4)
+WEIGHT = 1000
+UI_POSTION = Vector2(262.346, -60)
+
+[node name="28,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 63
+ID = Vector2(28, 4)
+WEIGHT = 1000
+UI_POSTION = Vector2(245.026, -60)
+
+[node name="39,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(275.5, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 64
+ID = Vector2(39, 4)
+WEIGHT = 1000
+UI_POSTION = Vector2(54.5002, -60)
+
+[node name="40,4" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(292.82, -140)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 65
+ID = Vector2(40, 4)
+WEIGHT = 1000
+UI_POSTION = Vector2(37.1797, -60)
+
+[node name="6,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-287.417, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 66
+ID = Vector2(6, 5)
+WEIGHT = 3000
+UI_POSTION = Vector2(617.417, -75)
+
+[node name="7,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-270.096, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 67
+ID = Vector2(7, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(600.096, -75)
+
+[node name="8,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-252.776, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 68
+ID = Vector2(8, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(582.776, -75)
+
+[node name="9,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-235.455, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 69
+ID = Vector2(9, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(565.455, -75)
+
+[node name="10,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-218.135, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 70
+ID = Vector2(10, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(548.135, -75)
+
+[node name="11,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-200.814, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 71
+ID = Vector2(11, 5)
+WEIGHT = 3000
+UI_POSTION = Vector2(530.814, -75)
+
+[node name="12,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-183.494, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 72
+ID = Vector2(12, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(513.494, -75)
+
+[node name="13,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-166.173, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 73
+ID = Vector2(13, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(496.173, -75)
+
+[node name="14,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-148.853, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 74
+ID = Vector2(14, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(478.853, -75)
+
+[node name="15,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-131.532, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 75
+ID = Vector2(15, 5)
+WEIGHT = 3000
+UI_POSTION = Vector2(461.532, -75)
+
+[node name="16,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 76
+ID = Vector2(16, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(444.212, -75)
+
+[node name="17,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 77
+ID = Vector2(17, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(426.891, -75)
+
+[node name="18,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 78
+ID = Vector2(18, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(409.571, -75)
+
+[node name="19,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 79
+ID = Vector2(19, 5)
+WEIGHT = 3000
+UI_POSTION = Vector2(392.25, -75)
+
+[node name="20,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 80
+ID = Vector2(20, 5)
+WEIGHT = 3000
+UI_POSTION = Vector2(374.93, -75)
+
+[node name="21,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 81
+ID = Vector2(21, 5)
+WEIGHT = 2000
+UI_POSTION = Vector2(357.609, -75)
+
+[node name="22,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 82
+ID = Vector2(22, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(340.289, -75)
+
+[node name="23,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 83
+ID = Vector2(23, 5)
+WEIGHT = 2000
+UI_POSTION = Vector2(322.968, -75)
+
+[node name="24,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 84
+ID = Vector2(24, 5)
+WEIGHT = 3000
+UI_POSTION = Vector2(305.648, -75)
+
+[node name="25,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 85
+ID = Vector2(25, 5)
+WEIGHT = 2000
+UI_POSTION = Vector2(288.327, -75)
+
+[node name="26,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 86
+ID = Vector2(26, 5)
+WEIGHT = 2000
+UI_POSTION = Vector2(271.007, -75)
+
+[node name="27,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 87
+ID = Vector2(27, 5)
+WEIGHT = 3000
+UI_POSTION = Vector2(253.686, -75)
+
+[node name="28,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 88
+ID = Vector2(28, 5)
+WEIGHT = 3000
+UI_POSTION = Vector2(236.366, -75)
+
+[node name="29,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 89
+ID = Vector2(29, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(219.045, -75)
+
+[node name="38,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(266.84, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 90
+ID = Vector2(38, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(63.1605, -75)
+
+[node name="39,5" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(284.16, -125)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 91
+ID = Vector2(39, 5)
+WEIGHT = 1000
+UI_POSTION = Vector2(45.8399, -75)
+
+[node name="6,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-296.077, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 92
+ID = Vector2(6, 6)
+WEIGHT = 1000
+UI_POSTION = Vector2(626.077, -90)
+
+[node name="7,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-278.756, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 93
+ID = Vector2(7, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(608.756, -90)
+
+[node name="8,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-261.436, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 94
+ID = Vector2(8, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(591.436, -90)
+
+[node name="9,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-244.115, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 95
+ID = Vector2(9, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(574.115, -90)
+
+[node name="10,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-226.795, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 96
+ID = Vector2(10, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(556.795, -90)
+
+[node name="11,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-209.474, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 97
+ID = Vector2(11, 6)
+WEIGHT = 2000
+UI_POSTION = Vector2(539.474, -90)
+
+[node name="12,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-192.154, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 98
+ID = Vector2(12, 6)
+WEIGHT = 1000
+UI_POSTION = Vector2(522.154, -90)
+
+[node name="13,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-174.833, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 99
+ID = Vector2(13, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(504.833, -90)
+
+[node name="14,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-157.513, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 100
+ID = Vector2(14, 6)
+WEIGHT = 1000
+UI_POSTION = Vector2(487.513, -90)
+
+[node name="15,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 101
+ID = Vector2(15, 6)
+WEIGHT = 1000
+UI_POSTION = Vector2(470.192, -90)
+
+[node name="16,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 102
+ID = Vector2(16, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(452.872, -90)
+
+[node name="17,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 103
+ID = Vector2(17, 6)
+WEIGHT = 2000
+UI_POSTION = Vector2(435.551, -90)
+
+[node name="18,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 104
+ID = Vector2(18, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(418.231, -90)
+
+[node name="19,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 105
+ID = Vector2(19, 6)
+WEIGHT = 2000
+UI_POSTION = Vector2(400.91, -90)
+
+[node name="20,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 106
+ID = Vector2(20, 6)
+WEIGHT = 2000
+UI_POSTION = Vector2(383.59, -90)
+
+[node name="21,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 107
+ID = Vector2(21, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(366.269, -90)
+
+[node name="22,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 108
+ID = Vector2(22, 6)
+WEIGHT = 2000
+UI_POSTION = Vector2(348.949, -90)
+
+[node name="23,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 109
+ID = Vector2(23, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(331.628, -90)
+
+[node name="24,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 110
+ID = Vector2(24, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(314.308, -90)
+
+[node name="25,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 111
+ID = Vector2(25, 6)
+WEIGHT = 2000
+UI_POSTION = Vector2(296.987, -90)
+
+[node name="26,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 112
+ID = Vector2(26, 6)
+WEIGHT = 2000
+UI_POSTION = Vector2(279.667, -90)
+
+[node name="27,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 113
+ID = Vector2(27, 6)
+WEIGHT = 2000
+UI_POSTION = Vector2(262.346, -90)
+
+[node name="28,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 114
+ID = Vector2(28, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(245.026, -90)
+
+[node name="29,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 115
+ID = Vector2(29, 6)
+WEIGHT = 2000
+UI_POSTION = Vector2(227.705, -90)
+
+[node name="30,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 116
+ID = Vector2(30, 6)
+WEIGHT = 2000
+UI_POSTION = Vector2(210.385, -90)
+
+[node name="36,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(223.538, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 117
+ID = Vector2(36, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(106.462, -90)
+
+[node name="37,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(240.859, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 118
+ID = Vector2(37, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(89.1412, -90)
+
+[node name="38,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(258.179, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 119
+ID = Vector2(38, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(71.8207, -90)
+
+[node name="39,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(275.5, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 120
+ID = Vector2(39, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(54.5002, -90)
+
+[node name="40,6" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(292.82, -110)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 121
+ID = Vector2(40, 6)
+WEIGHT = 3000
+UI_POSTION = Vector2(37.1797, -90)
+
+[node name="6,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-287.417, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 122
+ID = Vector2(6, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(617.417, -105)
+
+[node name="7,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-270.096, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 123
+ID = Vector2(7, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(600.096, -105)
+
+[node name="8,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-252.776, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 124
+ID = Vector2(8, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(582.776, -105)
+
+[node name="9,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-235.455, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 125
+ID = Vector2(9, 7)
+WEIGHT = 1000
+UI_POSTION = Vector2(565.455, -105)
+
+[node name="10,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-218.135, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 126
+ID = Vector2(10, 7)
+WEIGHT = 3000
+UI_POSTION = Vector2(548.135, -105)
+
+[node name="11,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-200.814, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 127
+ID = Vector2(11, 7)
+WEIGHT = 3000
+UI_POSTION = Vector2(530.814, -105)
+
+[node name="12,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-183.494, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 128
+ID = Vector2(12, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(513.494, -105)
+
+[node name="13,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-166.173, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 129
+ID = Vector2(13, 7)
+WEIGHT = 1000
+UI_POSTION = Vector2(496.173, -105)
+
+[node name="14,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-148.853, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 130
+ID = Vector2(14, 7)
+WEIGHT = 1000
+UI_POSTION = Vector2(478.853, -105)
+
+[node name="15,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-131.532, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 131
+ID = Vector2(15, 7)
+WEIGHT = 3000
+UI_POSTION = Vector2(461.532, -105)
+
+[node name="16,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 132
+ID = Vector2(16, 7)
+WEIGHT = 1000
+UI_POSTION = Vector2(444.212, -105)
+
+[node name="17,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 133
+ID = Vector2(17, 7)
+WEIGHT = 1000
+UI_POSTION = Vector2(426.891, -105)
+
+[node name="18,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 134
+ID = Vector2(18, 7)
+WEIGHT = 1000
+UI_POSTION = Vector2(409.571, -105)
+
+[node name="19,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 135
+ID = Vector2(19, 7)
+WEIGHT = 3000
+UI_POSTION = Vector2(392.25, -105)
+
+[node name="20,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 136
+ID = Vector2(20, 7)
+WEIGHT = 3000
+UI_POSTION = Vector2(374.93, -105)
+
+[node name="21,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 137
+ID = Vector2(21, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(357.609, -105)
+
+[node name="22,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 138
+ID = Vector2(22, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(340.289, -105)
+
+[node name="23,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 139
+ID = Vector2(23, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(322.968, -105)
+
+[node name="24,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 140
+ID = Vector2(24, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(305.648, -105)
+
+[node name="25,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 141
+ID = Vector2(25, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(288.327, -105)
+
+[node name="26,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 142
+ID = Vector2(26, 7)
+WEIGHT = 1000
+UI_POSTION = Vector2(271.007, -105)
+
+[node name="27,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 143
+ID = Vector2(27, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(253.686, -105)
+
+[node name="28,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 144
+ID = Vector2(28, 7)
+WEIGHT = 3000
+UI_POSTION = Vector2(236.366, -105)
+
+[node name="29,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 145
+ID = Vector2(29, 7)
+WEIGHT = 3000
+UI_POSTION = Vector2(219.045, -105)
+
+[node name="30,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 146
+ID = Vector2(30, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(201.724, -105)
+
+[node name="35,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(214.878, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 147
+ID = Vector2(35, 7)
+WEIGHT = 1000
+UI_POSTION = Vector2(115.122, -105)
+
+[node name="36,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(232.199, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 148
+ID = Vector2(36, 7)
+WEIGHT = 3000
+UI_POSTION = Vector2(97.8015, -105)
+
+[node name="37,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(249.519, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 149
+ID = Vector2(37, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(80.481, -105)
+
+[node name="38,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(266.84, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 150
+ID = Vector2(38, 7)
+WEIGHT = 3000
+UI_POSTION = Vector2(63.1605, -105)
+
+[node name="39,7" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(284.16, -95)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 151
+ID = Vector2(39, 7)
+WEIGHT = 2000
+UI_POSTION = Vector2(45.8399, -105)
+
+[node name="6,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-296.077, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 152
+ID = Vector2(6, 8)
+WEIGHT = 3000
+UI_POSTION = Vector2(626.077, -120)
+
+[node name="7,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-278.756, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 153
+ID = Vector2(7, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(608.756, -120)
+
+[node name="8,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-261.436, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 154
+ID = Vector2(8, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(591.436, -120)
+
+[node name="9,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-244.115, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 155
+ID = Vector2(9, 8)
+WEIGHT = 3000
+UI_POSTION = Vector2(574.115, -120)
+
+[node name="10,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-226.795, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 156
+ID = Vector2(10, 8)
+WEIGHT = 3000
+UI_POSTION = Vector2(556.795, -120)
+
+[node name="11,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-209.474, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 157
+ID = Vector2(11, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(539.474, -120)
+
+[node name="12,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-192.154, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 158
+ID = Vector2(12, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(522.154, -120)
+
+[node name="13,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-174.833, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 159
+ID = Vector2(13, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(504.833, -120)
+
+[node name="14,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-157.513, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 160
+ID = Vector2(14, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(487.513, -120)
+
+[node name="15,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 161
+ID = Vector2(15, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(470.192, -120)
+
+[node name="16,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 162
+ID = Vector2(16, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(452.872, -120)
+
+[node name="17,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 163
+ID = Vector2(17, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(435.551, -120)
+
+[node name="18,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 164
+ID = Vector2(18, 8)
+WEIGHT = 3000
+UI_POSTION = Vector2(418.231, -120)
+
+[node name="19,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 165
+ID = Vector2(19, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(400.91, -120)
+
+[node name="20,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 166
+ID = Vector2(20, 8)
+WEIGHT = 1000
+UI_POSTION = Vector2(383.59, -120)
+
+[node name="21,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 167
+ID = Vector2(21, 8)
+WEIGHT = 1000
+UI_POSTION = Vector2(366.269, -120)
+
+[node name="22,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 168
+ID = Vector2(22, 8)
+WEIGHT = 1000
+UI_POSTION = Vector2(348.949, -120)
+
+[node name="23,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 169
+ID = Vector2(23, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(331.628, -120)
+
+[node name="24,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 170
+ID = Vector2(24, 8)
+WEIGHT = 3000
+UI_POSTION = Vector2(314.308, -120)
+
+[node name="25,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 171
+ID = Vector2(25, 8)
+WEIGHT = 3000
+UI_POSTION = Vector2(296.987, -120)
+
+[node name="26,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 172
+ID = Vector2(26, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(279.667, -120)
+
+[node name="27,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 173
+ID = Vector2(27, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(262.346, -120)
+
+[node name="28,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 174
+ID = Vector2(28, 8)
+WEIGHT = 1000
+UI_POSTION = Vector2(245.026, -120)
+
+[node name="29,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 175
+ID = Vector2(29, 8)
+WEIGHT = 1000
+UI_POSTION = Vector2(227.705, -120)
+
+[node name="30,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 176
+ID = Vector2(30, 8)
+WEIGHT = 3000
+UI_POSTION = Vector2(210.385, -120)
+
+[node name="31,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 177
+ID = Vector2(31, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(193.064, -120)
+
+[node name="33,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(171.577, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 178
+ID = Vector2(33, 8)
+WEIGHT = 3000
+UI_POSTION = Vector2(158.423, -120)
+
+[node name="34,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(188.897, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 179
+ID = Vector2(34, 8)
+WEIGHT = 1000
+UI_POSTION = Vector2(141.103, -120)
+
+[node name="35,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(206.218, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 180
+ID = Vector2(35, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(123.782, -120)
+
+[node name="36,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(223.538, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 181
+ID = Vector2(36, 8)
+WEIGHT = 3000
+UI_POSTION = Vector2(106.462, -120)
+
+[node name="37,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(240.859, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 182
+ID = Vector2(37, 8)
+WEIGHT = 2000
+UI_POSTION = Vector2(89.1412, -120)
+
+[node name="38,8" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(258.179, -80)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 183
+ID = Vector2(38, 8)
+WEIGHT = 1000
+UI_POSTION = Vector2(71.8207, -120)
+
+[node name="6,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-287.417, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 184
+ID = Vector2(6, 9)
+WEIGHT = 3000
+UI_POSTION = Vector2(617.417, -135)
+
+[node name="7,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-270.096, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 185
+ID = Vector2(7, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(600.096, -135)
+
+[node name="8,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-252.776, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 186
+ID = Vector2(8, 9)
+WEIGHT = 1000
+UI_POSTION = Vector2(582.776, -135)
+
+[node name="9,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-235.455, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 187
+ID = Vector2(9, 9)
+WEIGHT = 1000
+UI_POSTION = Vector2(565.455, -135)
+
+[node name="10,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-218.135, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 188
+ID = Vector2(10, 9)
+WEIGHT = 3000
+UI_POSTION = Vector2(548.135, -135)
+
+[node name="11,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-200.814, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 189
+ID = Vector2(11, 9)
+WEIGHT = 1000
+UI_POSTION = Vector2(530.814, -135)
+
+[node name="12,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-183.494, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 190
+ID = Vector2(12, 9)
+WEIGHT = 1000
+UI_POSTION = Vector2(513.494, -135)
+
+[node name="13,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-166.173, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 191
+ID = Vector2(13, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(496.173, -135)
+
+[node name="14,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-148.853, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 192
+ID = Vector2(14, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(478.853, -135)
+
+[node name="15,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-131.532, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 193
+ID = Vector2(15, 9)
+WEIGHT = 1000
+UI_POSTION = Vector2(461.532, -135)
+
+[node name="16,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 194
+ID = Vector2(16, 9)
+WEIGHT = 3000
+UI_POSTION = Vector2(444.212, -135)
+
+[node name="17,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 195
+ID = Vector2(17, 9)
+WEIGHT = 3000
+UI_POSTION = Vector2(426.891, -135)
+
+[node name="18,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 196
+ID = Vector2(18, 9)
+WEIGHT = 3000
+UI_POSTION = Vector2(409.571, -135)
+
+[node name="19,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 197
+ID = Vector2(19, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(392.25, -135)
+
+[node name="20,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 198
+ID = Vector2(20, 9)
+WEIGHT = 3000
+UI_POSTION = Vector2(374.93, -135)
+
+[node name="21,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 199
+ID = Vector2(21, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(357.609, -135)
+
+[node name="22,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 200
+ID = Vector2(22, 9)
+WEIGHT = 3000
+UI_POSTION = Vector2(340.289, -135)
+
+[node name="23,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 201
+ID = Vector2(23, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(322.968, -135)
+
+[node name="24,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 202
+ID = Vector2(24, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(305.648, -135)
+
+[node name="25,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 203
+ID = Vector2(25, 9)
+WEIGHT = 3000
+UI_POSTION = Vector2(288.327, -135)
+
+[node name="26,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 204
+ID = Vector2(26, 9)
+WEIGHT = 3000
+UI_POSTION = Vector2(271.007, -135)
+
+[node name="27,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 205
+ID = Vector2(27, 9)
+WEIGHT = 1000
+UI_POSTION = Vector2(253.686, -135)
+
+[node name="28,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 206
+ID = Vector2(28, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(236.366, -135)
+
+[node name="29,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 207
+ID = Vector2(29, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(219.045, -135)
+
+[node name="30,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 208
+ID = Vector2(30, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(201.724, -135)
+
+[node name="31,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 209
+ID = Vector2(31, 9)
+WEIGHT = 3000
+UI_POSTION = Vector2(184.404, -135)
+
+[node name="32,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(162.917, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 210
+ID = Vector2(32, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(167.083, -135)
+
+[node name="33,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(180.237, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 211
+ID = Vector2(33, 9)
+WEIGHT = 3000
+UI_POSTION = Vector2(149.763, -135)
+
+[node name="34,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(197.558, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 212
+ID = Vector2(34, 9)
+WEIGHT = 2000
+UI_POSTION = Vector2(132.442, -135)
+
+[node name="35,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(214.878, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 213
+ID = Vector2(35, 9)
+WEIGHT = 1000
+UI_POSTION = Vector2(115.122, -135)
+
+[node name="36,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(232.199, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 214
+ID = Vector2(36, 9)
+WEIGHT = 1000
+UI_POSTION = Vector2(97.8015, -135)
+
+[node name="37,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(249.519, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 215
+ID = Vector2(37, 9)
+WEIGHT = 1000
+UI_POSTION = Vector2(80.481, -135)
+
+[node name="38,9" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(266.84, -65)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 216
+ID = Vector2(38, 9)
+WEIGHT = 1000
+UI_POSTION = Vector2(63.1605, -135)
+
+[node name="6,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-296.077, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 217
+ID = Vector2(6, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(626.077, -150)
+
+[node name="7,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-278.756, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 218
+ID = Vector2(7, 10)
+WEIGHT = 1000
+UI_POSTION = Vector2(608.756, -150)
+
+[node name="8,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-261.436, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 219
+ID = Vector2(8, 10)
+WEIGHT = 3000
+UI_POSTION = Vector2(591.436, -150)
+
+[node name="9,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-244.115, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 220
+ID = Vector2(9, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(574.115, -150)
+
+[node name="10,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-226.795, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 221
+ID = Vector2(10, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(556.795, -150)
+
+[node name="11,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-209.474, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 222
+ID = Vector2(11, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(539.474, -150)
+
+[node name="12,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-192.154, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 223
+ID = Vector2(12, 10)
+WEIGHT = 3000
+UI_POSTION = Vector2(522.154, -150)
+
+[node name="13,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-174.833, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 224
+ID = Vector2(13, 10)
+WEIGHT = 3000
+UI_POSTION = Vector2(504.833, -150)
+
+[node name="14,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-157.513, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 225
+ID = Vector2(14, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(487.513, -150)
+
+[node name="15,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 226
+ID = Vector2(15, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(470.192, -150)
+
+[node name="16,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 227
+ID = Vector2(16, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(452.872, -150)
+
+[node name="17,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 228
+ID = Vector2(17, 10)
+WEIGHT = 1000
+UI_POSTION = Vector2(435.551, -150)
+
+[node name="18,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 229
+ID = Vector2(18, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(418.231, -150)
+
+[node name="19,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 230
+ID = Vector2(19, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(400.91, -150)
+
+[node name="20,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 231
+ID = Vector2(20, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(383.59, -150)
+
+[node name="21,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 232
+ID = Vector2(21, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(366.269, -150)
+
+[node name="22,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 233
+ID = Vector2(22, 10)
+WEIGHT = 1000
+UI_POSTION = Vector2(348.949, -150)
+
+[node name="23,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 234
+ID = Vector2(23, 10)
+WEIGHT = 1000
+UI_POSTION = Vector2(331.628, -150)
+
+[node name="24,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 235
+ID = Vector2(24, 10)
+WEIGHT = 1000
+UI_POSTION = Vector2(314.308, -150)
+
+[node name="25,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 236
+ID = Vector2(25, 10)
+WEIGHT = 1000
+UI_POSTION = Vector2(296.987, -150)
+
+[node name="26,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 237
+ID = Vector2(26, 10)
+WEIGHT = 3000
+UI_POSTION = Vector2(279.667, -150)
+
+[node name="27,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 238
+ID = Vector2(27, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(262.346, -150)
+
+[node name="28,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 239
+ID = Vector2(28, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(245.026, -150)
+
+[node name="29,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 240
+ID = Vector2(29, 10)
+WEIGHT = 3000
+UI_POSTION = Vector2(227.705, -150)
+
+[node name="30,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 241
+ID = Vector2(30, 10)
+WEIGHT = 1000
+UI_POSTION = Vector2(210.385, -150)
+
+[node name="31,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 242
+ID = Vector2(31, 10)
+WEIGHT = 1000
+UI_POSTION = Vector2(193.064, -150)
+
+[node name="32,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 243
+ID = Vector2(32, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(175.744, -150)
+
+[node name="33,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(171.577, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 244
+ID = Vector2(33, 10)
+WEIGHT = 1000
+UI_POSTION = Vector2(158.423, -150)
+
+[node name="34,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(188.897, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 245
+ID = Vector2(34, 10)
+WEIGHT = 2000
+UI_POSTION = Vector2(141.103, -150)
+
+[node name="35,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(206.218, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 246
+ID = Vector2(35, 10)
+WEIGHT = 1000
+UI_POSTION = Vector2(123.782, -150)
+
+[node name="36,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(223.538, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 247
+ID = Vector2(36, 10)
+WEIGHT = 1000
+UI_POSTION = Vector2(106.462, -150)
+
+[node name="37,10" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(240.859, -50)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 248
+ID = Vector2(37, 10)
+WEIGHT = 3000
+UI_POSTION = Vector2(89.1412, -150)
+
+[node name="6,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-287.417, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 249
+ID = Vector2(6, 11)
+WEIGHT = 2000
+UI_POSTION = Vector2(617.417, -165)
+
+[node name="7,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-270.096, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 250
+ID = Vector2(7, 11)
+WEIGHT = 1000
+UI_POSTION = Vector2(600.096, -165)
+
+[node name="8,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-252.776, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 251
+ID = Vector2(8, 11)
+WEIGHT = 1000
+UI_POSTION = Vector2(582.776, -165)
+
+[node name="9,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-235.455, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 252
+ID = Vector2(9, 11)
+WEIGHT = 3000
+UI_POSTION = Vector2(565.455, -165)
+
+[node name="10,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-218.135, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 253
+ID = Vector2(10, 11)
+WEIGHT = 2000
+UI_POSTION = Vector2(548.135, -165)
+
+[node name="11,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-200.814, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 254
+ID = Vector2(11, 11)
+WEIGHT = 2000
+UI_POSTION = Vector2(530.814, -165)
+
+[node name="12,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-183.494, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 255
+ID = Vector2(12, 11)
+WEIGHT = 3000
+UI_POSTION = Vector2(513.494, -165)
+
+[node name="13,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-166.173, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 256
+ID = Vector2(13, 11)
+WEIGHT = 3000
+UI_POSTION = Vector2(496.173, -165)
+
+[node name="14,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-148.853, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 257
+ID = Vector2(14, 11)
+WEIGHT = 2000
+UI_POSTION = Vector2(478.853, -165)
+
+[node name="15,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-131.532, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 258
+ID = Vector2(15, 11)
+WEIGHT = 1000
+UI_POSTION = Vector2(461.532, -165)
+
+[node name="16,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 259
+ID = Vector2(16, 11)
+WEIGHT = 1000
+UI_POSTION = Vector2(444.212, -165)
+
+[node name="17,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 260
+ID = Vector2(17, 11)
+WEIGHT = 3000
+UI_POSTION = Vector2(426.891, -165)
+
+[node name="18,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 261
+ID = Vector2(18, 11)
+WEIGHT = 3000
+UI_POSTION = Vector2(409.571, -165)
+
+[node name="19,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 262
+ID = Vector2(19, 11)
+WEIGHT = 2000
+UI_POSTION = Vector2(392.25, -165)
+
+[node name="20,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 263
+ID = Vector2(20, 11)
+WEIGHT = 1000
+UI_POSTION = Vector2(374.93, -165)
+
+[node name="21,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 264
+ID = Vector2(21, 11)
+WEIGHT = 3000
+UI_POSTION = Vector2(357.609, -165)
+
+[node name="22,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 265
+ID = Vector2(22, 11)
+WEIGHT = 2000
+UI_POSTION = Vector2(340.289, -165)
+
+[node name="23,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 266
+ID = Vector2(23, 11)
+WEIGHT = 1000
+UI_POSTION = Vector2(322.968, -165)
+
+[node name="24,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 267
+ID = Vector2(24, 11)
+WEIGHT = 3000
+UI_POSTION = Vector2(305.648, -165)
+
+[node name="25,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 268
+ID = Vector2(25, 11)
+WEIGHT = 1000
+UI_POSTION = Vector2(288.327, -165)
+
+[node name="26,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 269
+ID = Vector2(26, 11)
+WEIGHT = 2000
+UI_POSTION = Vector2(271.007, -165)
+
+[node name="27,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 270
+ID = Vector2(27, 11)
+WEIGHT = 1000
+UI_POSTION = Vector2(253.686, -165)
+
+[node name="28,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 271
+ID = Vector2(28, 11)
+WEIGHT = 2000
+UI_POSTION = Vector2(236.366, -165)
+
+[node name="29,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 272
+ID = Vector2(29, 11)
+WEIGHT = 3000
+UI_POSTION = Vector2(219.045, -165)
+
+[node name="30,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 273
+ID = Vector2(30, 11)
+WEIGHT = 3000
+UI_POSTION = Vector2(201.724, -165)
+
+[node name="31,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 274
+ID = Vector2(31, 11)
+WEIGHT = 2000
+UI_POSTION = Vector2(184.404, -165)
+
+[node name="32,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(162.917, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 275
+ID = Vector2(32, 11)
+WEIGHT = 2000
+UI_POSTION = Vector2(167.083, -165)
+
+[node name="33,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(180.237, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 276
+ID = Vector2(33, 11)
+WEIGHT = 3000
+UI_POSTION = Vector2(149.763, -165)
+
+[node name="34,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(197.558, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 277
+ID = Vector2(34, 11)
+WEIGHT = 1000
+UI_POSTION = Vector2(132.442, -165)
+
+[node name="35,11" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(214.878, -35)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 278
+ID = Vector2(35, 11)
+WEIGHT = 2000
+UI_POSTION = Vector2(115.122, -165)
+
+[node name="7,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-278.756, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 279
+ID = Vector2(7, 12)
+WEIGHT = 2000
+UI_POSTION = Vector2(608.756, -180)
+
+[node name="8,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-261.436, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 280
+ID = Vector2(8, 12)
+WEIGHT = 1000
+UI_POSTION = Vector2(591.436, -180)
+
+[node name="9,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-244.115, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 281
+ID = Vector2(9, 12)
+WEIGHT = 2000
+UI_POSTION = Vector2(574.115, -180)
+
+[node name="10,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-226.795, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 282
+ID = Vector2(10, 12)
+WEIGHT = 3000
+UI_POSTION = Vector2(556.795, -180)
+
+[node name="11,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-209.474, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 283
+ID = Vector2(11, 12)
+WEIGHT = 1000
+UI_POSTION = Vector2(539.474, -180)
+
+[node name="12,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-192.154, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 284
+ID = Vector2(12, 12)
+WEIGHT = 3000
+UI_POSTION = Vector2(522.154, -180)
+
+[node name="13,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-174.833, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 285
+ID = Vector2(13, 12)
+WEIGHT = 1000
+UI_POSTION = Vector2(504.833, -180)
+
+[node name="14,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-157.513, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 286
+ID = Vector2(14, 12)
+WEIGHT = 2000
+UI_POSTION = Vector2(487.513, -180)
+
+[node name="15,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 287
+ID = Vector2(15, 12)
+WEIGHT = 2000
+UI_POSTION = Vector2(470.192, -180)
+
+[node name="16,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 288
+ID = Vector2(16, 12)
+WEIGHT = 3000
+UI_POSTION = Vector2(452.872, -180)
+
+[node name="17,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 289
+ID = Vector2(17, 12)
+WEIGHT = 2000
+UI_POSTION = Vector2(435.551, -180)
+
+[node name="18,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 290
+ID = Vector2(18, 12)
+WEIGHT = 3000
+UI_POSTION = Vector2(418.231, -180)
+
+[node name="19,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 291
+ID = Vector2(19, 12)
+WEIGHT = 1000
+UI_POSTION = Vector2(400.91, -180)
+
+[node name="20,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 292
+ID = Vector2(20, 12)
+WEIGHT = 1000
+UI_POSTION = Vector2(383.59, -180)
+
+[node name="21,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 293
+ID = Vector2(21, 12)
+WEIGHT = 2000
+UI_POSTION = Vector2(366.269, -180)
+
+[node name="22,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 294
+ID = Vector2(22, 12)
+WEIGHT = 3000
+UI_POSTION = Vector2(348.949, -180)
+
+[node name="23,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 295
+ID = Vector2(23, 12)
+WEIGHT = 1000
+UI_POSTION = Vector2(331.628, -180)
+
+[node name="24,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 296
+ID = Vector2(24, 12)
+WEIGHT = 1000
+UI_POSTION = Vector2(314.308, -180)
+
+[node name="25,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 297
+ID = Vector2(25, 12)
+WEIGHT = 1000
+UI_POSTION = Vector2(296.987, -180)
+
+[node name="26,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 298
+ID = Vector2(26, 12)
+WEIGHT = 1000
+UI_POSTION = Vector2(279.667, -180)
+
+[node name="27,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 299
+ID = Vector2(27, 12)
+WEIGHT = 2000
+UI_POSTION = Vector2(262.346, -180)
+
+[node name="28,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 300
+ID = Vector2(28, 12)
+WEIGHT = 1000
+UI_POSTION = Vector2(245.026, -180)
+
+[node name="29,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 301
+ID = Vector2(29, 12)
+WEIGHT = 2000
+UI_POSTION = Vector2(227.705, -180)
+
+[node name="30,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 302
+ID = Vector2(30, 12)
+WEIGHT = 1000
+UI_POSTION = Vector2(210.385, -180)
+
+[node name="31,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 303
+ID = Vector2(31, 12)
+WEIGHT = 2000
+UI_POSTION = Vector2(193.064, -180)
+
+[node name="32,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 304
+ID = Vector2(32, 12)
+WEIGHT = 3000
+UI_POSTION = Vector2(175.744, -180)
+
+[node name="33,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(171.577, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 305
+ID = Vector2(33, 12)
+WEIGHT = 2000
+UI_POSTION = Vector2(158.423, -180)
+
+[node name="34,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(188.897, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 306
+ID = Vector2(34, 12)
+WEIGHT = 3000
+UI_POSTION = Vector2(141.103, -180)
+
+[node name="35,12" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(206.218, -20)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 307
+ID = Vector2(35, 12)
+WEIGHT = 2000
+UI_POSTION = Vector2(123.782, -180)
+
+[node name="7,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-270.096, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 308
+ID = Vector2(7, 13)
+WEIGHT = 1000
+UI_POSTION = Vector2(600.096, -195)
+
+[node name="8,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-252.776, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 309
+ID = Vector2(8, 13)
+WEIGHT = 3000
+UI_POSTION = Vector2(582.776, -195)
+
+[node name="9,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-235.455, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 310
+ID = Vector2(9, 13)
+WEIGHT = 3000
+UI_POSTION = Vector2(565.455, -195)
+
+[node name="10,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-218.135, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 311
+ID = Vector2(10, 13)
+WEIGHT = 1000
+UI_POSTION = Vector2(548.135, -195)
+
+[node name="11,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-200.814, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 312
+ID = Vector2(11, 13)
+WEIGHT = 1000
+UI_POSTION = Vector2(530.814, -195)
+
+[node name="12,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-183.494, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 313
+ID = Vector2(12, 13)
+WEIGHT = 1000
+UI_POSTION = Vector2(513.494, -195)
+
+[node name="13,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-166.173, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 314
+ID = Vector2(13, 13)
+WEIGHT = 2000
+UI_POSTION = Vector2(496.173, -195)
+
+[node name="14,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-148.853, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 315
+ID = Vector2(14, 13)
+WEIGHT = 1000
+UI_POSTION = Vector2(478.853, -195)
+
+[node name="15,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-131.532, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 316
+ID = Vector2(15, 13)
+WEIGHT = 2000
+UI_POSTION = Vector2(461.532, -195)
+
+[node name="16,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 317
+ID = Vector2(16, 13)
+WEIGHT = 2000
+UI_POSTION = Vector2(444.212, -195)
+
+[node name="17,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 318
+ID = Vector2(17, 13)
+WEIGHT = 3000
+UI_POSTION = Vector2(426.891, -195)
+
+[node name="18,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 319
+ID = Vector2(18, 13)
+WEIGHT = 1000
+UI_POSTION = Vector2(409.571, -195)
+
+[node name="19,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 320
+ID = Vector2(19, 13)
+WEIGHT = 3000
+UI_POSTION = Vector2(392.25, -195)
+
+[node name="20,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 321
+ID = Vector2(20, 13)
+WEIGHT = 2000
+UI_POSTION = Vector2(374.93, -195)
+
+[node name="21,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 322
+ID = Vector2(21, 13)
+WEIGHT = 3000
+UI_POSTION = Vector2(357.609, -195)
+
+[node name="22,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 323
+ID = Vector2(22, 13)
+WEIGHT = 3000
+UI_POSTION = Vector2(340.289, -195)
+
+[node name="23,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 324
+ID = Vector2(23, 13)
+WEIGHT = 3000
+UI_POSTION = Vector2(322.968, -195)
+
+[node name="24,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 325
+ID = Vector2(24, 13)
+WEIGHT = 2000
+UI_POSTION = Vector2(305.648, -195)
+
+[node name="25,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 326
+ID = Vector2(25, 13)
+WEIGHT = 2000
+UI_POSTION = Vector2(288.327, -195)
+
+[node name="26,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 327
+ID = Vector2(26, 13)
+WEIGHT = 1000
+UI_POSTION = Vector2(271.007, -195)
+
+[node name="27,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 328
+ID = Vector2(27, 13)
+WEIGHT = 2000
+UI_POSTION = Vector2(253.686, -195)
+
+[node name="28,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 329
+ID = Vector2(28, 13)
+WEIGHT = 3000
+UI_POSTION = Vector2(236.366, -195)
+
+[node name="29,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 330
+ID = Vector2(29, 13)
+WEIGHT = 3000
+UI_POSTION = Vector2(219.045, -195)
+
+[node name="30,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 331
+ID = Vector2(30, 13)
+WEIGHT = 2000
+UI_POSTION = Vector2(201.724, -195)
+
+[node name="31,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 332
+ID = Vector2(31, 13)
+WEIGHT = 3000
+UI_POSTION = Vector2(184.404, -195)
+
+[node name="32,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(162.917, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 333
+ID = Vector2(32, 13)
+WEIGHT = 2000
+UI_POSTION = Vector2(167.083, -195)
+
+[node name="33,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(180.237, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 334
+ID = Vector2(33, 13)
+WEIGHT = 3000
+UI_POSTION = Vector2(149.763, -195)
+
+[node name="34,13" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(197.558, -5)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 335
+ID = Vector2(34, 13)
+WEIGHT = 2000
+UI_POSTION = Vector2(132.442, -195)
+
+[node name="8,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-261.436, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 336
+ID = Vector2(8, 14)
+WEIGHT = 1000
+UI_POSTION = Vector2(591.436, -210)
+
+[node name="9,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-244.115, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 337
+ID = Vector2(9, 14)
+WEIGHT = 2000
+UI_POSTION = Vector2(574.115, -210)
+
+[node name="10,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-226.795, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 338
+ID = Vector2(10, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(556.795, -210)
+
+[node name="11,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-209.474, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 339
+ID = Vector2(11, 14)
+WEIGHT = 2000
+UI_POSTION = Vector2(539.474, -210)
+
+[node name="12,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-192.154, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 340
+ID = Vector2(12, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(522.154, -210)
+
+[node name="13,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-174.833, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 341
+ID = Vector2(13, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(504.833, -210)
+
+[node name="14,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-157.513, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 342
+ID = Vector2(14, 14)
+WEIGHT = 1000
+UI_POSTION = Vector2(487.513, -210)
+
+[node name="15,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 343
+ID = Vector2(15, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(470.192, -210)
+
+[node name="16,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 344
+ID = Vector2(16, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(452.872, -210)
+
+[node name="17,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 345
+ID = Vector2(17, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(435.551, -210)
+
+[node name="18,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 346
+ID = Vector2(18, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(418.231, -210)
+
+[node name="19,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 347
+ID = Vector2(19, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(400.91, -210)
+
+[node name="20,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 348
+ID = Vector2(20, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(383.59, -210)
+
+[node name="21,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 349
+ID = Vector2(21, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(366.269, -210)
+
+[node name="22,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 350
+ID = Vector2(22, 14)
+WEIGHT = 1000
+UI_POSTION = Vector2(348.949, -210)
+
+[node name="23,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 351
+ID = Vector2(23, 14)
+WEIGHT = 2000
+UI_POSTION = Vector2(331.628, -210)
+
+[node name="24,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 352
+ID = Vector2(24, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(314.308, -210)
+
+[node name="25,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 353
+ID = Vector2(25, 14)
+WEIGHT = 2000
+UI_POSTION = Vector2(296.987, -210)
+
+[node name="26,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 354
+ID = Vector2(26, 14)
+WEIGHT = 2000
+UI_POSTION = Vector2(279.667, -210)
+
+[node name="27,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 355
+ID = Vector2(27, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(262.346, -210)
+
+[node name="28,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 356
+ID = Vector2(28, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(245.026, -210)
+
+[node name="29,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 357
+ID = Vector2(29, 14)
+WEIGHT = 2000
+UI_POSTION = Vector2(227.705, -210)
+
+[node name="30,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 358
+ID = Vector2(30, 14)
+WEIGHT = 2000
+UI_POSTION = Vector2(210.385, -210)
+
+[node name="31,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 359
+ID = Vector2(31, 14)
+WEIGHT = 1000
+UI_POSTION = Vector2(193.064, -210)
+
+[node name="32,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 360
+ID = Vector2(32, 14)
+WEIGHT = 2000
+UI_POSTION = Vector2(175.744, -210)
+
+[node name="33,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(171.577, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 361
+ID = Vector2(33, 14)
+WEIGHT = 2000
+UI_POSTION = Vector2(158.423, -210)
+
+[node name="34,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(188.897, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 362
+ID = Vector2(34, 14)
+WEIGHT = 1000
+UI_POSTION = Vector2(141.103, -210)
+
+[node name="35,14" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(206.218, 10)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 363
+ID = Vector2(35, 14)
+WEIGHT = 3000
+UI_POSTION = Vector2(123.782, -210)
+
+[node name="8,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-252.776, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 364
+ID = Vector2(8, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(582.776, -225)
+
+[node name="9,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-235.455, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 365
+ID = Vector2(9, 15)
+WEIGHT = 3000
+UI_POSTION = Vector2(565.455, -225)
+
+[node name="10,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-218.135, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 366
+ID = Vector2(10, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(548.135, -225)
+
+[node name="11,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-200.814, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 367
+ID = Vector2(11, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(530.814, -225)
+
+[node name="12,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-183.494, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 368
+ID = Vector2(12, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(513.494, -225)
+
+[node name="13,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-166.173, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 369
+ID = Vector2(13, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(496.173, -225)
+
+[node name="14,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-148.853, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 370
+ID = Vector2(14, 15)
+WEIGHT = 3000
+UI_POSTION = Vector2(478.853, -225)
+
+[node name="15,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-131.532, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 371
+ID = Vector2(15, 15)
+WEIGHT = 3000
+UI_POSTION = Vector2(461.532, -225)
+
+[node name="16,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 372
+ID = Vector2(16, 15)
+WEIGHT = 3000
+UI_POSTION = Vector2(444.212, -225)
+
+[node name="17,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 373
+ID = Vector2(17, 15)
+WEIGHT = 2000
+UI_POSTION = Vector2(426.891, -225)
+
+[node name="18,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 374
+ID = Vector2(18, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(409.571, -225)
+
+[node name="19,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 375
+ID = Vector2(19, 15)
+WEIGHT = 3000
+UI_POSTION = Vector2(392.25, -225)
+
+[node name="20,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 376
+ID = Vector2(20, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(374.93, -225)
+
+[node name="21,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 377
+ID = Vector2(21, 15)
+WEIGHT = 2000
+UI_POSTION = Vector2(357.609, -225)
+
+[node name="22,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 378
+ID = Vector2(22, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(340.289, -225)
+
+[node name="23,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 379
+ID = Vector2(23, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(322.968, -225)
+
+[node name="24,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 380
+ID = Vector2(24, 15)
+WEIGHT = 2000
+UI_POSTION = Vector2(305.648, -225)
+
+[node name="25,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 381
+ID = Vector2(25, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(288.327, -225)
+
+[node name="26,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 382
+ID = Vector2(26, 15)
+WEIGHT = 3000
+UI_POSTION = Vector2(271.007, -225)
+
+[node name="27,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 383
+ID = Vector2(27, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(253.686, -225)
+
+[node name="28,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 384
+ID = Vector2(28, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(236.366, -225)
+
+[node name="29,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 385
+ID = Vector2(29, 15)
+WEIGHT = 1000
+UI_POSTION = Vector2(219.045, -225)
+
+[node name="30,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 386
+ID = Vector2(30, 15)
+WEIGHT = 2000
+UI_POSTION = Vector2(201.724, -225)
+
+[node name="31,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 387
+ID = Vector2(31, 15)
+WEIGHT = 2000
+UI_POSTION = Vector2(184.404, -225)
+
+[node name="32,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(162.917, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 388
+ID = Vector2(32, 15)
+WEIGHT = 2000
+UI_POSTION = Vector2(167.083, -225)
+
+[node name="33,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(180.237, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 389
+ID = Vector2(33, 15)
+WEIGHT = 2000
+UI_POSTION = Vector2(149.763, -225)
+
+[node name="34,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(197.558, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 390
+ID = Vector2(34, 15)
+WEIGHT = 2000
+UI_POSTION = Vector2(132.442, -225)
+
+[node name="35,15" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(214.878, 25)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 391
+ID = Vector2(35, 15)
+WEIGHT = 3000
+UI_POSTION = Vector2(115.122, -225)
+
+[node name="9,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-244.115, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 392
+ID = Vector2(9, 16)
+WEIGHT = 2000
+UI_POSTION = Vector2(574.115, -240)
+
+[node name="10,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-226.795, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 393
+ID = Vector2(10, 16)
+WEIGHT = 3000
+UI_POSTION = Vector2(556.795, -240)
+
+[node name="11,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-209.474, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 394
+ID = Vector2(11, 16)
+WEIGHT = 3000
+UI_POSTION = Vector2(539.474, -240)
+
+[node name="12,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-192.154, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 395
+ID = Vector2(12, 16)
+WEIGHT = 2000
+UI_POSTION = Vector2(522.154, -240)
+
+[node name="13,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-174.833, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 396
+ID = Vector2(13, 16)
+WEIGHT = 1000
+UI_POSTION = Vector2(504.833, -240)
+
+[node name="14,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-157.513, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 397
+ID = Vector2(14, 16)
+WEIGHT = 1000
+UI_POSTION = Vector2(487.513, -240)
+
+[node name="15,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 398
+ID = Vector2(15, 16)
+WEIGHT = 3000
+UI_POSTION = Vector2(470.192, -240)
+
+[node name="16,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 399
+ID = Vector2(16, 16)
+WEIGHT = 1000
+UI_POSTION = Vector2(452.872, -240)
+
+[node name="17,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 400
+ID = Vector2(17, 16)
+WEIGHT = 2000
+UI_POSTION = Vector2(435.551, -240)
+
+[node name="18,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 401
+ID = Vector2(18, 16)
+WEIGHT = 2000
+UI_POSTION = Vector2(418.231, -240)
+
+[node name="19,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 402
+ID = Vector2(19, 16)
+WEIGHT = 1000
+UI_POSTION = Vector2(400.91, -240)
+
+[node name="20,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 403
+ID = Vector2(20, 16)
+WEIGHT = 3000
+UI_POSTION = Vector2(383.59, -240)
+
+[node name="21,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 404
+ID = Vector2(21, 16)
+WEIGHT = 3000
+UI_POSTION = Vector2(366.269, -240)
+
+[node name="22,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 405
+ID = Vector2(22, 16)
+WEIGHT = 3000
+UI_POSTION = Vector2(348.949, -240)
+
+[node name="23,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 406
+ID = Vector2(23, 16)
+WEIGHT = 1000
+UI_POSTION = Vector2(331.628, -240)
+
+[node name="24,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 407
+ID = Vector2(24, 16)
+WEIGHT = 1000
+UI_POSTION = Vector2(314.308, -240)
+
+[node name="25,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 408
+ID = Vector2(25, 16)
+WEIGHT = 1000
+UI_POSTION = Vector2(296.987, -240)
+
+[node name="26,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 409
+ID = Vector2(26, 16)
+WEIGHT = 1000
+UI_POSTION = Vector2(279.667, -240)
+
+[node name="27,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 410
+ID = Vector2(27, 16)
+WEIGHT = 1000
+UI_POSTION = Vector2(262.346, -240)
+
+[node name="28,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 411
+ID = Vector2(28, 16)
+WEIGHT = 3000
+UI_POSTION = Vector2(245.026, -240)
+
+[node name="29,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 412
+ID = Vector2(29, 16)
+WEIGHT = 1000
+UI_POSTION = Vector2(227.705, -240)
+
+[node name="30,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 413
+ID = Vector2(30, 16)
+WEIGHT = 2000
+UI_POSTION = Vector2(210.385, -240)
+
+[node name="31,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 414
+ID = Vector2(31, 16)
+WEIGHT = 3000
+UI_POSTION = Vector2(193.064, -240)
+
+[node name="32,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 415
+ID = Vector2(32, 16)
+WEIGHT = 3000
+UI_POSTION = Vector2(175.744, -240)
+
+[node name="33,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(171.577, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 416
+ID = Vector2(33, 16)
+WEIGHT = 1000
+UI_POSTION = Vector2(158.423, -240)
+
+[node name="34,16" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(188.897, 40)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 417
+ID = Vector2(34, 16)
+WEIGHT = 2000
+UI_POSTION = Vector2(141.103, -240)
+
+[node name="10,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-218.135, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 418
+ID = Vector2(10, 17)
+WEIGHT = 2000
+UI_POSTION = Vector2(548.135, -255)
+
+[node name="11,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-200.814, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 419
+ID = Vector2(11, 17)
+WEIGHT = 2000
+UI_POSTION = Vector2(530.814, -255)
+
+[node name="12,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-183.494, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 420
+ID = Vector2(12, 17)
+WEIGHT = 3000
+UI_POSTION = Vector2(513.494, -255)
+
+[node name="13,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-166.173, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 421
+ID = Vector2(13, 17)
+WEIGHT = 3000
+UI_POSTION = Vector2(496.173, -255)
+
+[node name="14,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-148.853, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 422
+ID = Vector2(14, 17)
+WEIGHT = 2000
+UI_POSTION = Vector2(478.853, -255)
+
+[node name="15,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-131.532, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 423
+ID = Vector2(15, 17)
+WEIGHT = 2000
+UI_POSTION = Vector2(461.532, -255)
+
+[node name="16,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-114.212, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 424
+ID = Vector2(16, 17)
+WEIGHT = 2000
+UI_POSTION = Vector2(444.212, -255)
+
+[node name="17,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 425
+ID = Vector2(17, 17)
+WEIGHT = 1000
+UI_POSTION = Vector2(426.891, -255)
+
+[node name="18,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 426
+ID = Vector2(18, 17)
+WEIGHT = 3000
+UI_POSTION = Vector2(409.571, -255)
+
+[node name="19,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 427
+ID = Vector2(19, 17)
+WEIGHT = 2000
+UI_POSTION = Vector2(392.25, -255)
+
+[node name="20,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 428
+ID = Vector2(20, 17)
+WEIGHT = 1000
+UI_POSTION = Vector2(374.93, -255)
+
+[node name="21,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 429
+ID = Vector2(21, 17)
+WEIGHT = 2000
+UI_POSTION = Vector2(357.609, -255)
+
+[node name="22,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 430
+ID = Vector2(22, 17)
+WEIGHT = 3000
+UI_POSTION = Vector2(340.289, -255)
+
+[node name="23,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 431
+ID = Vector2(23, 17)
+WEIGHT = 2000
+UI_POSTION = Vector2(322.968, -255)
+
+[node name="24,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 432
+ID = Vector2(24, 17)
+WEIGHT = 1000
+UI_POSTION = Vector2(305.648, -255)
+
+[node name="25,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 433
+ID = Vector2(25, 17)
+WEIGHT = 2000
+UI_POSTION = Vector2(288.327, -255)
+
+[node name="26,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 434
+ID = Vector2(26, 17)
+WEIGHT = 3000
+UI_POSTION = Vector2(271.007, -255)
+
+[node name="27,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 435
+ID = Vector2(27, 17)
+WEIGHT = 3000
+UI_POSTION = Vector2(253.686, -255)
+
+[node name="28,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 436
+ID = Vector2(28, 17)
+WEIGHT = 2000
+UI_POSTION = Vector2(236.366, -255)
+
+[node name="29,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 437
+ID = Vector2(29, 17)
+WEIGHT = 1000
+UI_POSTION = Vector2(219.045, -255)
+
+[node name="30,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 438
+ID = Vector2(30, 17)
+WEIGHT = 1000
+UI_POSTION = Vector2(201.724, -255)
+
+[node name="31,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 439
+ID = Vector2(31, 17)
+WEIGHT = 2000
+UI_POSTION = Vector2(184.404, -255)
+
+[node name="32,17" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(162.917, 55)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 440
+ID = Vector2(32, 17)
+WEIGHT = 1000
+UI_POSTION = Vector2(167.083, -255)
+
+[node name="13,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-174.833, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 441
+ID = Vector2(13, 18)
+WEIGHT = 2000
+UI_POSTION = Vector2(504.833, -270)
+
+[node name="14,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-157.513, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 442
+ID = Vector2(14, 18)
+WEIGHT = 2000
+UI_POSTION = Vector2(487.513, -270)
+
+[node name="15,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-140.192, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 443
+ID = Vector2(15, 18)
+WEIGHT = 1000
+UI_POSTION = Vector2(470.192, -270)
+
+[node name="16,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-122.872, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 444
+ID = Vector2(16, 18)
+WEIGHT = 2000
+UI_POSTION = Vector2(452.872, -270)
+
+[node name="17,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-105.551, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 445
+ID = Vector2(17, 18)
+WEIGHT = 2000
+UI_POSTION = Vector2(435.551, -270)
+
+[node name="18,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 446
+ID = Vector2(18, 18)
+WEIGHT = 1000
+UI_POSTION = Vector2(418.231, -270)
+
+[node name="19,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 447
+ID = Vector2(19, 18)
+WEIGHT = 3000
+UI_POSTION = Vector2(400.91, -270)
+
+[node name="20,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 448
+ID = Vector2(20, 18)
+WEIGHT = 2000
+UI_POSTION = Vector2(383.59, -270)
+
+[node name="21,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 449
+ID = Vector2(21, 18)
+WEIGHT = 3000
+UI_POSTION = Vector2(366.269, -270)
+
+[node name="22,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 450
+ID = Vector2(22, 18)
+WEIGHT = 2000
+UI_POSTION = Vector2(348.949, -270)
+
+[node name="23,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 451
+ID = Vector2(23, 18)
+WEIGHT = 1000
+UI_POSTION = Vector2(331.628, -270)
+
+[node name="24,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 452
+ID = Vector2(24, 18)
+WEIGHT = 3000
+UI_POSTION = Vector2(314.308, -270)
+
+[node name="25,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 453
+ID = Vector2(25, 18)
+WEIGHT = 3000
+UI_POSTION = Vector2(296.987, -270)
+
+[node name="26,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 454
+ID = Vector2(26, 18)
+WEIGHT = 3000
+UI_POSTION = Vector2(279.667, -270)
+
+[node name="27,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 455
+ID = Vector2(27, 18)
+WEIGHT = 2000
+UI_POSTION = Vector2(262.346, -270)
+
+[node name="28,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(84.9742, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 456
+ID = Vector2(28, 18)
+WEIGHT = 2000
+UI_POSTION = Vector2(245.026, -270)
+
+[node name="29,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(102.295, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 457
+ID = Vector2(29, 18)
+WEIGHT = 2000
+UI_POSTION = Vector2(227.705, -270)
+
+[node name="30,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 458
+ID = Vector2(30, 18)
+WEIGHT = 1000
+UI_POSTION = Vector2(210.385, -270)
+
+[node name="31,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 459
+ID = Vector2(31, 18)
+WEIGHT = 2000
+UI_POSTION = Vector2(193.064, -270)
+
+[node name="32,18" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, 70)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 460
+ID = Vector2(32, 18)
+WEIGHT = 2000
+UI_POSTION = Vector2(175.744, -270)
+
+[node name="17,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-96.8911, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 461
+ID = Vector2(17, 19)
+WEIGHT = 1000
+UI_POSTION = Vector2(426.891, -285)
+
+[node name="18,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-79.5706, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 462
+ID = Vector2(18, 19)
+WEIGHT = 1000
+UI_POSTION = Vector2(409.571, -285)
+
+[node name="19,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-62.2501, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 463
+ID = Vector2(19, 19)
+WEIGHT = 3000
+UI_POSTION = Vector2(392.25, -285)
+
+[node name="20,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 464
+ID = Vector2(20, 19)
+WEIGHT = 3000
+UI_POSTION = Vector2(374.93, -285)
+
+[node name="21,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 465
+ID = Vector2(21, 19)
+WEIGHT = 3000
+UI_POSTION = Vector2(357.609, -285)
+
+[node name="22,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 466
+ID = Vector2(22, 19)
+WEIGHT = 2000
+UI_POSTION = Vector2(340.289, -285)
+
+[node name="23,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 467
+ID = Vector2(23, 19)
+WEIGHT = 3000
+UI_POSTION = Vector2(322.968, -285)
+
+[node name="24,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(24.3524, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 468
+ID = Vector2(24, 19)
+WEIGHT = 1000
+UI_POSTION = Vector2(305.648, -285)
+
+[node name="25,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(41.673, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 469
+ID = Vector2(25, 19)
+WEIGHT = 2000
+UI_POSTION = Vector2(288.327, -285)
+
+[node name="26,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(58.9935, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 470
+ID = Vector2(26, 19)
+WEIGHT = 2000
+UI_POSTION = Vector2(271.007, -285)
+
+[node name="27,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(76.314, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 471
+ID = Vector2(27, 19)
+WEIGHT = 3000
+UI_POSTION = Vector2(253.686, -285)
+
+[node name="28,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(93.6345, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 472
+ID = Vector2(28, 19)
+WEIGHT = 1000
+UI_POSTION = Vector2(236.366, -285)
+
+[node name="29,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(110.955, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 473
+ID = Vector2(29, 19)
+WEIGHT = 2000
+UI_POSTION = Vector2(219.045, -285)
+
+[node name="30,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(128.275, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 474
+ID = Vector2(30, 19)
+WEIGHT = 1000
+UI_POSTION = Vector2(201.724, -285)
+
+[node name="31,19" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, 85)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 475
+ID = Vector2(31, 19)
+WEIGHT = 1000
+UI_POSTION = Vector2(184.404, -285)
+
+[node name="18,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-88.2309, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 476
+ID = Vector2(18, 20)
+WEIGHT = 1000
+UI_POSTION = Vector2(418.231, -300)
+
+[node name="19,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-70.9103, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 477
+ID = Vector2(19, 20)
+WEIGHT = 1000
+UI_POSTION = Vector2(400.91, -300)
+
+[node name="20,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-53.5898, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 478
+ID = Vector2(20, 20)
+WEIGHT = 3000
+UI_POSTION = Vector2(383.59, -300)
+
+[node name="21,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 479
+ID = Vector2(21, 20)
+WEIGHT = 1000
+UI_POSTION = Vector2(366.269, -300)
+
+[node name="22,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 480
+ID = Vector2(22, 20)
+WEIGHT = 2000
+UI_POSTION = Vector2(348.949, -300)
+
+[node name="23,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-1.62831, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 481
+ID = Vector2(23, 20)
+WEIGHT = 1000
+UI_POSTION = Vector2(331.628, -300)
+
+[node name="24,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(15.6922, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 482
+ID = Vector2(24, 20)
+WEIGHT = 2000
+UI_POSTION = Vector2(314.308, -300)
+
+[node name="25,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(33.0127, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 483
+ID = Vector2(25, 20)
+WEIGHT = 3000
+UI_POSTION = Vector2(296.987, -300)
+
+[node name="26,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(50.3332, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 484
+ID = Vector2(26, 20)
+WEIGHT = 1000
+UI_POSTION = Vector2(279.667, -300)
+
+[node name="27,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(67.6537, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 485
+ID = Vector2(27, 20)
+WEIGHT = 1000
+UI_POSTION = Vector2(262.346, -300)
+
+[node name="30,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(119.615, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 486
+ID = Vector2(30, 20)
+WEIGHT = 3000
+UI_POSTION = Vector2(210.385, -300)
+
+[node name="31,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 487
+ID = Vector2(31, 20)
+WEIGHT = 3000
+UI_POSTION = Vector2(193.064, -300)
+
+[node name="32,20" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, 100)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 488
+ID = Vector2(32, 20)
+WEIGHT = 1000
+UI_POSTION = Vector2(175.744, -300)
+
+[node name="20,21" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-44.9296, 115)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 489
+ID = Vector2(20, 21)
+WEIGHT = 1000
+UI_POSTION = Vector2(374.93, -315)
+
+[node name="21,21" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, 115)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 490
+ID = Vector2(21, 21)
+WEIGHT = 1000
+UI_POSTION = Vector2(357.609, -315)
+
+[node name="22,21" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, 115)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 491
+ID = Vector2(22, 21)
+WEIGHT = 3000
+UI_POSTION = Vector2(340.289, -315)
+
+[node name="23,21" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(7.03194, 115)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 492
+ID = Vector2(23, 21)
+WEIGHT = 3000
+UI_POSTION = Vector2(322.968, -315)
+
+[node name="31,21" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, 115)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 493
+ID = Vector2(31, 21)
+WEIGHT = 3000
+UI_POSTION = Vector2(184.404, -315)
+
+[node name="32,21" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(162.917, 115)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 494
+ID = Vector2(32, 21)
+WEIGHT = 2000
+UI_POSTION = Vector2(167.083, -315)
+
+[node name="21,22" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-36.2693, 130)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 495
+ID = Vector2(21, 22)
+WEIGHT = 1000
+UI_POSTION = Vector2(366.269, -330)
+
+[node name="22,22" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-18.9488, 130)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 496
+ID = Vector2(22, 22)
+WEIGHT = 1000
+UI_POSTION = Vector2(348.949, -330)
+
+[node name="31,22" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(136.936, 130)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 497
+ID = Vector2(31, 22)
+WEIGHT = 3000
+UI_POSTION = Vector2(193.064, -330)
+
+[node name="32,22" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, 130)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 498
+ID = Vector2(32, 22)
+WEIGHT = 1000
+UI_POSTION = Vector2(175.744, -330)
+
+[node name="21,23" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-27.6091, 145)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 499
+ID = Vector2(21, 23)
+WEIGHT = 2000
+UI_POSTION = Vector2(357.609, -345)
+
+[node name="22,23" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(-10.2886, 145)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 500
+ID = Vector2(22, 23)
+WEIGHT = 2000
+UI_POSTION = Vector2(340.289, -345)
+
+[node name="31,23" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(145.596, 145)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 501
+ID = Vector2(31, 23)
+WEIGHT = 1000
+UI_POSTION = Vector2(184.404, -345)
+
+[node name="32,23" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(162.917, 145)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 502
+ID = Vector2(32, 23)
+WEIGHT = 1000
+UI_POSTION = Vector2(167.083, -345)
+
+[node name="32,24" type="StaticBody2D" parent="." instance=ExtResource("2_rhdsy")]
+material = SubResource("CanvasItemMaterial_vf11p")
+position = Vector2(154.256, 160)
+input_pickable = true
+script = ExtResource("3_bxl5w")
+HEX_RADIUS = 10
+INDEX = 503
+ID = Vector2(32, 24)
+WEIGHT = 2000
+UI_POSTION = Vector2(175.744, -360)

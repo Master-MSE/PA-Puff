@@ -3,12 +3,13 @@ extends Control
 @onready var host_button = $Host
 @onready var join_button = $Join
 @onready var line_address_join = $Address_join
-@onready var address_label = $Address
 @onready var country_box = $Country_box
 
 @export var switzerland_field_scene : PackedScene
 @export var french_field_scene : PackedScene
 @export var italy_field_scene : PackedScene
+@export var us_field_scene : PackedScene
+@export var world_field_scene : PackedScene
 
 
 const PORT = 7000
@@ -40,7 +41,6 @@ func _on_host_pressed() -> void:
 	$Host.visible=false
 	$Address_join.visible=false
 	$Text.text="Wait Player"
-	$Address.text= "Address: %s" % [IP.get_local_addresses()[5]]
 	create_game()
 	
 
@@ -62,8 +62,12 @@ func init_game():
 		game_scene = switzerland_field_scene.instantiate()
 	elif country_id == 1 :
 		game_scene = french_field_scene.instantiate()
-	else :
+	elif country_id == 2:
 		game_scene = italy_field_scene.instantiate()
+	elif country_id == 3:
+		game_scene = us_field_scene.instantiate()
+	else :
+		game_scene = world_field_scene.instantiate()
 	
 	game_scene.name="board"
 	game_scene.position=Vector2(500,300) 

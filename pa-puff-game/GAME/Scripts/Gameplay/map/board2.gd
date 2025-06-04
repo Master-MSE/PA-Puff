@@ -113,6 +113,7 @@ func update_infuence()-> void:
 		
 	inf_a_g/=array_hex.size()
 	inf_b_g/=array_hex.size()
+	
 	get_parent().player1.set_global_influence(inf_a_g)
 	get_parent().player2.set_global_influence(inf_b_g)
 		
